@@ -621,6 +621,7 @@ function build() {
 
   write('sitemap.xml', sitemap(urls));
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${config.domain}/sitemap.xml\n`);
+  write('google0b3bbcc5984512fc.html', 'google-site-verification: google0b3bbcc5984512fc.html');
 
   console.log(`\n  ${config.siteName} built.`);
   console.log(`  ${urls.length} pages -> ./site\n`);
