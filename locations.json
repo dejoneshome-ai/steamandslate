@@ -9,8 +9,36 @@
     "whereToStay": "The park splits into three rough zones for accommodation. The north, around Betws-y-Coed and Capel Curig, is closest to the big walks and busiest in summer. The Llanberis side puts you at the foot of Yr Wyddfa itself. The quieter south, around Dolgellau and Cadair Idris, tends to be better value and emptier in school holidays — most people never get past Betws.",
     "whenToBook": "July and August book out roughly four to five months ahead. The sweet spot for a hot tub specifically is late October through February: cold air, cheap rates, and steam that actually does something. Half-term weeks are the exception and go early.",
     "localTip": "If dark skies are the draw, base yourself south or west of Blaenau Ffestiniog. The light spill from the north coast towns reaches further inland than people expect.",
-    "nearby": ["Betws-y-Coed", "Llanberis", "Dolgellau", "Beddgelert", "Bala"],
-    "searchTerm": "Snowdonia"
+    "nearby": [
+      "Betws-y-Coed",
+      "Llanberis",
+      "Dolgellau",
+      "Beddgelert",
+      "Bala"
+    ],
+    "searchTerm": "Snowdonia",
+    "neighbours": [
+      "llyn-peninsula",
+      "conwy-valley",
+      "mid-wales"
+    ],
+    "driveTimes": [
+      {
+        "from": "Manchester",
+        "time": "1h45"
+      },
+      {
+        "from": "Liverpool",
+        "time": "1h30"
+      },
+      {
+        "from": "Birmingham",
+        "time": "2h45"
+      }
+    ],
+    "bestSeason": "Oct–Feb for value and cold, clear air",
+    "darkSky": true,
+    "nearestTown": "Betws-y-Coed"
   },
   {
     "slug": "pembrokeshire",
@@ -22,8 +50,36 @@
     "whereToStay": "The north coast around St Davids and Newport is wilder, quieter and better for walkers. The south, around Tenby and Saundersfoot, is family territory with beaches you can drive to. Inland around the Preseli Hills is where the value is — you're twenty minutes from the coast and paying considerably less for it.",
     "whenToBook": "This is the most seasonal county on the list. Summer is fierce and expensive. Shoulder season — May, and mid-September through October — gives you usable weather, open pubs and rates that drop by a third or more.",
     "localTip": "Check whether the tub is sheltered. Exposed clifftop plots sound romantic and are genuinely unpleasant in a westerly. The listing photos rarely show the wind.",
-    "nearby": ["St Davids", "Tenby", "Newport", "Fishguard", "Narberth"],
-    "searchTerm": "Pembrokeshire"
+    "nearby": [
+      "St Davids",
+      "Tenby",
+      "Newport",
+      "Fishguard",
+      "Narberth"
+    ],
+    "searchTerm": "Pembrokeshire",
+    "neighbours": [
+      "gower",
+      "ceredigion",
+      "mid-wales"
+    ],
+    "driveTimes": [
+      {
+        "from": "Cardiff",
+        "time": "1h45"
+      },
+      {
+        "from": "Bristol",
+        "time": "2h15"
+      },
+      {
+        "from": "Birmingham",
+        "time": "3h30"
+      }
+    ],
+    "bestSeason": "May, or mid-Sep through October",
+    "darkSky": false,
+    "nearestTown": "Haverfordwest"
   },
   {
     "slug": "brecon-beacons",
@@ -35,8 +91,36 @@
     "whereToStay": "The central Beacons around Brecon and Talybont are the classic base. The Black Mountains in the east, towards Crickhowell and Hay, are prettier and have the better pubs. The western end around the Waterfall Country near Ystradfellte is the most dramatic and the least developed.",
     "whenToBook": "Less extreme than the coast. Weekends year-round are the pressure point rather than whole seasons — midweek breaks in November and January can be genuinely cheap. Hay Festival week in late May takes out the entire east of the park.",
     "localTip": "Waterfall Country is the strongest single reason to come here in winter. The falls at Ystradfellte run hardest after rain, and a cold wet walk followed by a hot tub is the correct order of operations.",
-    "nearby": ["Brecon", "Crickhowell", "Hay-on-Wye", "Abergavenny", "Talgarth"],
-    "searchTerm": "Brecon Beacons"
+    "nearby": [
+      "Brecon",
+      "Crickhowell",
+      "Hay-on-Wye",
+      "Abergavenny",
+      "Talgarth"
+    ],
+    "searchTerm": "Brecon Beacons",
+    "neighbours": [
+      "mid-wales",
+      "wye-valley",
+      "vale-of-glamorgan"
+    ],
+    "driveTimes": [
+      {
+        "from": "Cardiff",
+        "time": "1h"
+      },
+      {
+        "from": "Bristol",
+        "time": "1h15"
+      },
+      {
+        "from": "Birmingham",
+        "time": "2h"
+      }
+    ],
+    "bestSeason": "Year-round — avoid Hay Festival week, late May",
+    "darkSky": true,
+    "nearestTown": "Brecon"
   },
   {
     "slug": "anglesey",
@@ -48,8 +132,36 @@
     "whereToStay": "The west coast around Rhosneigr and Aberffraw has the surf beaches and the best sunsets. The north around Amlwch and Cemaes is remote and cheap. The east, near Beaumaris and Menai Bridge, is the most polished and the closest to Snowdonia if you want to do both.",
     "whenToBook": "Summer weekends go early because of the beaches and the sailing. Autumn is underrated here — the light is extraordinary and the island empties out completely after October half-term.",
     "localTip": "The coastal path circles the entire island, 130 miles of it, and it's mostly gentle. You can do a genuinely good three-mile section from almost any property on the coast.",
-    "nearby": ["Beaumaris", "Rhosneigr", "Trearddur Bay", "Moelfre", "Benllech"],
-    "searchTerm": "Anglesey"
+    "nearby": [
+      "Beaumaris",
+      "Rhosneigr",
+      "Trearddur Bay",
+      "Moelfre",
+      "Benllech"
+    ],
+    "searchTerm": "Anglesey",
+    "neighbours": [
+      "llyn-peninsula",
+      "conwy-valley",
+      "snowdonia"
+    ],
+    "driveTimes": [
+      {
+        "from": "Manchester",
+        "time": "2h15"
+      },
+      {
+        "from": "Liverpool",
+        "time": "2h"
+      },
+      {
+        "from": "Birmingham",
+        "time": "3h15"
+      }
+    ],
+    "bestSeason": "September into October for light and quiet",
+    "darkSky": false,
+    "nearestTown": "Llangefni"
   },
   {
     "slug": "gower",
@@ -61,8 +173,36 @@
     "whereToStay": "South Gower, from Mumbles round to Rhossili, has the famous beaches and the higher prices. North Gower, along the estuary, is marsh and salt flats and cockle beds, and is both quieter and better value. Inland around Reynoldston puts you ten minutes from either.",
     "whenToBook": "Gower is close enough to Swansea and Cardiff to be a weekend destination all year, so Fridays and Saturdays are the constraint rather than the season. Midweek availability is usually good even in August if you're flexible on the exact property.",
     "localTip": "Rhossili Bay regularly turns up on lists of the best beaches in Europe, and the car park fills by ten on a summer day. Staying on the peninsula is the whole point — you walk down before the day-trippers arrive.",
-    "nearby": ["Rhossili", "Mumbles", "Port Eynon", "Llangennith", "Reynoldston"],
-    "searchTerm": "Gower"
+    "nearby": [
+      "Rhossili",
+      "Mumbles",
+      "Port Eynon",
+      "Llangennith",
+      "Reynoldston"
+    ],
+    "searchTerm": "Gower",
+    "neighbours": [
+      "vale-of-glamorgan",
+      "pembrokeshire",
+      "brecon-beacons"
+    ],
+    "driveTimes": [
+      {
+        "from": "Cardiff",
+        "time": "1h"
+      },
+      {
+        "from": "Bristol",
+        "time": "1h30"
+      },
+      {
+        "from": "Birmingham",
+        "time": "2h30"
+      }
+    ],
+    "bestSeason": "Midweek, almost any month",
+    "darkSky": false,
+    "nearestTown": "Swansea"
   },
   {
     "slug": "llyn-peninsula",
@@ -74,8 +214,36 @@
     "whereToStay": "Abersoch is the busy, sailing-and-second-homes end. Head further west towards Aberdaron and Uwchmynydd and it gets emptier and wilder with every mile. Nefyn and Morfa Nefyn on the north coast split the difference.",
     "whenToBook": "Abersoch in August is its own market and books far ahead. The far west is available much later. If you want a hot tub with genuine isolation, this peninsula is the best-value place in Wales to find one.",
     "localTip": "Porthdinllaen has a pub on the beach, the Tŷ Coch, that you can only reach on foot across the sand or the golf course. It's worth building an evening around.",
-    "nearby": ["Abersoch", "Aberdaron", "Nefyn", "Pwllheli", "Criccieth"],
-    "searchTerm": "Llyn Peninsula"
+    "nearby": [
+      "Abersoch",
+      "Aberdaron",
+      "Nefyn",
+      "Pwllheli",
+      "Criccieth"
+    ],
+    "searchTerm": "Llyn Peninsula",
+    "neighbours": [
+      "snowdonia",
+      "anglesey",
+      "conwy-valley"
+    ],
+    "driveTimes": [
+      {
+        "from": "Manchester",
+        "time": "2h30"
+      },
+      {
+        "from": "Liverpool",
+        "time": "2h15"
+      },
+      {
+        "from": "Birmingham",
+        "time": "3h30"
+      }
+    ],
+    "bestSeason": "September onward, for genuine isolation",
+    "darkSky": false,
+    "nearestTown": "Pwllheli"
   },
   {
     "slug": "mid-wales",
@@ -87,8 +255,36 @@
     "whereToStay": "The Montgomery and Welshpool side is gentle border country, close to Shropshire and easy to reach. Around Machynlleth and the Dyfi valley you get forest and the edge of Snowdonia. The Elan Valley near Rhayader is reservoirs and moorland, and is the most remote-feeling of the three.",
     "whenToBook": "Barely seasonal. Availability is good most of the year and rates stay reasonably flat, which makes this the reliable fallback when Snowdonia and Pembrokeshire are full.",
     "localTip": "The Elan Valley is a Dark Sky Park in its own right, and it gets a fraction of the attention that Snowdonia's does. Same stars, fewer people, lower prices.",
-    "nearby": ["Machynlleth", "Rhayader", "Welshpool", "Llanidloes", "Builth Wells"],
-    "searchTerm": "Mid Wales"
+    "nearby": [
+      "Machynlleth",
+      "Rhayader",
+      "Welshpool",
+      "Llanidloes",
+      "Builth Wells"
+    ],
+    "searchTerm": "Mid Wales",
+    "neighbours": [
+      "snowdonia",
+      "brecon-beacons",
+      "ceredigion"
+    ],
+    "driveTimes": [
+      {
+        "from": "Birmingham",
+        "time": "1h45"
+      },
+      {
+        "from": "Cardiff",
+        "time": "2h"
+      },
+      {
+        "from": "Bristol",
+        "time": "2h15"
+      }
+    ],
+    "bestSeason": "Fairly flat year-round — the reliable fallback",
+    "darkSky": true,
+    "nearestTown": "Newtown"
   },
   {
     "slug": "ceredigion",
@@ -100,8 +296,36 @@
     "whereToStay": "Aberystwyth is the town, with the university and the pier. New Quay and Aberaeron are the pretty harbour villages, Aberaeron especially — the Georgian terraces are painted in colours that shouldn't work and do. Inland the Teifi valley towards Lampeter is farmland and forest and much cheaper.",
     "whenToBook": "Dolphin season runs roughly April to September and drives the summer demand. Outside that, availability is comfortable and rates drop sharply. October on this coast is often still and clear.",
     "localTip": "Take a boat trip from New Quay rather than watching from land. The licensed operators keep a legal distance and the sightings rate is far higher out on the water.",
-    "nearby": ["Aberystwyth", "Aberaeron", "New Quay", "Cardigan", "Lampeter"],
-    "searchTerm": "Ceredigion"
+    "nearby": [
+      "Aberystwyth",
+      "Aberaeron",
+      "New Quay",
+      "Cardigan",
+      "Lampeter"
+    ],
+    "searchTerm": "Ceredigion",
+    "neighbours": [
+      "mid-wales",
+      "pembrokeshire",
+      "snowdonia"
+    ],
+    "driveTimes": [
+      {
+        "from": "Birmingham",
+        "time": "2h15"
+      },
+      {
+        "from": "Cardiff",
+        "time": "2h"
+      },
+      {
+        "from": "Bristol",
+        "time": "2h30"
+      }
+    ],
+    "bestSeason": "Outside the April–September dolphin season for value",
+    "darkSky": false,
+    "nearestTown": "Aberystwyth"
   },
   {
     "slug": "wye-valley",
@@ -113,8 +337,36 @@
     "whereToStay": "Tintern and Llandogo are the classic valley bases, right on the river. Monmouth is the market town with the restaurants. Up on the hills towards Trellech you get views down the gorge and more space for your money.",
     "whenToBook": "Weekend-driven rather than season-driven, because of how close it is to English cities. Autumn is the standout — the gorge is almost entirely deciduous woodland and the colour in late October is the best in south Wales.",
     "localTip": "The Devil's Pulpit viewpoint above Tintern gives you the abbey from directly overhead. It's a steep twenty minutes up from the valley floor and worth every step.",
-    "nearby": ["Tintern", "Monmouth", "Chepstow", "Llandogo", "Trellech"],
-    "searchTerm": "Wye Valley"
+    "nearby": [
+      "Tintern",
+      "Monmouth",
+      "Chepstow",
+      "Llandogo",
+      "Trellech"
+    ],
+    "searchTerm": "Wye Valley",
+    "neighbours": [
+      "brecon-beacons",
+      "vale-of-glamorgan",
+      "mid-wales"
+    ],
+    "driveTimes": [
+      {
+        "from": "Bristol",
+        "time": "40 min"
+      },
+      {
+        "from": "Cardiff",
+        "time": "45 min"
+      },
+      {
+        "from": "Birmingham",
+        "time": "1h30"
+      }
+    ],
+    "bestSeason": "Late October, for the gorge in full colour",
+    "darkSky": false,
+    "nearestTown": "Monmouth"
   },
   {
     "slug": "conwy-valley",
@@ -126,8 +378,36 @@
     "whereToStay": "Conwy town itself for restaurants and the castle. Up the valley at Trefriw and Llanrwst you're in farmland with the mountains rising either side. Betws-y-Coed at the top of the valley is the walkers' hub and the busiest point.",
     "whenToBook": "Summer and half-terms are tight because this is the main tourist artery of north Wales. Midweek in the shoulder months is straightforward, and winter here is quiet and often clear.",
     "localTip": "The Gwydir Forest above Llanrwst is threaded with old lead-mine tracks and small lakes, and it's almost empty even when Betws-y-Coed is heaving.",
-    "nearby": ["Conwy", "Betws-y-Coed", "Llanrwst", "Trefriw", "Llandudno"],
-    "searchTerm": "Conwy"
+    "nearby": [
+      "Conwy",
+      "Betws-y-Coed",
+      "Llanrwst",
+      "Trefriw",
+      "Llandudno"
+    ],
+    "searchTerm": "Conwy",
+    "neighbours": [
+      "snowdonia",
+      "anglesey",
+      "clwydian-range"
+    ],
+    "driveTimes": [
+      {
+        "from": "Liverpool",
+        "time": "1h15"
+      },
+      {
+        "from": "Manchester",
+        "time": "1h30"
+      },
+      {
+        "from": "Birmingham",
+        "time": "2h30"
+      }
+    ],
+    "bestSeason": "Midweek in the shoulder months",
+    "darkSky": false,
+    "nearestTown": "Conwy"
   },
   {
     "slug": "clwydian-range",
@@ -139,8 +419,36 @@
     "whereToStay": "Llangollen in the Dee valley is the liveliest base, with the canal, the steam railway and the Pontcysyllte Aqueduct. Ruthin and Llandegla put you right under the ridge. Mold is the practical eastern end, closest to the motorway.",
     "whenToBook": "Very weekend-weighted because of the proximity to English cities. Midweek is easy nearly all year. Late August into September is when the heather turns and the ridge is at its best.",
     "localTip": "The Pontcysyllte Aqueduct is a World Heritage Site and you can walk the towpath across it, 126 feet above the Dee, with no railing on the water side. Not for everyone, memorable for everyone else.",
-    "nearby": ["Llangollen", "Ruthin", "Mold", "Corwen", "Denbigh"],
-    "searchTerm": "Llangollen"
+    "nearby": [
+      "Llangollen",
+      "Ruthin",
+      "Mold",
+      "Corwen",
+      "Denbigh"
+    ],
+    "searchTerm": "Llangollen",
+    "neighbours": [
+      "conwy-valley",
+      "snowdonia",
+      "mid-wales"
+    ],
+    "driveTimes": [
+      {
+        "from": "Manchester",
+        "time": "1h"
+      },
+      {
+        "from": "Liverpool",
+        "time": "1h"
+      },
+      {
+        "from": "Birmingham",
+        "time": "1h45"
+      }
+    ],
+    "bestSeason": "Late August into September, for the heather",
+    "darkSky": false,
+    "nearestTown": "Ruthin"
   },
   {
     "slug": "vale-of-glamorgan",
@@ -152,7 +460,35 @@
     "whereToStay": "Llantwit Major and St Donats sit right on the heritage coast. Cowbridge inland is the market town with the good food. Penarth on the eastern edge is effectively Cardiff-by-the-sea and useful if you want a city day in the middle of the break.",
     "whenToBook": "The least competitive area on this list. Because it's a commuter belt rather than a holiday region, you can often find good properties at short notice even in summer.",
     "localTip": "Nash Point has a working lighthouse and a foghorn that's sounded on some weekends. Time a walk along the cliffs for low tide and you get the full striped rock platform.",
-    "nearby": ["Cowbridge", "Llantwit Major", "Penarth", "Barry", "Southerndown"],
-    "searchTerm": "Vale of Glamorgan"
+    "nearby": [
+      "Cowbridge",
+      "Llantwit Major",
+      "Penarth",
+      "Barry",
+      "Southerndown"
+    ],
+    "searchTerm": "Vale of Glamorgan",
+    "neighbours": [
+      "gower",
+      "wye-valley",
+      "brecon-beacons"
+    ],
+    "driveTimes": [
+      {
+        "from": "Cardiff",
+        "time": "25 min"
+      },
+      {
+        "from": "Bristol",
+        "time": "1h"
+      },
+      {
+        "from": "Birmingham",
+        "time": "2h"
+      }
+    ],
+    "bestSeason": "The least seasonal region — good most of the year",
+    "darkSky": false,
+    "nearestTown": "Cowbridge"
   }
 ]
