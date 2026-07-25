@@ -127,7 +127,7 @@ function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld, 
 ${ogImageTag}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${cssHref}">
 ${schemas.map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n')}
 ${analyticsTag}
@@ -844,8 +844,12 @@ const css = `
   --ember:#E8A25E;
   --ember-hi:#F3B87B;
 
-  /* --- type --- */
-  --display:"Instrument Serif",Georgia,serif;
+  /* --- type ---
+     display  = bold, modern headings (Space Grotesk)
+     accent   = elegant italic for Welsh names + hero emphasis (Instrument Serif)
+     body     = readable running text (Source Sans 3) */
+  --display:"Space Grotesk","Helvetica Neue",Arial,sans-serif;
+  --accent:"Instrument Serif",Georgia,serif;
   --body:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
 
   /* --- measures --- */
@@ -936,7 +940,7 @@ a{color:inherit}
   transition:opacity .2s ease;
 }
 .wordmark:hover{opacity:.85}
-.wordmark__amp{color:var(--thermal);font-style:italic}
+.wordmark__amp{font-family:var(--accent);color:var(--thermal);font-style:italic}
 .wordmark__slate{color:var(--steam-dim)}
 .masthead__nav{display:flex;gap:1.75rem}
 .masthead__nav a{
@@ -998,19 +1002,25 @@ a{color:inherit}
 
 .hero__title{
   font-family:var(--display);
-  font-weight:400;
-  font-size:clamp(3.1rem,10vw,6.75rem);
-  line-height:.94;
-  letter-spacing:-.022em;
+  font-weight:500;
+  font-size:clamp(2.9rem,9vw,6.25rem);
+  line-height:.98;
+  letter-spacing:-.03em;
   margin:0 0 1.5rem;
   text-wrap:balance;
 }
-.hero__title em{color:var(--thermal);font-style:italic}
+.hero__title em{
+  font-family:var(--accent);
+  font-weight:400;
+  font-style:italic;
+  letter-spacing:-.01em;
+  color:var(--thermal);
+}
 .hero__title--place{margin-bottom:.35rem}
 .hero__welsh{
-  font-family:var(--display);
+  font-family:var(--accent);
   font-style:italic;
-  font-size:clamp(1.25rem,3.5vw,1.8rem);
+  font-size:clamp(1.3rem,3.5vw,1.9rem);
   color:var(--steam-dim);
   margin:0 0 1.5rem;
 }
@@ -1194,7 +1204,7 @@ a{color:inherit}
 }
 .section__head{margin-bottom:var(--s-7);max-width:var(--read)}
 .section__title{
-  font-family:var(--display);font-weight:400;
+  font-family:var(--display);font-weight:600;
   font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04;
   margin:0 0 1rem;letter-spacing:-.015em;
   text-wrap:balance;
@@ -1234,11 +1244,11 @@ a{color:inherit}
 .region:hover .region__index{color:var(--thermal)}
 .region__names{display:flex;flex-direction:column;gap:.15rem}
 .region__name{
-  font-family:var(--display);font-size:1.65rem;line-height:1.08;
+  font-family:var(--display);font-weight:500;font-size:1.5rem;line-height:1.1;letter-spacing:-.01em;
 }
 .region__welsh{
-  font-family:var(--display);font-style:italic;
-  font-size:.95rem;color:var(--steam-dim);
+  font-family:var(--accent);font-style:italic;
+  font-size:1rem;color:var(--steam-dim);
 }
 .region__lead{color:var(--steam-dim);font-size:.9375rem;line-height:1.5}
 .region__go{
@@ -1261,7 +1271,7 @@ a{color:inherit}
 }
 .prose--top{padding-top:var(--s-7)}
 .page__title{
-  font-family:var(--display);font-weight:400;
+  font-family:var(--display);font-weight:600;
   font-size:clamp(2.25rem,6vw,3.25rem);line-height:1.04;
   margin:0 0 1.5rem;letter-spacing:-.015em;
 }
@@ -1274,7 +1284,7 @@ a{color:inherit}
 }
 .block{margin:0 0 var(--s-7)}
 .block__title{
-  font-family:var(--display);font-weight:400;
+  font-family:var(--display);font-weight:600;
   font-size:1.75rem;line-height:1.15;
   margin:0 0 .85rem;
   color:var(--steam);letter-spacing:-.01em;
@@ -1342,7 +1352,7 @@ a{color:inherit}
 }
 .cta > *{position:relative;z-index:1}
 .cta__title{
-  font-family:var(--display);font-weight:400;
+  font-family:var(--display);font-weight:600;
   font-size:1.9rem;margin:0 0 .75rem;letter-spacing:-.01em;
 }
 .cta__note{color:var(--steam-dim);font-size:.9375rem;margin:0 0 1.5rem;max-width:34rem}
@@ -1421,7 +1431,7 @@ a{color:inherit}
   transition:background-color .18s ease;
 }
 .neighbour:hover{background:var(--surface-2)}
-.neighbour__name{font-family:var(--display);font-size:1.25rem;color:var(--steam);display:flex;align-items:center;gap:.4rem}
+.neighbour__name{font-family:var(--display);font-weight:500;font-size:1.15rem;color:var(--steam);display:flex;align-items:center;gap:.4rem}
 .neighbour:hover .neighbour__name{color:var(--thermal)}
 .neighbour__lead{font-size:.8125rem;color:var(--steam-dim);line-height:1.5}
 
@@ -1438,8 +1448,8 @@ a{color:inherit}
 }
 .faq__item:last-child{border-bottom:0}
 .faq__q{
-  font-family:var(--display);font-size:1.3rem;
-  color:var(--steam);margin:0 0 .65rem;line-height:1.2;
+  font-family:var(--display);font-weight:500;font-size:1.15rem;
+  color:var(--steam);margin:0 0 .65rem;line-height:1.25;letter-spacing:-.005em;
 }
 .faq__a{color:var(--steam-dim);margin:0}
 
