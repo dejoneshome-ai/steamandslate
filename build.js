@@ -191,6 +191,16 @@ function homepage() {
     <p class="section__note">Pick where you want to be. Each guide covers the areas within it, when to book, and one thing worth knowing before you go.</p>
   </div>
   <div class="region__list">${rows}</div>
+</section>
+
+<section class="postcard" aria-label="Photography">
+  <figure class="postcard__figure">
+    <img src="/images/mid-wales/mid-wales-patchwork-fields-1.jpg" alt="Patchwork of green and gold farmland under a big cloud-streaked sky in mid Wales" loading="lazy" width="1600" height="900">
+    <figcaption class="postcard__caption">
+      <span class="postcard__eyebrow">Mid Wales</span>
+      <span class="postcard__line">Drone photography over the hills around Montgomery, where this guide is written &mdash; real photographs, not stock.</span>
+    </figcaption>
+  </figure>
 </section>`;
 
   return shell({
@@ -466,6 +476,12 @@ function aboutPage() {
 <div class="prose prose--top">
   <h1 class="page__title">About ${esc(config.siteName)}</h1>
   <p class="lede">${esc(config.author.bio)}</p>
+
+  <figure class="photo photo--feature">
+    <img src="/images/mid-wales/mid-wales-village-aerial.jpg" alt="Aerial view of Montgomery, Powys, with its castle ruins on the wooded hill above the town" loading="lazy" width="1600" height="900">
+    <figcaption>Montgomery, Powys &mdash; the border town this site is written from.</figcaption>
+  </figure>
+
   <section class="block">
     <h2 class="block__title">How this site makes money</h2>
     <p>Some of the links to accommodation providers on this site are affiliate links. If you book through one, the provider pays a small commission. It costs you nothing extra and the price is identical to going direct.</p>
@@ -475,6 +491,12 @@ function aboutPage() {
     <h2 class="block__title">What this site isn't</h2>
     <p>It isn't a booking engine. We don't hold availability, take payment, or handle your reservation. Every booking happens on the provider's own site under their terms.</p>
   </section>
+
+  <figure class="photo photo--feature">
+    <img src="/images/mid-wales/mid-wales-valley-mist.jpg" alt="Early-morning mist filling the valley below Montgomery in mid Wales, with hills catching the sun" loading="lazy" width="1600" height="900">
+    <figcaption>Dawn mist in the valley below the town, on a still September morning.</figcaption>
+  </figure>
+
   <nav class="pagination"><a href="/#regions">&larr; All regions in Wales</a></nav>
 </div>`;
 
@@ -1054,6 +1076,44 @@ a{color:inherit}
 }
 .region-grid a:hover{background:var(--surface-2);color:var(--thermal)}
 
+/* ---------------------------------------------- homepage postcard */
+.postcard{
+  max-width:var(--wrap);
+  margin:0 auto;
+  padding:0 1.5rem var(--s-9);
+}
+.postcard__figure{
+  position:relative;margin:0;
+  border-radius:var(--r-lg);
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-2);
+}
+.postcard__figure img{
+  width:100%;height:auto;display:block;
+  aspect-ratio:21/9;object-fit:cover;
+}
+.postcard__caption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:2.4rem 1.9rem 1.6rem;
+  display:flex;flex-direction:column;gap:.5rem;
+  background:linear-gradient(to top, rgba(10,18,22,.9), rgba(10,18,22,.35) 55%, transparent);
+}
+.postcard__eyebrow{
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--thermal);font-weight:600;
+}
+.postcard__line{
+  font-family:var(--display);
+  font-size:clamp(1.2rem,2.6vw,1.7rem);
+  line-height:1.25;color:var(--steam);
+  max-width:36rem;text-wrap:pretty;
+}
+@media (max-width:44rem){
+  .postcard__figure img{aspect-ratio:3/2}
+  .postcard__caption{padding:1.6rem 1.25rem 1.25rem}
+}
+
 /* ------------------------------------------------------- footer */
 .footer{
   border-top:1px solid var(--line);
@@ -1135,17 +1195,28 @@ This site earns a commission on some outbound bookings via affiliate links. This
 function copyImages() {
   const srcRoot = path.join(ROOT, 'assets/images');
   if (!fs.existsSync(srcRoot)) return;
-  for (const loc of locations) {
-    const imgs = loc.images || [];
-    for (const img of imgs) {
-      const src = path.join(srcRoot, loc.slug, img.file);
-      if (!fs.existsSync(src)) {
-        console.warn(`  WARNING: missing image file ${src}`);
+
+  // Mirror the whole assets/images tree into the build. This means any page
+  // — region guides, the homepage, the about page — can reference an image by
+  // path without needing a matching entry in locations.json.
+  (function mirror(rel) {
+    for (const entry of fs.readdirSync(path.join(srcRoot, rel), { withFileTypes: true })) {
+      const childRel = path.join(rel, entry.name);
+      if (entry.isDirectory()) {
+        mirror(childRel);
         continue;
       }
-      const destRel = `images/${loc.slug}/${img.file}`;
+      const destRel = path.join('images', childRel);
       mkdir(path.dirname(path.join(OUT, destRel)));
-      fs.copyFileSync(src, path.join(OUT, destRel));
+      fs.copyFileSync(path.join(srcRoot, childRel), path.join(OUT, destRel));
+    }
+  })('');
+
+  // Still warn if a location references an image that isn't on disk.
+  for (const loc of locations) {
+    for (const img of loc.images || []) {
+      const src = path.join(srcRoot, loc.slug, img.file);
+      if (!fs.existsSync(src)) console.warn(`  WARNING: missing image file ${src}`);
     }
   }
 }
