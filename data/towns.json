@@ -20,6 +20,20 @@
         "q": "Are there hot tub lodges near Betws-y-Coed?",
         "a": "Yes — the wooded valleys around Betws-y-Coed, Penmachno and Capel Curig hold a good number of hot tub lodges and cabins, many of them tucked into forestry with genuine privacy. They book up well ahead for summer and school holidays, so winter is both easier and cheaper."
       }
+    ],
+    "images": [
+      {
+        "file": "betws-y-coed-cover.jpg",
+        "feature": true,
+        "alt": "The Pont-y-Pair bridge over the river at Betws-y-Coed",
+        "caption": "The Pont-y-Pair bridge at Betws-y-Coed.",
+        "credit": {
+          "author": "Clintheacock66 (talk) (Transferred by Hogweard/Originally up",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pont-y-pair_Bridge.jpg"
+        }
+      }
     ]
   },
   {
@@ -80,6 +94,20 @@
         "q": "Can you climb Cadair Idris from Dolgellau?",
         "a": "Yes. The Pony Path starts near Dolgellau and is the gentlest ascent; the Minffordd Path from the south is steeper and more dramatic. Cadair Idris is a serious mountain but a shorter day than Yr Wyddfa, and far less crowded."
       }
+    ],
+    "images": [
+      {
+        "file": "dolgellau-cover.jpg",
+        "feature": true,
+        "alt": "The River Wnion below Dolgellau, with Cadair Idris beyond",
+        "caption": "The Wnion at Dolgellau, Cadair Idris behind.",
+        "credit": {
+          "author": "Anthony Parkes",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afon_Wnion_from_the_bridge_-_geograph.org.uk_-_3394282.jpg"
+        }
+      }
     ]
   },
   {
@@ -139,6 +167,20 @@
       {
         "q": "Can you swim in Bala Lake?",
         "a": "Yes, open-water swimming is popular in Llyn Tegid, especially from the eastern shore near the town. It is a large, cold lake, so it suits confident swimmers and wetsuits; there is also a foreshore and car park with easy access."
+      }
+    ],
+    "images": [
+      {
+        "file": "bala-cover.jpg",
+        "feature": true,
+        "alt": "Llyn Tegid, the largest natural lake in Wales, at Bala",
+        "caption": "Llyn Tegid, the great lake at Bala.",
+        "credit": {
+          "author": "Eirian Evans",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llyn_Tegid_-_Bala_Lake_-_geograph.org.uk_-_8071157.jpg"
+        }
       }
     ]
   },
@@ -240,6 +282,20 @@
         "q": "What are the Preseli Hills known for?",
         "a": "The Preseli Hills are the source of the \"bluestones\" that form the inner circle of Stonehenge, quarried and somehow transported to Wiltshire around 5,000 years ago. The range is also rich in Neolithic sites such as Pentre Ifan and offers open, gentle upland walking."
       }
+    ],
+    "images": [
+      {
+        "file": "newport-pembrokeshire-cover.jpg",
+        "feature": true,
+        "alt": "The Parrog and estuary at Newport, Pembrokeshire, below Carningli",
+        "caption": "The Parrog at Newport, below Carningli.",
+        "credit": {
+          "author": "Christopher Hilton",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parrog,_looking_up_to_Carningli_-_geograph.org.uk_-_5344480.jpg"
+        }
+      }
     ]
   },
   {
@@ -263,6 +319,20 @@
       {
         "q": "Can you get a ferry to Ireland from Fishguard?",
         "a": "Yes. Fishguard Harbour runs ferry sailings to Rosslare in the Republic of Ireland, with a crossing of around three and a half hours. It makes Fishguard a useful base if you want to combine a Welsh coast break with a trip across the Irish Sea."
+      }
+    ],
+    "images": [
+      {
+        "file": "fishguard-cover.jpg",
+        "feature": true,
+        "alt": "The harbour at Fishguard Lower Town, Pembrokeshire",
+        "caption": "Fishguard's Lower Town harbour.",
+        "credit": {
+          "author": "Christopher Hilton",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fishguard_Lower_Town_harbour,_from_the_viewpoint_at_its_mouth_-_geograph.org.uk_-_2822079.jpg"
+        }
       }
     ]
   },
@@ -288,6 +358,20 @@
         "q": "What is there for families near Narberth?",
         "a": "The Oakwood theme park and the Bluestone resort are both within a few minutes of Narberth, along with Folly Farm a little further on — making the town a practical base for families combining attractions with beach days on either coast."
       }
+    ],
+    "images": [
+      {
+        "file": "narberth-cover.jpg",
+        "feature": true,
+        "alt": "The historic town hall on the colourful high street of Narberth",
+        "caption": "Narberth town hall, on the high street.",
+        "credit": {
+          "author": "Rosser1954",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narberth_town_hall,_Pembrokeshire,_Wales.jpg"
+        }
+      }
     ]
   },
   {
@@ -311,6 +395,20 @@
       {
         "q": "Is the Brecon Beacons good for stargazing?",
         "a": "Yes — the whole national park is an International Dark Sky Reserve, one of only a handful in the world. Away from the town lights, on a clear moonless night, you can see the Milky Way with the naked eye, which is a large part of the appeal of a winter hot tub break here."
+      }
+    ],
+    "images": [
+      {
+        "file": "brecon-cover.jpg",
+        "feature": true,
+        "alt": "The River Usk at Brecon",
+        "caption": "The River Usk at Brecon.",
+        "credit": {
+          "author": "WelshDave",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ducks_on_the_River_Usk.jpg"
+        }
       }
     ]
   },
@@ -336,6 +434,20 @@
         "q": "Is Crickhowell good for foodies?",
         "a": "Yes. For its size, Crickhowell has an unusual concentration of independent shops, delis and well-regarded pubs and restaurants, and it hosts a popular literary and food festival. It is one of the better bases in the Brecon Beacons for eating out in the evenings."
       }
+    ],
+    "images": [
+      {
+        "file": "crickhowell-cover.jpg",
+        "feature": true,
+        "alt": "The medieval bridge over the River Usk at Crickhowell",
+        "caption": "The old bridge over the Usk at Crickhowell.",
+        "credit": {
+          "author": "Rosser1954",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crickhowell_Bridge,_River_Usk,_Powys._Wales.jpg"
+        }
+      }
     ]
   },
   {
@@ -360,6 +472,20 @@
         "q": "When is the Hay Festival?",
         "a": "The Hay Festival runs for around ten days spanning late May and early June each year. It fills the town and surrounding area completely, so if you want a hot tub break nearby during the festival you should book many months ahead — or come outside it for a quieter stay."
       }
+    ],
+    "images": [
+      {
+        "file": "hay-on-wye-cover.jpg",
+        "feature": true,
+        "alt": "Castle Street in Hay-on-Wye, lined with bookshops",
+        "caption": "Castle Street in Hay-on-Wye, the town of books.",
+        "credit": {
+          "author": "Dominic Nelson",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castle_Street,_Hay-on-Wye,_Dec_2022.jpg"
+        }
+      }
     ]
   },
   {
@@ -383,6 +509,20 @@
       {
         "q": "What is the Abergavenny Food Festival?",
         "a": "Held each September, it is one of the longest-running and best-regarded food festivals in Britain, filling the town with producers, demonstrations and pop-up kitchens. It draws large crowds, so nearby accommodation books up months in advance."
+      }
+    ],
+    "images": [
+      {
+        "file": "abergavenny-cover.jpg",
+        "feature": true,
+        "alt": "The Sugar Loaf and Skirrid hills above Abergavenny at sunset",
+        "caption": "The Sugar Loaf and Skirrid above Abergavenny.",
+        "credit": {
+          "author": "Keith moseley",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Sugarloaf_and_The_Skirrid_at_Sunset.jpg"
+        }
       }
     ]
   },
@@ -468,6 +608,20 @@
         "q": "Why is Rhosneigr known for sunsets?",
         "a": "Because its beaches face west across the Irish Sea with an open horizon, Rhosneigr gets uninterrupted sunsets for much of the year — one reason it is among the most popular and quickly-booked villages on the island."
       }
+    ],
+    "images": [
+      {
+        "file": "rhosneigr-cover.jpg",
+        "feature": true,
+        "alt": "The rocky, dune-backed beach at Rhosneigr on Anglesey",
+        "caption": "The beach at Rhosneigr, on Anglesey's west coast.",
+        "credit": {
+          "author": "Robin Drayton",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhosneigr_beach,_Anglesey_-_geograph.org.uk_-_6300008.jpg"
+        }
+      }
     ]
   },
   {
@@ -490,6 +644,20 @@
       {
         "q": "What is there to see near Trearddur Bay?",
         "a": "South Stack lighthouse and its RSPB seabird cliffs are a few minutes away, along with the walk up Holyhead Mountain for island-wide views. The port of Holyhead, with ferries to Dublin, is also close by."
+      }
+    ],
+    "images": [
+      {
+        "file": "trearddur-bay-cover.jpg",
+        "feature": true,
+        "alt": "The sandy beach at Trearddur Bay on Holy Island, Anglesey",
+        "caption": "The beach at Trearddur Bay.",
+        "credit": {
+          "author": "Ian Greig",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_beach_at_Trearddur_Bay_-_geograph.org.uk_-_3482022.jpg"
+        }
       }
     ]
   },
@@ -514,6 +682,20 @@
         "q": "Is Moelfre good for a quiet break?",
         "a": "Yes. On Anglesey's sheltered east coast, Moelfre is calmer and less commercial than the west-coast surf villages, with gentle beaches, rock pools and coastal walks — well suited to families and to anyone wanting a peaceful hot tub stay."
       }
+    ],
+    "images": [
+      {
+        "file": "moelfre-cover.jpg",
+        "feature": true,
+        "alt": "The harbour and village of Moelfre on the Anglesey coast",
+        "caption": "The village and harbour at Moelfre.",
+        "credit": {
+          "author": "Colin Park",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lifeboat_Day,_Moelfre_-_crowds_around_Porth_Moelfre_-_geograph.org.uk_-_5617210.jpg"
+        }
+      }
     ]
   },
   {
@@ -536,6 +718,20 @@
       {
         "q": "What is Red Wharf Bay?",
         "a": "Red Wharf Bay is a vast tidal sand bay just south of Benllech, exposing miles of flat sand at low tide and popular for walking and birdwatching. The Ship Inn sits right on the shore and is a well-known spot for a meal at the water's edge."
+      }
+    ],
+    "images": [
+      {
+        "file": "benllech-cover.jpg",
+        "feature": true,
+        "alt": "The wide sandy beach at Benllech on Anglesey's east coast",
+        "caption": "The sands at Benllech.",
+        "credit": {
+          "author": "NorthernNez",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benllech_Beach_Anglesey.jpg"
+        }
       }
     ]
   },
@@ -598,6 +794,20 @@
         "q": "What is Mumbles known for?",
         "a": "Mumbles is known for its Victorian pier and promenade, Oystermouth Castle, and a long-standing reputation for ice cream (Joe's and Verdi's) and seafront dining. It marks the start of the Gower Area of Outstanding Natural Beauty."
       }
+    ],
+    "images": [
+      {
+        "file": "mumbles-cover.jpg",
+        "feature": true,
+        "alt": "The seafront at Oystermouth and Mumbles on Swansea Bay",
+        "caption": "The Mumbles seafront, on Swansea Bay.",
+        "credit": {
+          "author": "Colin Park",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seafront_at_Oystermouth_-_geograph.org.uk_-_6459932.jpg"
+        }
+      }
     ]
   },
   {
@@ -620,6 +830,20 @@
       {
         "q": "What is Culver Hole near Port Eynon?",
         "a": "Culver Hole is a curious medieval structure west of Port Eynon where a natural cleft in the cliff has been sealed with a tall stone wall pierced by openings. Its original purpose is uncertain — likely a dovecote — and it is reached on foot along the coast at low tide."
+      }
+    ],
+    "images": [
+      {
+        "file": "port-eynon-cover.jpg",
+        "feature": true,
+        "alt": "The sandy bay at Port Eynon on the south Gower coast",
+        "caption": "Port Eynon bay, on south Gower.",
+        "credit": {
+          "author": "Colin Cheesman",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Port_Eynon_or_Porth_Einon_beach_on_the_Gower_Coast_-_geograph.org.uk_-_6030631.jpg"
+        }
       }
     ]
   },
@@ -667,6 +891,20 @@
         "q": "What is Arthur's Stone on Gower?",
         "a": "Arthur's Stone (Maen Ceti) is a Neolithic burial chamber on Cefn Bryn above Reynoldston, its huge capstone propped on smaller uprights. Wrapped in Arthurian legend, it is a short walk up onto the common and offers wide views across Gower."
       }
+    ],
+    "images": [
+      {
+        "file": "reynoldston-cover.jpg",
+        "feature": true,
+        "alt": "Arthur's Stone, a Neolithic burial chamber on Cefn Bryn above Reynoldston",
+        "caption": "Arthur's Stone on Cefn Bryn, above Reynoldston.",
+        "credit": {
+          "author": "Sally",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur%27s_Stone_on_Cefn_Bryn_-_geograph.org.uk_-_2271705.jpg"
+        }
+      }
     ]
   },
   {
@@ -689,6 +927,20 @@
       {
         "q": "Where can you surf near Abersoch?",
         "a": "Porth Neigwl, known as Hell's Mouth, is a four-mile Atlantic-facing beach a few minutes from Abersoch and the main surf spot on the Llŷn. Abersoch's own beach is more sheltered and better suited to sailing and paddleboarding."
+      }
+    ],
+    "images": [
+      {
+        "file": "abersoch-cover.jpg",
+        "feature": true,
+        "alt": "The beach at Abersoch on the Llyn Peninsula",
+        "caption": "The beach at Abersoch.",
+        "credit": {
+          "author": "Nilfanion",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beach_hut_at_Abersoch_(7297).jpg"
+        }
       }
     ]
   },
@@ -713,6 +965,20 @@
         "q": "Can you visit Bardsey Island from Aberdaron?",
         "a": "Yes, in season. Boats cross to Bardsey Island (Ynys Enlli) from near Aberdaron, weather and tides permitting, mainly from spring to early autumn. The island is a former place of pilgrimage, now a nature reserve known for seals, seabirds and its ruined abbey."
       }
+    ],
+    "images": [
+      {
+        "file": "aberdaron-cover.jpg",
+        "feature": true,
+        "alt": "The coast path and bay at Aberdaron, near the tip of the Llyn",
+        "caption": "Aberdaron bay, near the tip of the Llyn.",
+        "credit": {
+          "author": "Colin Park",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:On_Wales_Coast_Path_-_view_WNW_along_Aberdaron_Bay_-_geograph.org.uk_-_7377773.jpg"
+        }
+      }
     ]
   },
   {
@@ -736,6 +1002,20 @@
         "q": "Is Nefyn a good family base on the Llŷn?",
         "a": "Yes. Nefyn and Morfa Nefyn wrap around a sheltered north-coast bay with safe swimming and paddling, and the walk to Porthdinllaen and its beach pub is an easy family outing. It is quieter than Abersoch but less isolated than the far west."
       }
+    ],
+    "images": [
+      {
+        "file": "nefyn-cover.jpg",
+        "feature": true,
+        "alt": "Walkers on Morfa Nefyn beach on the Llyn Peninsula",
+        "caption": "The beach at Morfa Nefyn.",
+        "credit": {
+          "author": "Peter Barr",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walkers_on_Morfa_Nefyn_Beach_-_geograph.org.uk_-_2933639.jpg"
+        }
+      }
     ]
   },
   {
@@ -758,6 +1038,20 @@
       {
         "q": "Does Pwllheli have a beach?",
         "a": "Yes — Pwllheli has a Blue Flag beach along with a large marina and harbour. The town is also home to Plas Heli, the Welsh National Sailing Academy, making it a centre for sailing on the peninsula."
+      }
+    ],
+    "images": [
+      {
+        "file": "pwllheli-cover.jpg",
+        "feature": true,
+        "alt": "The harbour and marina at Pwllheli on the Llyn Peninsula",
+        "caption": "The harbour and marina at Pwllheli.",
+        "credit": {
+          "author": "Gordon Hatton",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pwllheli_harbour_and_marina_-_geograph.org.uk_-_7995539.jpg"
+        }
       }
     ]
   },
@@ -819,6 +1113,20 @@
         "q": "What is the Centre for Alternative Technology?",
         "a": "The Centre for Alternative Technology (CAT), just north of Machynlleth, is a long-established eco-centre and visitor attraction demonstrating renewable energy, sustainable building and organic growing. It is reached by a water-balanced cliff railway and makes a good family day out."
       }
+    ],
+    "images": [
+      {
+        "file": "machynlleth-cover.jpg",
+        "feature": true,
+        "alt": "The Victorian clock tower at the centre of Machynlleth",
+        "caption": "The clock tower at Machynlleth.",
+        "credit": {
+          "author": "Peter Broster",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machynlleth_Town_Clock_(8061983744).jpg"
+        }
+      }
     ]
   },
   {
@@ -842,6 +1150,20 @@
       {
         "q": "Where can you see red kites near Rhayader?",
         "a": "Gigrin Farm, just outside Rhayader, runs a daily red kite feeding station where large numbers of kites gather — often over a hundred. The wider Elan Valley and surrounding hills are also among the best places in Britain to see red kites in the wild."
+      }
+    ],
+    "images": [
+      {
+        "file": "rhayader-cover.jpg",
+        "feature": true,
+        "alt": "A dam and reservoir in the Elan Valley near Rhayader",
+        "caption": "A dam in the Elan Valley, near Rhayader.",
+        "credit": {
+          "author": "Derek Voller",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garreg_Ddu_Dam,_Elan_Valley,_Powys_-_geograph.org.uk_-_5170563.jpg"
+        }
       }
     ]
   },
@@ -904,6 +1226,20 @@
         "q": "Is Mid Wales good for stargazing near Llanidloes?",
         "a": "Yes. This part of Mid Wales is sparsely populated with very little light pollution, so on clear nights the skies are excellent — one reason a hot tub break out here suits stargazers. The nearby Elan Valley is a designated Dark Sky Park."
       }
+    ],
+    "images": [
+      {
+        "file": "llanidloes-cover.jpg",
+        "feature": true,
+        "alt": "The 16th-century half-timbered market hall at Llanidloes",
+        "caption": "The half-timbered market hall at Llanidloes.",
+        "credit": {
+          "author": "Rosser1954",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llanidloes_Market_Hall,_Powys,_Wales.jpg"
+        }
+      }
     ]
   },
   {
@@ -927,6 +1263,20 @@
       {
         "q": "Is Builth Wells a good base for Mid Wales?",
         "a": "Yes. Builth Wells sits centrally on the River Wye, within reach of the Elan Valley, the Cambrian Mountains and the wild Abergwesyn Pass, making it a practical base for walking, cycling and touring the empty heart of Mid Wales — outside Royal Welsh Show week, when it is very busy."
+      }
+    ],
+    "images": [
+      {
+        "file": "builth-wells-cover.jpg",
+        "feature": true,
+        "alt": "The bridge over the River Wye at Builth Wells",
+        "caption": "The Wye bridge at Builth Wells.",
+        "credit": {
+          "author": "Gordon Hatton",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wye_Bridge,_Builth_Wells_-_geograph.org.uk_-_7300168.jpg"
+        }
       }
     ]
   },
@@ -988,6 +1338,20 @@
         "q": "Is Aberaeron good for food?",
         "a": "Yes — for its size, Aberaeron has a strong food reputation, with harbourside restaurants and its well-known honey ice cream. It makes a good base for a Cardigan Bay break that combines coast walks with eating well."
       }
+    ],
+    "images": [
+      {
+        "file": "aberaeron-cover.jpg",
+        "feature": true,
+        "alt": "The Georgian harbour and painted houses at Aberaeron",
+        "caption": "The harbour at Aberaeron.",
+        "credit": {
+          "author": "Roger Kidd",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_harbour_at_Aberaeron_in_Ceredigion_-_geograph.org.uk_-_4723615.jpg"
+        }
+      }
     ]
   },
   {
@@ -1011,6 +1375,20 @@
       {
         "q": "What is New Quay's connection to Dylan Thomas?",
         "a": "Dylan Thomas lived in New Quay during the 1940s, and the town is widely thought to have helped inspire the fictional seaside village of Llareggub in Under Milk Wood. A local trail links places associated with the poet."
+      }
+    ],
+    "images": [
+      {
+        "file": "new-quay-cover.jpg",
+        "feature": true,
+        "alt": "The jetty and harbour at New Quay on Cardigan Bay",
+        "caption": "The harbour at New Quay.",
+        "credit": {
+          "author": "Ruth Sharville",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_jetty_and_harbour,_New_Quay,_Ceredigion_-_geograph.org.uk_-_6931738.jpg"
+        }
       }
     ]
   },
@@ -1036,6 +1414,20 @@
         "q": "What are the best beaches near Cardigan?",
         "a": "Mwnt, a small National Trust cove with a hilltop chapel and good dolphin-watching, and Poppit Sands at the mouth of the Teifi are the best-known beaches near Cardigan. Both are a short drive from the town and mark the start of the Ceredigion and Pembrokeshire coast paths."
       }
+    ],
+    "images": [
+      {
+        "file": "cardigan-cover.jpg",
+        "feature": true,
+        "alt": "The River Teifi at Cardigan, from the air",
+        "caption": "The River Teifi at Cardigan.",
+        "credit": {
+          "author": "Llywelyn2000",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afon_Teifi_ger_Aberteifi_o%27r_awyr_-_the_river_teifi_near_Cardigan,_Ceredigion,_Wales_from_the_air_51.jpg"
+        }
+      }
     ]
   },
   {
@@ -1060,6 +1452,20 @@
         "q": "What is Cors Caron?",
         "a": "Cors Caron is a large raised bog (peatland) nature reserve north of Lampeter, crossed by boardwalks and a former railway trail. It is an important habitat for birds and other wildlife, and one of the finest examples of its kind in Britain."
       }
+    ],
+    "images": [
+      {
+        "file": "lampeter-cover.jpg",
+        "feature": true,
+        "alt": "The town centre of Lampeter in the Teifi valley",
+        "caption": "Lampeter town centre.",
+        "credit": {
+          "author": "Jaggery",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caffi_Jac_in_Lampeter_town_centre_-_geograph.org.uk_-_6148041.jpg"
+        }
+      }
     ]
   },
   {
@@ -1082,6 +1488,20 @@
       {
         "q": "What is the Devil's Pulpit?",
         "a": "The Devil's Pulpit is a rocky viewpoint on the Offa's Dyke path high above Tintern, on the English side of the gorge, giving a dramatic bird's-eye view down onto the abbey. It is reached by a steep but short walk up from the valley floor."
+      }
+    ],
+    "images": [
+      {
+        "file": "tintern-cover.jpg",
+        "feature": true,
+        "alt": "The ruins of Tintern Abbey in the Wye Valley",
+        "caption": "The ruins of Tintern Abbey.",
+        "credit": {
+          "author": "Saffron Blaze",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tintern_Abbey_and_Courtyard.jpg"
+        }
       }
     ]
   },
@@ -1205,6 +1625,20 @@
         "q": "Was Trellech ever a large town?",
         "a": "Yes — in the 13th century Trellech was one of the largest towns in medieval Wales, an industrial and market centre, before decline and plague reduced it to a village. Archaeological work in the surrounding fields has explored the remains of this \"lost\" town."
       }
+    ],
+    "images": [
+      {
+        "file": "trellech-cover.jpg",
+        "feature": true,
+        "alt": "The village green and church at Trellech",
+        "caption": "The green and church at Trellech.",
+        "credit": {
+          "author": "Philip Pankhurst",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Village_Green,_Trellech_(geograph_5093039).jpg"
+        }
+      }
     ]
   },
   {
@@ -1264,6 +1698,20 @@
       {
         "q": "Is Llanrwst a good base for the Conwy Valley?",
         "a": "Yes. Llanrwst sits centrally in the valley between Conwy and Betws-y-Coed, with the Gwydir Forest on its doorstep and the mountains close. It tends to be quieter and better value than the busier towns at each end of the valley."
+      }
+    ],
+    "images": [
+      {
+        "file": "llanrwst-cover.jpg",
+        "feature": true,
+        "alt": "The Pont Fawr bridge over the River Conwy at Llanrwst in autumn",
+        "caption": "The Pont Fawr bridge at Llanrwst.",
+        "credit": {
+          "author": "Mark Warren 1973",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pont_Fawr_Bridge,_Llanrwst.jpg"
+        }
       }
     ]
   },
@@ -1433,6 +1881,20 @@
         "q": "Is Corwen a good base for the Berwyn and Clwydian hills?",
         "a": "Yes. Corwen sits on the upper Dee between the Berwyn mountains to the south and the Clwydian Range to the north, giving access to both, plus the Dee valley and nearby Llangollen. It is a quiet, good-value alternative to the busier towns."
       }
+    ],
+    "images": [
+      {
+        "file": "corwen-cover.jpg",
+        "feature": true,
+        "alt": "The Dee valley east of Corwen",
+        "caption": "The Dee valley, east of Corwen.",
+        "credit": {
+          "author": "Peter Morgan",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dee_Valley_East_of_Corwen_-_geograph.org.uk_-_3169984.jpg"
+        }
+      }
     ]
   },
   {
@@ -1456,6 +1918,20 @@
       {
         "q": "Is Denbigh a good base for the Clwydian Range?",
         "a": "Denbigh sits on the western side of the Vale of Clwyd, across the valley from the main Clwydian ridge, so Moel Famau and the hillfort walks are a short drive away. It is a quiet, historic and good-value base for exploring the range and the north coast."
+      }
+    ],
+    "images": [
+      {
+        "file": "denbigh-cover.jpg",
+        "feature": true,
+        "alt": "The hilltop ruins of Denbigh Castle above the town",
+        "caption": "Denbigh Castle, on its hill above the town.",
+        "credit": {
+          "author": "Llywelyn2000",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castell_Dinbych,_Dinbych,_Sir_Ddinbych_(Denbigh_Castle,_Wales)_-_Grade_1_listed_15.jpg"
+        }
       }
     ]
   },
@@ -1481,6 +1957,20 @@
         "q": "Is Cowbridge a good base for the Glamorgan coast?",
         "a": "Yes. Cowbridge sits inland at the centre of the Vale of Glamorgan, roughly fifteen minutes from the heritage coast beaches at Llantwit Major, Nash Point and Southerndown, while offering the area's best choice of restaurants and shops for the evenings."
       }
+    ],
+    "images": [
+      {
+        "file": "cowbridge-cover.jpg",
+        "feature": true,
+        "alt": "The high street of Cowbridge in the Vale of Glamorgan",
+        "caption": "Cowbridge high street.",
+        "credit": {
+          "author": "Betty Longbottom",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:High_Street_-_viewed_from_Town_Hall_-_geograph.org.uk_-_6201042.jpg"
+        }
+      }
     ]
   },
   {
@@ -1504,6 +1994,20 @@
       {
         "q": "What is the Glamorgan Heritage Coast?",
         "a": "The Glamorgan Heritage Coast is a protected stretch of striped Jurassic limestone cliffs and rocky beaches running west from Barry, taking in Llantwit Major, Nash Point and Southerndown. It offers dramatic clifftop walking within easy reach of Cardiff."
+      }
+    ],
+    "images": [
+      {
+        "file": "llantwit-major-cover.jpg",
+        "feature": true,
+        "alt": "The cliffs and pebble beach at Llantwit Major on the Glamorgan Heritage Coast",
+        "caption": "Llantwit Major beach, on the heritage coast.",
+        "credit": {
+          "author": "Dominic Nelson",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llantwit_Major_Beach,_Oct_2023_06_(cropped).jpg"
+        }
       }
     ]
   },
