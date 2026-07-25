@@ -7,9 +7,15 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const ROOT = __dirname;
 const OUT = path.join(ROOT, 'site');
+
+// Stylesheet URL, replaced at build time with a content-hashed filename
+// (e.g. /style.a1b2c3d4.css) so browsers always fetch the current CSS
+// instead of a stale cached copy after a deploy.
+let cssHref = '/style.css';
 
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/config.json'), 'utf8'));
 const locations = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/locations.json'), 'utf8'));
@@ -96,7 +102,7 @@ function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld }
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${cssHref}">
 ${schemas.map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n')}
 ${analyticsTag}
 </head>
@@ -757,17 +763,22 @@ a{color:inherit}
   text-wrap:pretty;
 }
 
-/* ------------------------------------------- photographic place hero */
+/* ------------------------------------------- photographic place hero
+ * Desktop/tablet: the photo is full-bleed with the text overlaid on a
+ * legibility scrim. The box keeps a landscape aspect so the image is only
+ * gently cropped (never squeezed into a portrait sliver).
+ */
 .hero--photo{
   display:flex;flex-direction:column;justify-content:flex-end;
-  min-height:clamp(28rem, 64vh, 44rem);
+  width:100%;
+  min-height:clamp(26rem, 56vw, 46rem);
   padding-top:8rem;
   padding-bottom:2.75rem;
   background:var(--ink);
 }
 .hero--photo .hero__img{
   position:absolute;inset:0;z-index:0;
-  width:100%;height:100%;object-fit:cover;
+  width:100%;height:100%;object-fit:cover;object-position:50% 42%;
 }
 .hero--photo .hero__scrim{
   position:absolute;inset:0;z-index:1;pointer-events:none;
@@ -780,6 +791,28 @@ a{color:inherit}
 .hero__credit{
   margin:1.1rem 0 0;
   text-align:left;
+}
+
+/* Phones: stack the full landscape photo above the text instead of cropping
+ * it into a tall box. The image shows at its natural shape; the words sit
+ * below on the dark background. */
+@media (max-width:44rem){
+  .hero--photo{
+    display:block;
+    aspect-ratio:auto;
+    min-height:0;max-height:none;
+    margin-top:0;
+    padding:0 0 .5rem;
+    overflow:visible;
+  }
+  .hero--photo .hero__img{
+    position:static;
+    width:100%;height:auto;
+    aspect-ratio:3 / 2;object-position:50% 50%;
+  }
+  .hero--photo .hero__scrim{display:none}
+  .hero--photo .hero__inner{padding:1.6rem 1.5rem 0}
+  .hero--photo .hero__title--place{color:var(--steam)}
 }
 .hero__credit .photo__credit{color:rgba(234,241,238,.66);font-size:.7rem}
 .hero__credit .photo__credit a{color:rgba(234,241,238,.7);text-decoration-color:rgba(234,241,238,.35)}
@@ -1310,10 +1343,16 @@ function build() {
   fs.rmSync(OUT, { recursive: true, force: true });
   mkdir(OUT);
 
+  // Content-hash the stylesheet and reference it by that name everywhere, so a
+  // deploy always busts the browser cache. Must run before any page is built.
+  const cssContent = css.trim();
+  const cssHash = crypto.createHash('md5').update(cssContent).digest('hex').slice(0, 8);
+  cssHref = `/style.${cssHash}.css`;
+  write(cssHref.slice(1), cssContent);
+
   const urls = ['/'];
 
   write('index.html', homepage());
-  write('style.css', css.trim());
   write('about/index.html', aboutPage());
   urls.push('/about/');
 
