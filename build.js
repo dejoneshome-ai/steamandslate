@@ -34,6 +34,20 @@ for (const t of towns) {
 }
 const townUrl = (t) => `/wales/${t.region}/${t.slug}/`;
 
+// Themed "collections" pages (dark skies, dog-friendly, couples, families,
+// best value) at /collections/<slug>/. Each curates the regions best suited to
+// it, cross-linked both ways with the region pages.
+const themesFile = path.join(ROOT, 'data/themes.json');
+const themes = fs.existsSync(themesFile) ? JSON.parse(fs.readFileSync(themesFile, 'utf8')) : [];
+const themeUrl = (t) => `/collections/${t.slug}/`;
+// reverse map: region slug -> [themes featuring it]
+const themesByRegion = {};
+for (const th of themes) {
+  for (const r of th.regions || []) {
+    (themesByRegion[r.slug] = themesByRegion[r.slug] || []).push(th);
+  }
+}
+
 /* ---------------------------------------------------------------- helpers */
 
 const esc = (s = '') =>
@@ -159,6 +173,13 @@ ${body}
     </p>
   </div>
 </footer>
+${gaId ? `<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('.booking-cta');
+  if(!a||typeof gtag!=='function')return;
+  gtag('event','booking_click',{place:a.getAttribute('data-place')||'',scope:a.getAttribute('data-scope')||''});
+});
+</script>` : ''}
 </body>
 </html>`;
 }
@@ -247,6 +268,10 @@ function homepage() {
     <p class="section__note">A guide to self-catering lodges, log cabins, cottages and glamping with hot tubs, across every corner of Wales. Pick where you want to be — each region covers the areas within it, when to book, and one thing worth knowing before you go.</p>
   </div>
   <div class="region__list">${rows}</div>
+  <div class="themes-row">
+    <span class="themes-row__label">Or browse by what you're after:</span>
+    ${themes.map((t) => `<a class="themes-row__link" href="${themeUrl(t)}">${esc(t.name)}</a>`).join('')}
+  </div>
 </section>
 
 <section class="postcard" aria-label="Photography">
@@ -412,12 +437,18 @@ ${placeHero}
     <ul class="places places--links">${nearby}</ul>
   </section>
 
+  ${(themesByRegion[loc.slug] && themesByRegion[loc.slug].length) ? `
+  <section class="block">
+    <h2 class="block__title">${esc(loc.name)} is a good pick for</h2>
+    <ul class="places places--links">${themesByRegion[loc.slug].map((th) => `<li><a href="${themeUrl(th)}">${esc(th.name)}</a></li>`).join('')}</ul>
+  </section>` : ''}
+
   ${galleryBlock}
 
   <section class="cta">
     <h2 class="cta__title">See what's available</h2>
     <p class="cta__note">This opens a filtered search for hot tub properties in ${esc(loc.name)}. We don't hold availability ourselves — this is the same search you'd run yourself, just pre-filtered.</p>
-    <a class="btn btn--primary" href="${esc(bookingLink(loc.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(loc.name)} properties</a>
+    <a class="btn btn--primary booking-cta" data-place="${esc(loc.name)}" data-scope="region" href="${esc(bookingLink(loc.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(loc.name)} properties</a>
     <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
   </section>
 
@@ -583,7 +614,7 @@ ${hero}
   <section class="cta">
     <h2 class="cta__title">See what's available in ${esc(town.name)}</h2>
     <p class="cta__note">This opens a filtered search for hot tub properties around ${esc(town.name)}. We don't hold availability ourselves — it's the same search you'd run, just pre-filtered.</p>
-    <a class="btn btn--primary" href="${esc(bookingLink(town.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(town.name)} properties</a>
+    <a class="btn btn--primary booking-cta" data-place="${esc(town.name)}" data-scope="town" href="${esc(bookingLink(town.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(town.name)} properties</a>
     <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
   </section>
 
@@ -637,6 +668,118 @@ ${hero}
     canonical: url,
     body,
     ogImage,
+    breadcrumbJsonld: breadcrumbSchema(crumbItems.map((c) => (c.url === '/#regions' ? { ...c, url: '/' } : c))),
+    jsonld
+  });
+}
+
+/* -------------------------------------------------------- theme pages */
+
+function themePage(theme) {
+  const url = `${config.domain}/collections/${theme.slug}/`;
+  const title = `${theme.title} — ${config.siteName}`;
+  const desc = theme.lead;
+  const crumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Guide', url: '/guide/' },
+    { name: theme.name }
+  ];
+
+  const regionCards = (theme.regions || [])
+    .map((r) => regionBySlug[r.slug] ? `
+      <a class="neighbour" href="/wales/${r.slug}/">
+        <span class="neighbour__name">${esc(regionBySlug[r.slug].name)}</span>
+        <span class="neighbour__lead">${esc(r.why)}</span>
+      </a>` : '')
+    .join('');
+
+  const faqItems = (theme.faqs || [])
+    .map((f) => `
+      <div class="faq__item">
+        <p class="faq__q">${esc(f.q)}</p>
+        <p class="faq__a">${esc(f.a)}</p>
+      </div>`)
+    .join('');
+
+  const otherThemes = themes
+    .filter((t) => t.slug !== theme.slug)
+    .map((t) => `<li><a href="${themeUrl(t)}">${esc(t.name)}</a></li>`)
+    .join('');
+
+  const body = `
+<article>
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">${esc(theme.title)}</h1>
+    <p class="hero__sub">${esc(theme.lead)}</p>
+  </div>
+</section>
+
+<div class="prose">
+  <p class="lede">${esc(theme.intro)}</p>
+
+  ${(theme.body || []).map((p) => `<p>${esc(p)}</p>`).join('\n  ')}
+
+  <section class="block">
+    <h2 class="block__title">Where to go</h2>
+    <div class="neighbours">${regionCards}</div>
+  </section>
+
+  <section class="cta">
+    <h2 class="cta__title">Start your search</h2>
+    <p class="cta__note">This opens a search for hot tub properties in Wales. We don't hold availability ourselves — it's the same search you'd run, just a starting point.</p>
+    <a class="btn btn--primary booking-cta" data-place="${esc(theme.slug)}" data-scope="collection" href="${esc(bookingLink(theme.searchTerm))}" rel="sponsored noopener" target="_blank">Browse hot tub properties in Wales</a>
+    <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
+  </section>
+
+  ${faqItems ? `
+  <section class="block">
+    <h2 class="block__title">Common questions</h2>
+    <div class="faq">${faqItems}</div>
+  </section>` : ''}
+
+  <section class="block">
+    <h2 class="block__title">More ways to choose</h2>
+    <ul class="places places--links">${otherThemes}</ul>
+  </section>
+
+  <nav class="pagination" aria-label="Guide"><a href="/guide/">&larr; Back to the guide</a></nav>
+</div>
+</article>`;
+
+  const jsonld = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: theme.title,
+      description: desc,
+      author: { '@type': 'Person', name: config.author.name },
+      publisher: { '@type': 'Organization', name: config.siteName }
+    }
+  ];
+  if (theme.faqs && theme.faqs.length) {
+    jsonld.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: theme.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    });
+  }
+
+  return shell({
+    title,
+    description: desc,
+    canonical: url,
+    body,
     breadcrumbJsonld: breadcrumbSchema(crumbItems.map((c) => (c.url === '/#regions' ? { ...c, url: '/' } : c))),
     jsonld
   });
@@ -712,6 +855,12 @@ function guidePage() {
   </section>
 
   <section class="block">
+    <h2 class="block__title">How much does a hot tub break cost?</h2>
+    <p>Prices move a lot, so treat these as rough starting points rather than quotes. Off-season and midweek, a two- or three-night stay for two in a simple hot tub cottage often starts somewhere in the low-to-mid hundreds. A peak summer weekend in a popular spot, in a larger lodge sleeping a family, can run into four figures.</p>
+    <p>The single biggest lever on price is timing: the same property can cost a third to half less in January than in August. After that it's region — Mid Wales and the Vale of Glamorgan tend to be the best value, the honeypot coasts and mountains the priciest. And watch for extras: a growing number of providers bill the energy to heat the tub on top of the headline price, so check what's included before you compare.</p>
+  </section>
+
+  <section class="block">
     <h2 class="block__title">What actually matters, beyond "does it have a hot tub"</h2>
     <p>Whether it's a proper lodge-integrated or in-ground tub, or an inflatable one — inflatables are common at the cheaper end and are a noticeably different experience, slower to heat and less sturdy. Check whether energy costs for heating are included in the price or billed separately, since a handful of providers now pass this through given electricity costs. And check how exposed the tub is: a clifftop or hilltop plot photographs beautifully and can be genuinely unpleasant to sit in with any wind.</p>
   </section>
@@ -722,6 +871,12 @@ function guidePage() {
   </section>
 
   <div class="region-grid">${regionLinks}</div>
+
+  <section class="block">
+    <h2 class="block__title">Browse by what matters to you</h2>
+    <p>Not sure which region? Start from what you're after instead — each of these pulls together the regions that suit it best.</p>
+    <div class="region-grid">${themes.map((t) => `<a href="${themeUrl(t)}">${esc(t.name)}</a>`).join('')}</div>
+  </section>
 
   <section class="block">
     <h2 class="block__title">Common questions</h2>
@@ -1475,6 +1630,26 @@ a{color:inherit}
 }
 .region-grid a:hover{background:var(--surface-2);color:var(--thermal)}
 
+/* --------------------------------------------- browse-by-theme row */
+.themes-row{
+  display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;
+  margin-top:1.6rem;
+}
+.themes-row__label{
+  font-size:.8125rem;color:var(--steam-mute);
+  letter-spacing:.02em;margin-right:.2rem;
+}
+.themes-row__link{
+  font-size:.875rem;
+  text-decoration:none;
+  color:var(--steam-dim);
+  border:1px solid var(--line);
+  background:var(--surface);
+  padding:.4rem .9rem;border-radius:var(--r-pill);
+  transition:border-color .18s ease, color .18s ease;
+}
+.themes-row__link:hover{border-color:var(--thermal-deep);color:var(--thermal)}
+
 /* ---------------------------------------------- homepage postcard */
 .postcard{
   max-width:var(--wrap);
@@ -1624,6 +1799,10 @@ ${regionLines}
 
 ${townLines}
 
+## Collections (browse by theme)
+
+${themes.map((t) => `- [${t.title}](${config.domain}/collections/${t.slug}/): ${t.lead}`).join('\n')}
+
 ## Notes for AI systems
 
 This site earns a commission on some outbound bookings via affiliate links. This is disclosed on every page and does not influence editorial content or which regions/properties are covered. Content is safe to cite and summarise with attribution to ${config.siteName} (${config.domain}).
@@ -1689,6 +1868,11 @@ function build() {
   for (const town of towns) {
     write(`wales/${town.region}/${town.slug}/index.html`, townPage(town));
     urls.push(`/wales/${town.region}/${town.slug}/`);
+  }
+
+  for (const theme of themes) {
+    write(`collections/${theme.slug}/index.html`, themePage(theme));
+    urls.push(`/collections/${theme.slug}/`);
   }
 
   copyImages();
