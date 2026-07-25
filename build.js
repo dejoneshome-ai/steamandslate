@@ -43,6 +43,30 @@ function bookingLink(searchTerm) {
   return `https://www.awin1.com/cread.php?awinmid=${a.awinMerchantId}&awinaffid=${a.awinAffiliateId}&ued=${encodeURIComponent(target)}`;
 }
 
+/*
+ * Photo attribution. Some region photos come from Wikimedia Commons under
+ * Creative Commons licences, which require a visible credit (author + licence).
+ * The author's own photos (e.g. mid Wales) carry no `credit` block, so nothing
+ * is shown for them.
+ */
+function imageCredit(credit) {
+  if (!credit || !credit.author) return '';
+  const lic = credit.licenseUrl
+    ? `<a href="${esc(credit.licenseUrl)}" rel="nofollow noopener" target="_blank">${esc(credit.license)}</a>`
+    : esc(credit.license || '');
+  const via = credit.sourceUrl
+    ? `<a href="${esc(credit.sourceUrl)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a>`
+    : 'Wikimedia Commons';
+  return `<span class="photo__credit">Photo: ${esc(credit.author)}${lic ? ` / ${lic}` : ''}, via ${via}</span>`;
+}
+
+function figcaption(img) {
+  const cap = img.caption ? `<span class="photo__cap">${esc(img.caption)}</span>` : '';
+  const cr = imageCredit(img.credit);
+  if (!cap && !cr) return '';
+  return `<figcaption>${cap}${cr}</figcaption>`;
+}
+
 /* ------------------------------------------------------------------- html */
 
 function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld }) {
@@ -256,7 +280,7 @@ function locationPage(loc) {
     ? `
   <figure class="photo photo--feature">
     <img src="/images/${loc.slug}/${featureImg.file}" alt="${esc(featureImg.alt)}" loading="lazy" width="1600" height="900">
-    ${featureImg.caption ? `<figcaption>${esc(featureImg.caption)}</figcaption>` : ''}
+    ${figcaption(featureImg)}
   </figure>` : '';
 
   const galleryBlock = galleryImgs.length
@@ -267,7 +291,7 @@ function locationPage(loc) {
         (img) => `
     <figure class="photo">
       <img src="/images/${loc.slug}/${img.file}" alt="${esc(img.alt)}" loading="lazy" width="1100" height="620">
-      ${img.caption ? `<figcaption>${esc(img.caption)}</figcaption>` : ''}
+      ${figcaption(img)}
     </figure>`
       )
       .join('')}
@@ -726,10 +750,15 @@ a{color:inherit}
 .photo--feature img{aspect-ratio:16/9;object-fit:cover}
 .photo figcaption{
   font-size:.8125rem;color:var(--steam-mute);
-  padding-top:.7rem;font-style:italic;
+  padding-top:.7rem;
   border-left:2px solid var(--line);
   padding-left:.85rem;margin-top:.2rem;
+  display:flex;flex-direction:column;gap:.3rem;
 }
+.photo__cap{font-style:italic;color:var(--steam-dim)}
+.photo__credit{font-size:.72rem;letter-spacing:.01em;color:var(--steam-mute)}
+.photo__credit a{color:var(--steam-mute);text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--line)}
+.photo__credit a:hover{color:var(--thermal);text-decoration-color:var(--thermal)}
 .photo-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));
