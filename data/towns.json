@@ -1,0 +1,1622 @@
+[
+  {
+    "region": "snowdonia",
+    "slug": "betws-y-coed",
+    "name": "Betws-y-Coed",
+    "county": "Conwy",
+    "lead": "The stone-and-slate village that everyone means by \"Snowdonia\".",
+    "intro": "Betws-y-Coed sits where three rivers meet at the eastern gateway to Eryri, and it has been a tourist village since the Victorian painters arrived in the 1840s. It is the busiest single point in the national park, ringed by the Gwydir Forest and a short drive from most of the big Snowdonia walks.",
+    "staying": "It is the obvious first base for a hot tub break if you want the walks, the outdoor shops and a choice of pubs within stumbling distance. Properties fill early here; look a mile or two out towards Capel Curig or Penmachno for a tub with real quiet and better value.",
+    "thingsToDo": "Swallow Falls, the Miners' Bridge and the Fairy Glen are all within a couple of miles. The Gwydir Forest tracks start from the village, and Zip World and the Conwy Valley Railway are close by.",
+    "whenToVisit": "Autumn and winter are the sweet spot — the waterfalls run hardest after rain, and the coach-trip crowds that clog the village in July have gone.",
+    "localTip": "Park once and walk. The village car parks fill by mid-morning in summer, and almost everything worth seeing is on foot from the centre along the river.",
+    "searchTerm": "Betws-y-Coed",
+    "faqs": [
+      {
+        "q": "Is Betws-y-Coed a good base for climbing Snowdon?",
+        "a": "It is a comfortable one. Betws-y-Coed is about 25 minutes' drive from the Pen-y-Pass car park for the Miners' Track and Pyg Track, and closer still to the quieter Moel Siabod. Many people prefer it to staying at the foot of the mountain because it has more pubs, shops and evening options."
+      },
+      {
+        "q": "Are there hot tub lodges near Betws-y-Coed?",
+        "a": "Yes — the wooded valleys around Betws-y-Coed, Penmachno and Capel Curig hold a good number of hot tub lodges and cabins, many of them tucked into forestry with genuine privacy. They book up well ahead for summer and school holidays, so winter is both easier and cheaper."
+      }
+    ]
+  },
+  {
+    "region": "snowdonia",
+    "slug": "llanberis",
+    "name": "Llanberis",
+    "county": "Gwynedd",
+    "lead": "At the foot of Yr Wyddfa, in the shadow of the slate.",
+    "intro": "Llanberis sits below the highest mountain in Wales and beside two lakes, hemmed in by the vast terraces of the Dinorwig slate quarry. It is the most practical launch point for Yr Wyddfa (Snowdon) and one of the most dramatic small towns in Britain to wake up in.",
+    "staying": "Stay here if the mountain is the whole point — the Llanberis Path and the mountain railway both start in town. Lakeside and hillside properties above Llyn Padarn give you a tub with a view straight up at the summit.",
+    "thingsToDo": "The Snowdon Mountain Railway, the National Slate Museum, the Dinorwig \"Electric Mountain\" and the Llanberis Path all begin in or beside the town. Llyn Padarn is good for cold-water swimming and paddleboarding.",
+    "whenToVisit": "Late spring to autumn for the mountain in usable condition; winter for a quiet lakeside tub with the tops under snow. The summit railway runs roughly March to October.",
+    "localTip": "Walk the far side of Llyn Padarn to the \"Snowdon reflection\" spot near Penllyn early in the morning — it is the classic photograph, and it is empty before nine.",
+    "searchTerm": "Llanberis",
+    "faqs": [
+      {
+        "q": "Is Llanberis the best place to stay for Snowdon?",
+        "a": "It is the most convenient. The Llanberis Path — the longest but least technical route up Yr Wyddfa — starts in the town, as does the Snowdon Mountain Railway, so you can walk up and ride down. Pen-y-Pass, for the more scenic Miners' and Pyg tracks, is a ten-minute drive away."
+      },
+      {
+        "q": "What is there to do in Llanberis if it rains?",
+        "a": "The National Slate Museum is free and undercover, the Electric Mountain area and lakeside cafés fill an afternoon, and a hot tub with the rain coming off the quarry is arguably the point. Betws-y-Coed and its shops are 20 minutes away."
+      }
+    ],
+    "images": [
+      {
+        "file": "llanberis-cover.jpg",
+        "feature": true,
+        "alt": "The Llanberis Lake Railway running along Llyn Padarn below the Snowdonia mountains",
+        "caption": "The lake railway along Llyn Padarn at Llanberis.",
+        "credit": {
+          "author": "Suicasmo",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llanberis_Lake_Railway_20160826.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "snowdonia",
+    "slug": "dolgellau",
+    "name": "Dolgellau",
+    "county": "Gwynedd",
+    "lead": "Dark stone town under Cadair Idris, in the quiet south.",
+    "intro": "Dolgellau is a tight huddle of dark, dressed-stone buildings in southern Snowdonia, sat between Cadair Idris and the Mawddach estuary. This end of the park sees a fraction of the traffic of the northern honeypots, and the walking is every bit as good.",
+    "staying": "The pick for value and quiet in Snowdonia. Properties here put you within reach of Cadair Idris, the estuary and the coast at Barmouth without the northern crowds or the northern prices.",
+    "thingsToDo": "Cadair Idris rises straight out of town — the Pony Path and Minffordd Path are the main routes. The Mawddach Trail runs flat along the estuary to Barmouth, and the Coed y Brenin forest park is a mountain-biking centre.",
+    "whenToVisit": "Good most of the year. Autumn colour along the Mawddach is exceptional, and winter here is genuinely peaceful.",
+    "localTip": "Walk or cycle the Mawddach Trail to the Barmouth bridge at low light — the estuary opening out to the sea with Cadair behind is one of the best views in Wales, and it is nearly flat the whole way.",
+    "searchTerm": "Dolgellau",
+    "faqs": [
+      {
+        "q": "Is southern Snowdonia cheaper than the north?",
+        "a": "Usually, yes. The area around Dolgellau, Cadair Idris and the Mawddach estuary is quieter and less competed-for than Betws-y-Coed or Llanberis, so hot tub properties tend to be better value and easier to book at shorter notice."
+      },
+      {
+        "q": "Can you climb Cadair Idris from Dolgellau?",
+        "a": "Yes. The Pony Path starts near Dolgellau and is the gentlest ascent; the Minffordd Path from the south is steeper and more dramatic. Cadair Idris is a serious mountain but a shorter day than Yr Wyddfa, and far less crowded."
+      }
+    ]
+  },
+  {
+    "region": "snowdonia",
+    "slug": "beddgelert",
+    "name": "Beddgelert",
+    "county": "Gwynedd",
+    "lead": "Postcard village where two rivers meet below the peaks.",
+    "intro": "Beddgelert is a small, flower-hung village at the meeting of the Glaslyn and Colwyn rivers, often called the prettiest in Snowdonia. It takes its name from the legend of Gelert, the faithful hound, whose \"grave\" is a short riverside walk from the bridge.",
+    "staying": "A romantic, low-key base with the Aberglaslyn Pass and Snowdon's southern approaches on the doorstep. Cottages and lodges here are characterful rather than large — well suited to couples.",
+    "thingsToDo": "The riverside walk to Gelert's Grave and through the Aberglaslyn Pass is a classic. Sygun Copper Mine and the Welsh Highland Railway are both here, and the Watkin Path — Snowdon's most scenic route — starts nearby at Nantgwynant.",
+    "whenToVisit": "Spring and autumn for the passes at their best; the Welsh Highland Railway runs mainly March to October.",
+    "localTip": "Take the Welsh Highland Railway one way and walk back through the Aberglaslyn Pass — it turns a train ride into one of the finest short walks in the park.",
+    "searchTerm": "Beddgelert",
+    "faqs": [
+      {
+        "q": "Is Beddgelert good for a couples' hot tub break?",
+        "a": "It is one of the best in Snowdonia for it — a small, scenic village with characterful cottages, riverside walks from the door and the dramatic Aberglaslyn Pass a few minutes away. It is quieter in the evenings than Betws-y-Coed or Llanberis."
+      },
+      {
+        "q": "What is the Watkin Path?",
+        "a": "It is generally considered the most scenic route up Yr Wyddfa (Snowdon), starting near Beddgelert at Nantgwynant and climbing past waterfalls. It is also one of the tougher routes, with a steep, loose final section to the summit."
+      }
+    ],
+    "images": [
+      {
+        "file": "beddgelert-cover.jpg",
+        "feature": true,
+        "alt": "The old stone bridge over the river in Beddgelert village, Snowdonia",
+        "caption": "The stone bridge in the heart of Beddgelert.",
+        "credit": {
+          "author": "Andrew Stawarz",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beddgelert_stone_bridge.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "snowdonia",
+    "slug": "bala",
+    "name": "Bala",
+    "county": "Gwynedd",
+    "lead": "Wales's largest natural lake, and the water sports to match.",
+    "intro": "Bala sits at the head of Llyn Tegid, the largest natural lake in Wales, in the gentler south-east corner of Snowdonia. The town is a long single street of Welsh-speaking market-town character, and the lake is the reason most people come.",
+    "staying": "A strong pick if you want water on your doorstep as well as mountains. Lakeside and hillside properties suit families and groups, with sailing, paddling and the Bala Lake Railway all close.",
+    "thingsToDo": "Llyn Tegid for sailing, kayaking and open-water swimming; the National White Water Centre on the Tryweryn for rafting; the narrow-gauge Bala Lake Railway along the shore; and the Aran and Arenig ranges for quieter hillwalking.",
+    "whenToVisit": "Late spring through summer for the water; the Tryweryn rafting runs are dam-released and reliable even in dry spells.",
+    "localTip": "The Tryweryn is one of the few rivers in Britain with guaranteed whitewater because it is dam-fed — book a rafting session even in a dry summer when everywhere else is low.",
+    "searchTerm": "Bala",
+    "faqs": [
+      {
+        "q": "Is Bala good for a family hot tub break?",
+        "a": "Very. Llyn Tegid offers sailing, paddleboarding and gentle swimming, the Bala Lake Railway is an easy day out, and the surrounding hills are less severe than northern Snowdonia — so it suits families who want activity without a summit push."
+      },
+      {
+        "q": "Can you swim in Bala Lake?",
+        "a": "Yes, open-water swimming is popular in Llyn Tegid, especially from the eastern shore near the town. It is a large, cold lake, so it suits confident swimmers and wetsuits; there is also a foreshore and car park with easy access."
+      }
+    ]
+  },
+  {
+    "region": "pembrokeshire",
+    "slug": "st-davids",
+    "name": "St Davids",
+    "county": "Pembrokeshire",
+    "welsh": "Tyddewi",
+    "lead": "Britain's smallest city, built around a cathedral in a hollow.",
+    "intro": "St Davids is the smallest city in Britain, a city only because of its medieval cathedral, tucked into a hollow to hide it from Viking raiders. It sits at the wild north-western tip of the Pembrokeshire Coast National Park, surrounded by some of the best coastline and boat trips in Wales.",
+    "staying": "The premier base for the north Pembrokeshire coast. Properties here are within walking or a short drive of Whitesands Bay and the coast path, and the city itself has good restaurants for its size.",
+    "thingsToDo": "St Davids Cathedral and the Bishop's Palace; Whitesands Bay for surfing; boat trips from St Justinian's to Ramsey Island for seals, porpoises and seabirds; and the coast path around St Davids Head.",
+    "whenToVisit": "May and September for the coast at its best without peak crowds; the Ramsey Island boats run roughly Easter to October.",
+    "localTip": "Take the sunset walk out to St Davids Head from Whitesands — on a clear evening you get Ramsey Island, the Bishops and Clerks rocks and the whole of the north coast lit up.",
+    "searchTerm": "St Davids",
+    "faqs": [
+      {
+        "q": "Why is St Davids called a city?",
+        "a": "St Davids holds city status because of St Davids Cathedral, the resting place of the patron saint of Wales. With a population of under 2,000, it is the smallest city in the United Kingdom by population, and city status was formally reconfirmed by the Queen in 1994."
+      },
+      {
+        "q": "Are there hot tub cottages near St Davids?",
+        "a": "Yes. The farmland just back from the coast around St Davids, Solva and Whitesands holds a number of converted-barn hot tub properties. Being a short walk or drive from the coast path rather than on the cliff itself usually means more shelter and better value."
+      }
+    ],
+    "images": [
+      {
+        "file": "st-davids-cover.jpg",
+        "feature": true,
+        "alt": "St Davids Cathedral set in its hollow in Pembrokeshire",
+        "caption": "St Davids Cathedral, hidden below the city in its hollow.",
+        "credit": {
+          "author": "Aqwis",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:St_Davids_Cathedral_Wales_Pembrokeshire.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "pembrokeshire",
+    "slug": "tenby",
+    "name": "Tenby",
+    "county": "Pembrokeshire",
+    "welsh": "Dinbych-y-pysgod",
+    "lead": "Pastel houses over a walled harbour, and beaches you can walk to.",
+    "intro": "Tenby is the postcard of south Pembrokeshire: a walled medieval town of pastel-painted houses stacked above a harbour, with wide sandy beaches on either side. It is the family capital of the county and the busiest resort in west Wales.",
+    "staying": "The base for a beach-first, family break where you want things within walking distance. For a hot tub with more space, the villages just inland around St Florence and Penally put you minutes from the sand with more room.",
+    "thingsToDo": "The North and South Beaches; the harbour and Castle Hill; boat trips to Caldey Island and its monastery; and the coast path towards Manorbier and its castle.",
+    "whenToVisit": "June and September for the beaches without the full August crush; the Caldey Island boats run Easter to October, Monday to Saturday.",
+    "localTip": "Walk to Caldey Island on the first boat and buy the monks' chocolate and perfume before the day boats arrive — the island empties again by late afternoon.",
+    "searchTerm": "Tenby",
+    "faqs": [
+      {
+        "q": "Is Tenby good for families?",
+        "a": "It is the best-known family resort in Pembrokeshire — walkable, with two large sandy beaches, a harbour, boat trips and plenty of cafés and shops. Hot tub properties in the villages just inland let families combine the beach days with somewhere quieter to stay."
+      },
+      {
+        "q": "Can you visit Caldey Island from Tenby?",
+        "a": "Yes. Boats run from Tenby harbour to Caldey Island, home to a working Cistercian monastery, roughly Easter to October (Monday to Saturday, weather permitting). The crossing takes about 20 minutes and you can walk the island, visit the abbey and buy the monks' produce."
+      }
+    ],
+    "images": [
+      {
+        "file": "tenby-cover.jpg",
+        "feature": true,
+        "alt": "Pastel-painted houses above the harbour at Tenby, Pembrokeshire",
+        "caption": "The painted houses above Tenby harbour.",
+        "credit": {
+          "author": "Phil Price from Encinitas, California, USA",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenby,_Pembrokeshire,_Wales_(3493504312).jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "pembrokeshire",
+    "slug": "newport-pembrokeshire",
+    "name": "Newport",
+    "county": "Pembrokeshire",
+    "welsh": "Trefdraeth",
+    "lead": "Preseli foothills, an estuary, and a foodie streak.",
+    "intro": "Newport — the Pembrokeshire one, not the city in Gwent — is a small, handsome town where the Preseli Hills meet the sea at the Nevern estuary. It has become quietly foodie, with good pubs and delis, while keeping its walking-town character.",
+    "staying": "An excellent base for the wilder north coast and the Preseli Hills, with less traffic than St Davids and Tenby. Properties here reach both the estuary beaches and the ancient hilltop of Carningli.",
+    "thingsToDo": "The estuary beach and Newport Sands; the climb up Carningli (\"mountain of angels\"); the Neolithic burial chamber at Pentre Ifan; and the Bluestone country of the Preselis, source of Stonehenge's inner ring.",
+    "whenToVisit": "Spring for the Preseli hills and wildflowers; September for warm sea and quiet beaches.",
+    "localTip": "Walk up Carningli from the town on a clear evening — the whole of Cardigan Bay opens up, and the hilltop is scattered with the remains of an Iron Age settlement.",
+    "searchTerm": "Newport Pembrokeshire",
+    "faqs": [
+      {
+        "q": "Which Newport is in Pembrokeshire?",
+        "a": "This is Newport (Trefdraeth), a small coastal town in north Pembrokeshire at the foot of the Preseli Hills — quite separate from the city of Newport (Casnewydd) in south-east Wales. It is a walking and beach town rather than a city."
+      },
+      {
+        "q": "What are the Preseli Hills known for?",
+        "a": "The Preseli Hills are the source of the \"bluestones\" that form the inner circle of Stonehenge, quarried and somehow transported to Wiltshire around 5,000 years ago. The range is also rich in Neolithic sites such as Pentre Ifan and offers open, gentle upland walking."
+      }
+    ]
+  },
+  {
+    "region": "pembrokeshire",
+    "slug": "fishguard",
+    "name": "Fishguard",
+    "county": "Pembrokeshire",
+    "welsh": "Abergwaun",
+    "lead": "Ferry town with a film-set harbour and an invasion story.",
+    "intro": "Fishguard is really two places: the working upper town, and the postcard Lower Town harbour that stood in for Llareggub in the 1972 film of Under Milk Wood. It is the ferry port for Rosslare in Ireland and the site of the last invasion of mainland Britain, in 1797.",
+    "staying": "A practical, characterful base for the north coast and a jumping-off point for Ireland. Quieter and cheaper than St Davids, with the coast path running right through.",
+    "thingsToDo": "The Lower Town harbour; the Last Invasion Tapestry in the town hall; the coast path to Strumble Head lighthouse for seals and porpoises; and the Gwaun Valley, an ancient wooded valley that still keeps the old Welsh New Year.",
+    "whenToVisit": "Late spring to early autumn for the coast path and the ferry connections; the Gwaun Valley is atmospheric year-round.",
+    "localTip": "Drive up the Gwaun Valley for a pint at the Dyffryn Arms (\"Bessie's\"), a front-room pub barely changed in a century — one of the most genuine survivals in Wales.",
+    "searchTerm": "Fishguard",
+    "faqs": [
+      {
+        "q": "What was the Last Invasion of Britain?",
+        "a": "In February 1797 a French force landed near Fishguard in the last invasion of mainland Britain. It collapsed within days, partly — by legend — because local women in red cloaks were mistaken for regular soldiers. The story is told in an embroidered tapestry displayed in the town."
+      },
+      {
+        "q": "Can you get a ferry to Ireland from Fishguard?",
+        "a": "Yes. Fishguard Harbour runs ferry sailings to Rosslare in the Republic of Ireland, with a crossing of around three and a half hours. It makes Fishguard a useful base if you want to combine a Welsh coast break with a trip across the Irish Sea."
+      }
+    ]
+  },
+  {
+    "region": "pembrokeshire",
+    "slug": "narberth",
+    "name": "Narberth",
+    "county": "Pembrokeshire",
+    "welsh": "Arberth",
+    "lead": "Independent shops, a bright high street and serious food.",
+    "intro": "Narberth is the inland market town that has turned into Pembrokeshire's food and shopping hub — a colourful high street of independent delis, galleries and clothes shops with none of the sea-front crowds. It sits at the county's centre, handy for both coasts.",
+    "staying": "A good all-rounder base if you want to explore the whole county rather than one beach, and to eat and shop well in the evenings. Central Pembrokeshire properties here are often better value than the coast.",
+    "thingsToDo": "The independent shops and food producers of the town itself; the Landsker Borderlands walks; and the family attractions of Oakwood theme park and Bluestone nearby. Both coasts are within half an hour.",
+    "whenToVisit": "Any time — as an inland town it is far less seasonal than the coast, and a reliable base when the seaside is fully booked.",
+    "localTip": "Time a visit for the food festival in September, when the whole town turns over to Pembrokeshire producers — but book accommodation months ahead if you do.",
+    "searchTerm": "Narberth",
+    "faqs": [
+      {
+        "q": "Is Narberth a good base for exploring Pembrokeshire?",
+        "a": "Yes. Narberth sits near the centre of the county, so both the north and south coasts are within about 30 minutes, and it avoids the peak-season traffic of Tenby and St Davids. Its independent shops and restaurants also make it a strong choice for evenings."
+      },
+      {
+        "q": "What is there for families near Narberth?",
+        "a": "The Oakwood theme park and the Bluestone resort are both within a few minutes of Narberth, along with Folly Farm a little further on — making the town a practical base for families combining attractions with beach days on either coast."
+      }
+    ]
+  },
+  {
+    "region": "brecon-beacons",
+    "slug": "brecon",
+    "name": "Brecon",
+    "county": "Powys",
+    "welsh": "Aberhonddu",
+    "lead": "The market town at the foot of Pen y Fan.",
+    "intro": "Brecon is the natural capital of the national park, a cathedral and market town at the meeting of the Usk and Honddu rivers. It is the closest town to Pen y Fan, the highest peak in southern Britain, and the terminus of the pretty Monmouthshire and Brecon Canal.",
+    "staying": "The most convenient base in the park for the central Beacons and Pen y Fan. Properties around Brecon put you minutes from the mountain car parks and the canal, with the town's shops and pubs on hand.",
+    "thingsToDo": "Pen y Fan and Corn Du from the Storey Arms or the quieter Cwm Llwch; the canal for walking, cycling and boat hire; Brecon Cathedral; and the Brecon Mountain Railway a short drive south.",
+    "whenToVisit": "Year-round; midweek in November and January is cheap and often clear. The Brecon Jazz weekend in August fills the town.",
+    "localTip": "Skip the motorway of a path from the Storey Arms and climb Pen y Fan from Cwm Llwch instead — it is longer, far quieter, and passes a mountain lake and a memorial obelisk on the way up.",
+    "searchTerm": "Brecon",
+    "faqs": [
+      {
+        "q": "Is Brecon the best base for climbing Pen y Fan?",
+        "a": "It is the most convenient town. The main Pen y Fan car parks at the Storey Arms and Pont ar Daf are about 15 minutes' drive from Brecon, and quieter routes such as Cwm Llwch start even closer. The town also has the shops, pubs and supplies you want either side of a walk."
+      },
+      {
+        "q": "Is the Brecon Beacons good for stargazing?",
+        "a": "Yes — the whole national park is an International Dark Sky Reserve, one of only a handful in the world. Away from the town lights, on a clear moonless night, you can see the Milky Way with the naked eye, which is a large part of the appeal of a winter hot tub break here."
+      }
+    ]
+  },
+  {
+    "region": "brecon-beacons",
+    "slug": "crickhowell",
+    "name": "Crickhowell",
+    "county": "Powys",
+    "welsh": "Crucywel",
+    "lead": "Black Mountains town with the best pubs in the park.",
+    "intro": "Crickhowell is a genteel little town on the Usk in the eastern Beacons, under the flat-topped hill of Table Mountain (Crug Hywel) that gives it its name. It has a reputation for independent shops and good food out of proportion to its size, and made national news fighting to keep its high street independent.",
+    "staying": "The pick of the eastern Beacons and the Black Mountains — prettier and better-fed than the central park. Properties here reach the Usk valley, the Sugar Loaf and Abergavenny with ease.",
+    "thingsToDo": "The walk up Table Mountain and on to the Sugar Loaf; the medieval bridge over the Usk; the independent shops of the high street; and the Black Mountains ridges climbing away to the north.",
+    "whenToVisit": "Spring to autumn for the hills; the town is a good all-year base with its pubs and restaurants. Avoid the roads during the nearby Hay Festival week in late May.",
+    "localTip": "The circular walk up Table Mountain from the town is short but gives you the whole Usk valley — do it in the evening and finish at one of the Crickhowell pubs.",
+    "searchTerm": "Crickhowell",
+    "faqs": [
+      {
+        "q": "What is Table Mountain in Crickhowell?",
+        "a": "Table Mountain (Crug Hywel) is the flat-topped hill above Crickhowell, crowned by an Iron Age hillfort that gives the town its name. It is a short, steep walk from the town centre and a popular half-day outing, often extended onto the higher Sugar Loaf."
+      },
+      {
+        "q": "Is Crickhowell good for foodies?",
+        "a": "Yes. For its size, Crickhowell has an unusual concentration of independent shops, delis and well-regarded pubs and restaurants, and it hosts a popular literary and food festival. It is one of the better bases in the Brecon Beacons for eating out in the evenings."
+      }
+    ]
+  },
+  {
+    "region": "brecon-beacons",
+    "slug": "hay-on-wye",
+    "name": "Hay-on-Wye",
+    "county": "Powys",
+    "welsh": "Y Gelli Gandryll",
+    "lead": "The town of books, on the English border.",
+    "intro": "Hay-on-Wye is the original \"book town\", with more secondhand bookshops than any place its size has a right to, strung along a border-country high street below a Norman castle. Its literary festival each spring draws tens of thousands and, briefly, the world's press.",
+    "staying": "A characterful base at the north-eastern corner of the park, on the edge of the Black Mountains and the Wye. Properties here suit browsers and walkers alike, with the river and the hills both close.",
+    "thingsToDo": "The bookshops, of course; the \"honesty\" bookshop in the castle grounds; walks along the Wye and up onto Hay Bluff and the Black Mountains ridge; and canoeing on the river.",
+    "whenToVisit": "Any time for the books; late May for the festival, but book a year ahead and expect the whole area to be full. Autumn is quiet and lovely.",
+    "localTip": "Drive up to Hay Bluff and Gospel Pass — the highest road pass in Wales — for the sunrise or sunset. It is minutes from the town and one of the great short drives in the country.",
+    "searchTerm": "Hay-on-Wye",
+    "faqs": [
+      {
+        "q": "Why is Hay-on-Wye famous for books?",
+        "a": "From the 1960s Richard Booth turned Hay-on-Wye into the world's first \"book town\", filling its shops with secondhand and antiquarian books. It still has dozens of bookshops and hosts the Hay Festival, a major literary festival held each spring."
+      },
+      {
+        "q": "When is the Hay Festival?",
+        "a": "The Hay Festival runs for around ten days spanning late May and early June each year. It fills the town and surrounding area completely, so if you want a hot tub break nearby during the festival you should book many months ahead — or come outside it for a quieter stay."
+      }
+    ]
+  },
+  {
+    "region": "brecon-beacons",
+    "slug": "abergavenny",
+    "name": "Abergavenny",
+    "county": "Monmouthshire",
+    "welsh": "Y Fenni",
+    "lead": "The \"gateway to Wales\", ringed by three shapely hills.",
+    "intro": "Abergavenny sits at the south-eastern edge of the national park, ringed by three distinctive hills — the Sugar Loaf, the Blorenge and the Skirrid — and long known as the gateway to Wales. It has a serious food reputation, anchored by one of Britain's best food festivals each September.",
+    "staying": "The most connected base in the eastern Beacons, on the main rail line and minutes from the Black Mountains. Good for those who want hills by day and proper restaurants by night.",
+    "thingsToDo": "The Sugar Loaf, Blorenge and Skirrid for half-day walks; the market and food shops; Abergavenny Castle; and the Black Mountains and Llanthony Valley to the north.",
+    "whenToVisit": "Spring to autumn for the hills; September for the food festival, with accommodation booked well ahead.",
+    "localTip": "Walk the Skirrid (\"Holy Mountain\") for the least effort and the best payoff of the three hills — a distinctive ridge with an old chapel site on top and views over the whole borderland.",
+    "searchTerm": "Abergavenny",
+    "faqs": [
+      {
+        "q": "Is Abergavenny a good base without a car?",
+        "a": "Better than most of the national park. Abergavenny is on the Newport–Hereford railway line with direct trains from Cardiff, Newport and Bristol, and the three surrounding hills can be walked directly from town — useful if you want a hot tub break with minimal driving."
+      },
+      {
+        "q": "What is the Abergavenny Food Festival?",
+        "a": "Held each September, it is one of the longest-running and best-regarded food festivals in Britain, filling the town with producers, demonstrations and pop-up kitchens. It draws large crowds, so nearby accommodation books up months in advance."
+      }
+    ]
+  },
+  {
+    "region": "brecon-beacons",
+    "slug": "talgarth",
+    "name": "Talgarth",
+    "county": "Powys",
+    "lead": "A working watermill and the quiet side of the Black Mountains.",
+    "intro": "Talgarth is a small town between the central Beacons and the Black Mountains, best known now for its restored working watermill and the bakery it feeds. It is an unshowy, walkable base in a gentle, overlooked corner of the park.",
+    "staying": "A quiet, good-value alternative to Brecon and Hay, within reach of both. Properties here reach the Black Mountains ridges and the Llangorse lake without the honeypot prices.",
+    "thingsToDo": "Talgarth Mill and its bakery; Llangorse Lake, the largest natural lake in south Wales, for paddling and a high-ropes course; and the walk up to Castell Dinas, the highest castle site in Wales.",
+    "whenToVisit": "Spring to autumn for the lake and the hills; the mill and bakery are a year-round draw.",
+    "localTip": "Buy bread straight from Talgarth Mill's wood-fired bakery, milled on site by the waterwheel, and take it up to Llangorse for the afternoon.",
+    "searchTerm": "Talgarth",
+    "faqs": [
+      {
+        "q": "What is there to do around Talgarth?",
+        "a": "Talgarth Mill (a restored working watermill with a bakery) is the centrepiece, with Llangorse Lake nearby for paddling, sailing and a high-ropes centre, and the Black Mountains rising immediately to the east for walking. It is a quiet, gentle base rather than a busy resort."
+      },
+      {
+        "q": "Is Talgarth good value compared with Brecon or Hay?",
+        "a": "Generally yes. As a smaller, lower-profile town between the central Beacons and the Black Mountains, Talgarth tends to offer better-value accommodation and easier availability than Brecon or Hay-on-Wye, while still being within about 20 minutes of both."
+      }
+    ]
+  },
+  {
+    "region": "anglesey",
+    "slug": "beaumaris",
+    "name": "Beaumaris",
+    "county": "Isle of Anglesey",
+    "welsh": "Biwmares",
+    "lead": "A Georgian seafront and the most perfect of Edward I's castles.",
+    "intro": "Beaumaris is the most polished town on Anglesey, a Georgian seafront looking across the Menai Strait to the mountains of Snowdonia. Its castle, the last and most technically perfect of Edward I's Welsh fortresses, is a UNESCO World Heritage Site — though it was never actually finished.",
+    "staying": "The smartest base on the island, and the closest to Snowdonia if you want to combine the two. Properties here trade on the Strait views and the town's restaurants and period charm.",
+    "thingsToDo": "Beaumaris Castle; the Victorian gaol and courthouse; the pier and boat trips to Puffin Island for seals and seabirds; and the Menai Strait views towards the mountains.",
+    "whenToVisit": "Spring to autumn; the Puffin Island boats run in the warmer months. Autumn light over the Strait is exceptional.",
+    "localTip": "Walk out along the pier at dusk — the sun going down behind the Snowdonia range across the Strait, seen from the flat of Anglesey, is the island's signature view.",
+    "searchTerm": "Beaumaris",
+    "faqs": [
+      {
+        "q": "Why is Beaumaris Castle a World Heritage Site?",
+        "a": "Beaumaris is considered the finest example of concentric castle design in Britain — the last and most symmetrical of the fortresses Edward I built to control Wales. It is part of the \"Castles and Town Walls of King Edward in Gwynedd\" World Heritage listing, despite never being completed."
+      },
+      {
+        "q": "Can you see Snowdonia from Beaumaris?",
+        "a": "Yes — Beaumaris sits on the Menai Strait directly opposite the mountains, and the view of the Snowdonia range across the water is one of the best on Anglesey. The mainland and the mountains are about 40 minutes' drive away over the Menai bridges."
+      }
+    ],
+    "images": [
+      {
+        "file": "beaumaris-cover.jpg",
+        "feature": true,
+        "alt": "The concentric stone ruins of Beaumaris Castle on Anglesey",
+        "caption": "Beaumaris Castle, the last of Edward I's Welsh fortresses.",
+        "credit": {
+          "author": "Photograph by Mike Peel (www.mikepeel.net).",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaumaris_Castle_2015_076.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "anglesey",
+    "slug": "rhosneigr",
+    "name": "Rhosneigr",
+    "county": "Isle of Anglesey",
+    "lead": "Surf, kitesurf and the island's best sunsets.",
+    "intro": "Rhosneigr is a low-slung village on Anglesey's west coast, wrapped in dunes and surf beaches, and it has quietly become the island's watersports and second-home hotspot. The west-facing beaches make it the place for sunsets.",
+    "staying": "The base for a beach-and-board break, with a cluster of good cafés and a genuinely lively summer scene. Book early — this is one of the most sought-after villages on the island.",
+    "thingsToDo": "Surfing, kitesurfing and paddleboarding off Broad Beach and Cymyran; the dunes and the wreck-strewn Cymyran strand; and the beach walks north towards RAF Valley's edge.",
+    "whenToVisit": "Summer for the water and the buzz; autumn for big skies and empty sand. West-coast winds make it a year-round board destination.",
+    "localTip": "The tidal island of Ynys Feirig off Rhosneigr is a nature reserve you can walk to at low water — check the tide times carefully before you cross.",
+    "searchTerm": "Rhosneigr",
+    "faqs": [
+      {
+        "q": "Is Rhosneigr good for surfing and watersports?",
+        "a": "Yes — its west-facing, dune-backed beaches pick up Atlantic swell and wind, making it Anglesey's main hub for surfing, kitesurfing and paddleboarding. There are local schools and hire, and the village has cafés and pubs geared to a watersports crowd."
+      },
+      {
+        "q": "Why is Rhosneigr known for sunsets?",
+        "a": "Because its beaches face west across the Irish Sea with an open horizon, Rhosneigr gets uninterrupted sunsets for much of the year — one reason it is among the most popular and quickly-booked villages on the island."
+      }
+    ]
+  },
+  {
+    "region": "anglesey",
+    "slug": "trearddur-bay",
+    "name": "Trearddur Bay",
+    "county": "Isle of Anglesey",
+    "lead": "Rocky coves and clear water on Holy Island.",
+    "intro": "Trearddur Bay sits on Holy Island, just across the causeway from the rest of Anglesey and next to the ferry port of Holyhead. Its coastline is a run of rocky coves and a wide sandy main beach, with some of the clearest bathing water on the island.",
+    "staying": "A relaxed, watery base handy for the ferries to Ireland and the dramatic cliffs of Holyhead Mountain. Popular with sailing and swimming families.",
+    "thingsToDo": "The main beach and the hidden coves for swimming and kayaking; South Stack lighthouse and the seabird cliffs nearby; and the climb up Holyhead Mountain, the highest point on Anglesey.",
+    "whenToVisit": "Summer for the swimming and the coves; spring and early summer for the South Stack seabird colonies at their busiest.",
+    "localTip": "Drive the few minutes to South Stack in late spring — the cliffs are packed with guillemots, razorbills and puffins, and the RSPB centre puts telescopes on the peregrines.",
+    "searchTerm": "Trearddur Bay",
+    "faqs": [
+      {
+        "q": "Is Trearddur Bay good for swimming?",
+        "a": "Yes — it is one of Anglesey's most popular swimming and watersports bays, with a sheltered sandy main beach and a series of rocky coves that hold clear, calm water. It has long been a favourite for sailing and family bathing."
+      },
+      {
+        "q": "What is there to see near Trearddur Bay?",
+        "a": "South Stack lighthouse and its RSPB seabird cliffs are a few minutes away, along with the walk up Holyhead Mountain for island-wide views. The port of Holyhead, with ferries to Dublin, is also close by."
+      }
+    ]
+  },
+  {
+    "region": "anglesey",
+    "slug": "moelfre",
+    "name": "Moelfre",
+    "county": "Isle of Anglesey",
+    "lead": "A fishing village steeped in lifeboat history.",
+    "intro": "Moelfre is a compact, pebble-and-cottage fishing village on Anglesey's east coast, with a lifeboat story out of all proportion to its size — the subject of two of the RNLI's most famous rescues. Its coast path and offshore islet make it one of the prettiest spots on the island.",
+    "staying": "A quiet, characterful base on the sheltered east coast, good for walkers and for families who want rock pools rather than surf.",
+    "thingsToDo": "The coast path north to Lligwy beach and the ancient burial chamber; the seal-watching around Ynys Moelfre; the Seawatch centre and lifeboat heritage; and the gentle east-coast beaches.",
+    "whenToVisit": "Late spring to early autumn for the coast path and calm bathing; the east coast is sheltered from the prevailing wind.",
+    "localTip": "Walk the short coast path to Lligwy and detour to the huge Neolithic burial chamber and the remains of a Romano-British village just inland — both are free and usually deserted.",
+    "searchTerm": "Moelfre",
+    "faqs": [
+      {
+        "q": "What is Moelfre known for?",
+        "a": "Moelfre is known as a traditional fishing village and for its lifeboat heritage, including the celebrated rescues of the Royal Charter (1859) and the Hindlea (1959). It has a small Seawatch heritage centre and a scenic coast path, with seals often seen around the offshore islet."
+      },
+      {
+        "q": "Is Moelfre good for a quiet break?",
+        "a": "Yes. On Anglesey's sheltered east coast, Moelfre is calmer and less commercial than the west-coast surf villages, with gentle beaches, rock pools and coastal walks — well suited to families and to anyone wanting a peaceful hot tub stay."
+      }
+    ]
+  },
+  {
+    "region": "anglesey",
+    "slug": "benllech",
+    "name": "Benllech",
+    "county": "Isle of Anglesey",
+    "lead": "A wide sandy beach on the sheltered east coast.",
+    "intro": "Benllech is the main family beach resort of eastern Anglesey, with a broad, gently shelving stretch of sand that is one of the safest and most popular on the island. It is straightforward, sheltered and geared to a relaxed seaside week.",
+    "staying": "A practical family base with the beach, shops and cafés on hand, and the smarter towns of Beaumaris and Menai Bridge a short drive south.",
+    "thingsToDo": "The beach itself for swimming and sandcastles; the coast path in both directions towards Moelfre and Red Wharf Bay; and the huge tidal sands of Red Wharf Bay with its beachside pub.",
+    "whenToVisit": "Summer for the beach; the east coast stays comparatively sheltered and warm into September.",
+    "localTip": "Walk the coast path south to Red Wharf Bay and time it so the tide is out — the sands stretch for what feels like a mile, and the Ship Inn sits right at the edge of them.",
+    "searchTerm": "Benllech",
+    "faqs": [
+      {
+        "q": "Is Benllech a good family beach?",
+        "a": "Yes — Benllech has a wide, gently sloping sandy beach that is among the safest and most popular on Anglesey for families, backed by shops, cafés and easy parking. Its sheltered east-coast position keeps it calmer than the surf beaches of the west."
+      },
+      {
+        "q": "What is Red Wharf Bay?",
+        "a": "Red Wharf Bay is a vast tidal sand bay just south of Benllech, exposing miles of flat sand at low tide and popular for walking and birdwatching. The Ship Inn sits right on the shore and is a well-known spot for a meal at the water's edge."
+      }
+    ]
+  },
+  {
+    "region": "gower",
+    "slug": "rhossili",
+    "name": "Rhossili",
+    "county": "Swansea",
+    "lead": "Three miles of sand and a tidal serpent of rock.",
+    "intro": "Rhossili is the great set-piece of the Gower Peninsula: a three-mile sweep of west-facing sand backed by downs, with the tidal causeway of Worm's Head snaking out to sea at its southern end. It regularly places on lists of Britain's and Europe's best beaches.",
+    "staying": "The most spectacular base on Gower, though a small and sought-after one. Staying on the peninsula lets you walk the beach before the day-trippers and their ten-o'clock car park arrive.",
+    "thingsToDo": "The beach and the walk out to Worm's Head at low tide; the clifftop path along the downs; the wreck of the Helvetia in the sand; and paragliding off Rhossili Down, the highest point on Gower.",
+    "whenToVisit": "Late spring to early autumn for the beach; the Worm's Head crossing is only possible for about two and a half hours either side of low tide.",
+    "localTip": "Check the tide times before you set out for Worm's Head — the causeway floods fast, and people are cut off on the rocks every year waiting for the next low water.",
+    "searchTerm": "Rhossili",
+    "faqs": [
+      {
+        "q": "Can you walk out to Worm's Head at Rhossili?",
+        "a": "Yes, but only around low tide. The tidal causeway to Worm's Head is safe to cross for roughly two and a half hours either side of low water; outside that window it floods and strands walkers on the headland. Always check the tide tables posted at the coastguard lookout first."
+      },
+      {
+        "q": "Why is Rhossili Bay so highly rated?",
+        "a": "Rhossili combines a three-mile arc of clean sand, dramatic cliffs and downs, the tidal island of Worm's Head and consistent surf, with almost no development behind it because most of the land is National Trust. That mix repeatedly earns it a place among the best beaches in Britain and Europe."
+      }
+    ],
+    "images": [
+      {
+        "file": "rhossili-cover.jpg",
+        "feature": true,
+        "alt": "The tidal causeway of Worm's Head reaching out from Rhossili on Gower",
+        "caption": "Worm's Head reaching out from Rhossili.",
+        "credit": {
+          "author": "Keith Lawson 11",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Worms_Head_while_tide_in,_Rhossili,_Gower_Peninsula,_Wales.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "gower",
+    "slug": "mumbles",
+    "name": "Mumbles",
+    "county": "Swansea",
+    "welsh": "Y Mwmbwls",
+    "lead": "Swansea's seaside, with a pier, a lighthouse and famous ice cream.",
+    "intro": "Mumbles is the genteel seaside gateway to Gower on the western edge of Swansea Bay, a curve of Victorian promenade ending at a pier and a lighthouse-topped island. Dylan Thomas called it \"a rather nice village\", and its cafés, ice cream and gastropubs still draw a steady crowd.",
+    "staying": "The most connected base for Gower, with city amenities and the peninsula both on the doorstep. Good for those who want the beaches by day and a proper choice of restaurants at night.",
+    "thingsToDo": "The pier and the promenade around Swansea Bay; Oystermouth Castle above the village; Joe's and Verdi's ice cream; and the start of the Gower coast path towards Langland and Caswell bays.",
+    "whenToVisit": "Year-round as a town; summer for the bays. It is close enough to Cardiff and Swansea to be busy on any fine weekend.",
+    "localTip": "Walk the coast path from Mumbles to Langland and Caswell for the pretty, sheltered bays that most day-trippers miss by stopping at the pier.",
+    "searchTerm": "Mumbles",
+    "faqs": [
+      {
+        "q": "Is Mumbles a good base for the Gower Peninsula?",
+        "a": "Yes. Mumbles sits at the eastern gateway to Gower on Swansea Bay, so the peninsula's beaches are close while you still have a full range of restaurants, cafés and shops. It is also the best-connected part of Gower for public transport from Swansea."
+      },
+      {
+        "q": "What is Mumbles known for?",
+        "a": "Mumbles is known for its Victorian pier and promenade, Oystermouth Castle, and a long-standing reputation for ice cream (Joe's and Verdi's) and seafront dining. It marks the start of the Gower Area of Outstanding Natural Beauty."
+      }
+    ]
+  },
+  {
+    "region": "gower",
+    "slug": "port-eynon",
+    "name": "Port Eynon",
+    "county": "Swansea",
+    "lead": "A south Gower cove with a salt house and a smugglers' past.",
+    "intro": "Port Eynon is a sheltered, sandy bay on the south Gower coast, once a centre for oyster fishing and salt making and, by repute, smuggling. Today it is a relaxed swimming and walking base with a ruined salt house on the point and a youth hostel in the old lifeboat station.",
+    "staying": "A quieter south-coast alternative to Rhossili, with a safe beach and easy access to the wilder cliffs west of the village. Good for families and walkers.",
+    "thingsToDo": "The beach for swimming; the walk west past the Salt House to Culver Hole, a mysterious walled sea cave; and the coast path on towards Oxwich and Three Cliffs bays.",
+    "whenToVisit": "Late spring to early autumn for the beach; the south Gower coast path is good year-round.",
+    "localTip": "Walk west along the cliffs to Culver Hole — a medieval wall sealing a natural cleft in the rock, half dovecote and half mystery, and one of Gower's stranger sights.",
+    "searchTerm": "Port Eynon",
+    "faqs": [
+      {
+        "q": "Is Port Eynon good for swimming?",
+        "a": "Yes — Port Eynon has a sheltered, south-facing sandy beach that is one of the safer bathing spots on Gower, with easy parking and a slipway. It is quieter than Rhossili and popular with families and swimmers."
+      },
+      {
+        "q": "What is Culver Hole near Port Eynon?",
+        "a": "Culver Hole is a curious medieval structure west of Port Eynon where a natural cleft in the cliff has been sealed with a tall stone wall pierced by openings. Its original purpose is uncertain — likely a dovecote — and it is reached on foot along the coast at low tide."
+      }
+    ]
+  },
+  {
+    "region": "gower",
+    "slug": "llangennith",
+    "name": "Llangennith",
+    "county": "Swansea",
+    "lead": "Gower's surf beach and the campsite crowd.",
+    "intro": "Llangennith is a small village behind the northern end of Rhossili's great beach, and it is the surf capital of Gower. The three miles of Atlantic-facing sand pick up the best swell in south Wales, and the village has the surf schools, campsites and one very good pub to match.",
+    "staying": "The base for a surf-first break, laid-back and outdoorsy. Properties here reach the beach at Hillend and the quieter estuary side of north Gower.",
+    "thingsToDo": "Surfing the length of Rhossili beach from the Llangennith end; the walk out to the tidal island of Burry Holms; and the climb over Rhossili Down to the famous bay itself.",
+    "whenToVisit": "Autumn and winter bring the biggest, cleanest surf; summer for learners and the campsite scene.",
+    "localTip": "Time the walk out to Burry Holms, the tidal islet at the north end of the beach, for low water — it has an Iron Age fort and a ruined chapel and is cut off for much of the day.",
+    "searchTerm": "Llangennith",
+    "faqs": [
+      {
+        "q": "Is Llangennith the best place to surf on Gower?",
+        "a": "It is generally considered so. The Atlantic-facing sands of Llangennith and Rhossili catch the most consistent surf in south Wales, and the village has surf schools, board hire and campsites geared to it. Autumn and winter bring the biggest swells."
+      },
+      {
+        "q": "Can you walk to Burry Holms from Llangennith?",
+        "a": "Yes, at low tide. Burry Holms is a small tidal island at the northern end of Rhossili beach, reachable on foot across the sand for a few hours around low water. It holds the remains of an Iron Age fort and a medieval chapel — check the tide before crossing."
+      }
+    ]
+  },
+  {
+    "region": "gower",
+    "slug": "reynoldston",
+    "name": "Reynoldston",
+    "county": "Swansea",
+    "lead": "Central Gower, ten minutes from either coast.",
+    "intro": "Reynoldston is a village at the heart of the Gower Peninsula, gathered around a green beneath the open common of Cefn Bryn. Its central position — ten minutes from the north or south coast — and its landmark inn make it a natural base for exploring the whole AONB.",
+    "staying": "The best-placed base if you want to roam all of Gower rather than one beach, with commons walking from the door and both coasts a short drive away.",
+    "thingsToDo": "Cefn Bryn, the \"backbone of Gower\", and the Neolithic burial chamber of Arthur's Stone on its ridge; and easy drives to Rhossili, Oxwich and Three Cliffs bays.",
+    "whenToVisit": "Year-round; the common is at its best in late summer heather and autumn light.",
+    "localTip": "Walk up onto Cefn Bryn at sunset to Arthur's Stone — a huge, propped Neolithic capstone with views over both coasts of the peninsula at once.",
+    "searchTerm": "Reynoldston",
+    "faqs": [
+      {
+        "q": "Is Reynoldston a good central base for Gower?",
+        "a": "Yes. Reynoldston sits in the middle of the peninsula on the slopes of Cefn Bryn, so the beaches of both the north and south coasts are within about ten minutes' drive. That central position, plus open common walking from the village, makes it a practical all-round base."
+      },
+      {
+        "q": "What is Arthur's Stone on Gower?",
+        "a": "Arthur's Stone (Maen Ceti) is a Neolithic burial chamber on Cefn Bryn above Reynoldston, its huge capstone propped on smaller uprights. Wrapped in Arthurian legend, it is a short walk up onto the common and offers wide views across Gower."
+      }
+    ]
+  },
+  {
+    "region": "llyn-peninsula",
+    "slug": "abersoch",
+    "name": "Abersoch",
+    "county": "Gwynedd",
+    "lead": "Sailing, second homes and the busy end of the Llŷn.",
+    "intro": "Abersoch is the lively, affluent resort of the Llŷn Peninsula, built around a harbour and two sandy beaches, with a sailing and watersports scene that fills it every summer. It is the busiest and priciest point on an otherwise quiet peninsula.",
+    "staying": "The base for a sociable, watersports-led week, with the best concentration of shops and restaurants on the Llŷn. Book far ahead for summer — this is the peninsula's hotspot.",
+    "thingsToDo": "Sailing, powerboating and paddleboarding from the main beach; the beach walk to the headland at Penbennar; boat trips to St Tudwal's Islands; and surf at Porth Neigwl (Hell's Mouth) round the corner.",
+    "whenToVisit": "Summer for the full scene; late spring and September for the beaches without the peak crush and prices.",
+    "localTip": "Drive the few minutes to Porth Neigwl — \"Hell's Mouth\" — for a four-mile surf beach that is a world away from Abersoch's harbour polish.",
+    "searchTerm": "Abersoch",
+    "faqs": [
+      {
+        "q": "Why is Abersoch so popular and expensive?",
+        "a": "Abersoch combines sheltered sandy beaches, a busy sailing and watersports harbour, and a long-established second-home and holiday market, which keeps summer demand — and prices — high. It is the liveliest resort on the Llŷn, in contrast to the quiet far west of the peninsula."
+      },
+      {
+        "q": "Where can you surf near Abersoch?",
+        "a": "Porth Neigwl, known as Hell's Mouth, is a four-mile Atlantic-facing beach a few minutes from Abersoch and the main surf spot on the Llŷn. Abersoch's own beach is more sheltered and better suited to sailing and paddleboarding."
+      }
+    ]
+  },
+  {
+    "region": "llyn-peninsula",
+    "slug": "aberdaron",
+    "name": "Aberdaron",
+    "county": "Gwynedd",
+    "lead": "Land's end of the Llŷn, and the road to Bardsey.",
+    "intro": "Aberdaron is a whitewashed fishing village at the very tip of the Llŷn, where a beachside church has stood against the sea for centuries. It was the last stop for medieval pilgrims crossing to Bardsey Island, and it still feels like the end of the road — because it is.",
+    "staying": "The base for genuine remoteness and dark, quiet nights, with some of the best-value isolated properties in Wales. This is where the peninsula empties out.",
+    "thingsToDo": "The beach and the ancient church of St Hywyn on it; the walk out to Uwchmynydd and the tip of the peninsula looking over to Bardsey; and boat trips to Bardsey Island itself for seals, seabirds and its monastic ruins.",
+    "whenToVisit": "Late spring to early autumn for the Bardsey boats and the coast path; the far west is atmospheric and empty in winter.",
+    "localTip": "Drive to the National Trust car park at Uwchmynydd and walk to the very tip — the \"land's end\" of Wales, with Bardsey Island across the fierce tidal sound.",
+    "searchTerm": "Aberdaron",
+    "faqs": [
+      {
+        "q": "Is Aberdaron a good place for a quiet, remote break?",
+        "a": "Yes — it sits at the far western tip of the Llŷn, well beyond the busier resorts, and is one of the quietest and most isolated coastal bases in Wales. That remoteness, plus dark skies and few lights, makes it ideal for a peaceful hot tub stay."
+      },
+      {
+        "q": "Can you visit Bardsey Island from Aberdaron?",
+        "a": "Yes, in season. Boats cross to Bardsey Island (Ynys Enlli) from near Aberdaron, weather and tides permitting, mainly from spring to early autumn. The island is a former place of pilgrimage, now a nature reserve known for seals, seabirds and its ruined abbey."
+      }
+    ]
+  },
+  {
+    "region": "llyn-peninsula",
+    "slug": "nefyn",
+    "name": "Nefyn",
+    "county": "Gwynedd",
+    "lead": "A north-coast bay and a pub you can only reach on foot.",
+    "intro": "Nefyn and neighbouring Morfa Nefyn sit on the sheltered north coast of the Llŷn, wrapped around a curving bay. Their great draw is Porthdinllaen, a tiny huddle of cottages on a spit of land with a beach pub that you can only reach by walking across the sand or the golf course.",
+    "staying": "A relaxed north-coast base that splits the difference between busy Abersoch and remote Aberdaron, with a superb beach and one of the best pub settings in Britain.",
+    "thingsToDo": "The walk to Porthdinllaen and the Tŷ Coch Inn on the beach; the golf course strung along the headland; and the sheltered swimming and paddling of the bay.",
+    "whenToVisit": "Late spring to early autumn for the beach and the pub; the north coast is sheltered from the prevailing south-westerlies.",
+    "localTip": "Walk to the Tŷ Coch across the beach at low tide, have a pint outside on the sand, and check the tide so you can walk back the same way.",
+    "searchTerm": "Nefyn",
+    "faqs": [
+      {
+        "q": "What is the Tŷ Coch Inn?",
+        "a": "The Tŷ Coch is a pub on the beach at Porthdinllaen, near Nefyn, reachable only on foot across the sand or over the headland golf course. Its setting on the shore has made it one of the most photographed pubs in Britain."
+      },
+      {
+        "q": "Is Nefyn a good family base on the Llŷn?",
+        "a": "Yes. Nefyn and Morfa Nefyn wrap around a sheltered north-coast bay with safe swimming and paddling, and the walk to Porthdinllaen and its beach pub is an easy family outing. It is quieter than Abersoch but less isolated than the far west."
+      }
+    ]
+  },
+  {
+    "region": "llyn-peninsula",
+    "slug": "pwllheli",
+    "name": "Pwllheli",
+    "county": "Gwynedd",
+    "lead": "The market town and marina at the gateway to the Llŷn.",
+    "intro": "Pwllheli is the largest town on the Llŷn and its natural hub, with a harbour, a large marina and the peninsula's main shops and market. It is the end of the railway line and the practical gateway to everything further west.",
+    "staying": "The most convenient base for supplies and connections, with the marina and beaches on hand and the whole peninsula within reach. A useful choice if you want a town at your back.",
+    "thingsToDo": "The Blue Flag beach and marina; the Wednesday market, one of the oldest in Wales; sailing from Plas Heli, the Welsh National Sailing Academy; and easy drives to the quieter beaches west and south.",
+    "whenToVisit": "Year-round as a town; summer for the marina and beaches. Less seasonal than the resort villages.",
+    "localTip": "Use Pwllheli for the big shop and the railway, then base your days further west — the town is the peninsula's engine room rather than its prettiest corner.",
+    "searchTerm": "Pwllheli",
+    "faqs": [
+      {
+        "q": "Is Pwllheli a good base for exploring the Llŷn Peninsula?",
+        "a": "Yes, practically. As the largest town and transport hub on the Llŷn, with the main shops, a market, a marina and the railway terminus, Pwllheli is a convenient base from which the rest of the peninsula's beaches and villages are within a short drive."
+      },
+      {
+        "q": "Does Pwllheli have a beach?",
+        "a": "Yes — Pwllheli has a Blue Flag beach along with a large marina and harbour. The town is also home to Plas Heli, the Welsh National Sailing Academy, making it a centre for sailing on the peninsula."
+      }
+    ]
+  },
+  {
+    "region": "llyn-peninsula",
+    "slug": "criccieth",
+    "name": "Criccieth",
+    "county": "Gwynedd",
+    "lead": "A castle on a headland between two beaches.",
+    "intro": "Criccieth sits where the Llŷn meets the edge of Snowdonia, a genteel Victorian resort built around a ruined castle on a green headland dividing two beaches. It is famous, locally, for Cadwalader's ice cream and for being a calmer, more old-fashioned resort than Abersoch.",
+    "staying": "A gentle, well-placed base that lets you combine the Llŷn with southern Snowdonia and Porthmadog. Good for families and for a quieter seaside week.",
+    "thingsToDo": "Criccieth Castle on its headland; the two beaches either side; Cadwalader's ice cream on the front; and easy trips to Portmeirion, the Welsh Highland Railway and the mountains just inland.",
+    "whenToVisit": "Late spring to early autumn for the beaches; the castle and front are pleasant year-round.",
+    "localTip": "Climb up to the castle at sunset — the headland gives you both beaches, the sweep of Cardigan Bay and the Snowdonia peaks behind the town in a single turn.",
+    "searchTerm": "Criccieth",
+    "faqs": [
+      {
+        "q": "Is Criccieth a good base for both the Llŷn and Snowdonia?",
+        "a": "Yes. Criccieth sits at the eastern end of the Llŷn Peninsula, close to Porthmadog and the southern edge of Snowdonia, so it is well placed to combine the peninsula's beaches with mountain days, Portmeirion and the heritage railways."
+      },
+      {
+        "q": "What is Criccieth known for?",
+        "a": "Criccieth is known for its clifftop medieval castle set between two beaches, its Victorian seaside character, and Cadwalader's ice cream, which originated in the town. It is a quieter, more traditional resort than nearby Abersoch."
+      }
+    ],
+    "images": [
+      {
+        "file": "criccieth-cover.jpg",
+        "feature": true,
+        "alt": "Criccieth Castle on its green headland at sunset above the beach",
+        "caption": "Criccieth Castle on its headland at sunset.",
+        "credit": {
+          "author": "Cmao20",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Criccieth_Castle_at_Sunset,_Caernarfonshire,_Wales_-_18-07-2018.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "mid-wales",
+    "slug": "machynlleth",
+    "name": "Machynlleth",
+    "county": "Powys",
+    "lead": "Glyndŵr's ancient capital, on the edge of the Dyfi.",
+    "intro": "Machynlleth is a handsome market town where the Dyfi valley meets the southern edge of Snowdonia, and it carries the title of \"ancient capital of Wales\" — Owain Glyndŵr held his parliament here in 1404. It has a strong independent, green and arts streak today.",
+    "staying": "A characterful base bridging Mid Wales and southern Snowdonia, with the Dyfi Biosphere, forests and estuary all close. Good for those who want culture and countryside together.",
+    "thingsToDo": "The Owain Glyndŵr Centre and the Wednesday market; the Centre for Alternative Technology just north of town; the Dyfi Forest and Dyfi Osprey Project; and mountain-biking at Dyfi and Climachx.",
+    "whenToVisit": "Spring to autumn for the ospreys and the forests; the town and its culture are a year-round draw.",
+    "localTip": "The Centre for Alternative Technology, up the hill outside town, is a full day out and reached by a water-balanced cliff railway — go early and take the walk down through its gardens.",
+    "searchTerm": "Machynlleth",
+    "faqs": [
+      {
+        "q": "Why is Machynlleth called the ancient capital of Wales?",
+        "a": "Machynlleth is called the ancient capital of Wales because Owain Glyndŵr, leader of the last major Welsh revolt against English rule, held a parliament there in 1404 and is said to have been crowned Prince of Wales in the town. The Owain Glyndŵr Centre commemorates this."
+      },
+      {
+        "q": "What is the Centre for Alternative Technology?",
+        "a": "The Centre for Alternative Technology (CAT), just north of Machynlleth, is a long-established eco-centre and visitor attraction demonstrating renewable energy, sustainable building and organic growing. It is reached by a water-balanced cliff railway and makes a good family day out."
+      }
+    ]
+  },
+  {
+    "region": "mid-wales",
+    "slug": "rhayader",
+    "name": "Rhayader",
+    "county": "Powys",
+    "welsh": "Rhaeadr Gwy",
+    "lead": "Gateway to the Elan Valley and its red kites.",
+    "intro": "Rhayader is a small market town on the upper Wye and the gateway to the Elan Valley, a chain of Victorian dams and reservoirs set in remote moorland. The surrounding hills hold one of the great British wildlife success stories — the red kite, brought back from near-extinction here.",
+    "staying": "The base for the Elan Valley and its Dark Sky Park, and for genuine mid-Wales emptiness. Well-placed for walkers, cyclists and stargazers.",
+    "thingsToDo": "The Elan Valley dams and their visitor centre; the red kite feeding station at Gigrin Farm; the traffic-free Elan Valley Trail for cycling; and dark-sky stargazing over the reservoirs.",
+    "whenToVisit": "Spring to autumn for the valley and cycling; autumn and winter for the darkest skies. The kite feeding happens daily, year-round.",
+    "localTip": "Time an afternoon at Gigrin Farm for the daily kite feed, when a hundred or more red kites wheel in at once — it is timed slightly later in winter, so check before you go.",
+    "searchTerm": "Rhayader",
+    "faqs": [
+      {
+        "q": "What is the Elan Valley known for?",
+        "a": "The Elan Valley is known for its chain of Victorian dams and reservoirs, built to supply Birmingham with water, set in remote moorland. It is also an International Dark Sky Park with excellent stargazing, and a stronghold for red kites and other upland wildlife."
+      },
+      {
+        "q": "Where can you see red kites near Rhayader?",
+        "a": "Gigrin Farm, just outside Rhayader, runs a daily red kite feeding station where large numbers of kites gather — often over a hundred. The wider Elan Valley and surrounding hills are also among the best places in Britain to see red kites in the wild."
+      }
+    ]
+  },
+  {
+    "region": "mid-wales",
+    "slug": "welshpool",
+    "name": "Welshpool",
+    "county": "Powys",
+    "welsh": "Y Trallwng",
+    "lead": "Border market town beneath a red castle.",
+    "intro": "Welshpool is a busy border market town in the Severn valley, watched over by Powis Castle — a medieval fortress turned grand country house, famous for its terraced gardens and its treasures from Clive of India. It sits on the gentle, green edge of Mid Wales, easily reached from Shropshire.",
+    "staying": "The most accessible base in Mid Wales from England, and a comfortable one for gardens, canals and castles rather than mountains. Good value and rarely full.",
+    "thingsToDo": "Powis Castle and its world-famous terraced gardens; the Montgomery Canal towpath; the narrow-gauge Welshpool and Llanfair Light Railway; and the Monday livestock market, one of the largest in Wales.",
+    "whenToVisit": "Spring to autumn for the castle gardens; the town is a year-round, low-season-friendly base.",
+    "localTip": "Powis Castle's terraces are the real draw — go late in the day when the coach parties have gone and the light rakes across the clipped yews and the Severn valley beyond.",
+    "searchTerm": "Welshpool",
+    "faqs": [
+      {
+        "q": "Is Powis Castle worth visiting?",
+        "a": "Yes — Powis Castle, on the edge of Welshpool, is one of the finest properties in Wales, known especially for its dramatic 17th-century terraced gardens and for the Clive Museum, holding treasures brought back from India. It is a National Trust site and a full half-day out."
+      },
+      {
+        "q": "Is Welshpool easy to reach from England?",
+        "a": "Very. Welshpool lies just inside the Welsh border in the Severn valley, close to Shrewsbury, and is on the Cambrian railway line. That accessibility, plus gentle countryside rather than high mountains, makes it one of the easiest Mid Wales bases to reach."
+      }
+    ],
+    "images": [
+      {
+        "file": "welshpool-cover.jpg",
+        "feature": true,
+        "alt": "The red walls and terraced gardens of Powis Castle near Welshpool",
+        "caption": "Powis Castle and its terraced gardens, above Welshpool.",
+        "credit": {
+          "author": "Alexander Forst-Rakoczy",
+          "license": "CC BY-SA 2.0 at",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/at/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PowisCastle.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "mid-wales",
+    "slug": "llanidloes",
+    "name": "Llanidloes",
+    "county": "Powys",
+    "lead": "A half-timbered market hall and the young River Severn.",
+    "intro": "Llanidloes is the first town on the River Severn, a compact and characterful place built around a rare 16th-century half-timbered market hall standing on its stone pillars at the crossroads. It has an artistic, independent feel and sits close to the vast Hafren Forest and the Severn's source.",
+    "staying": "A quiet, creative base in the empty heart of Mid Wales, good for walkers, cyclists and anyone wanting genuine peace and dark skies.",
+    "thingsToDo": "The Old Market Hall and the town's independent shops and galleries; the walk to the source of the Severn through Hafren Forest; and the Clywedog reservoir and dam just to the north.",
+    "whenToVisit": "Spring to autumn for the forests and reservoir; the town is a calm, low-season base year-round.",
+    "localTip": "Drive up to Llyn Clywedog for the dam and the reservoir road — the water winds through bare hills and it is one of the most underrated short drives in Wales.",
+    "searchTerm": "Llanidloes",
+    "faqs": [
+      {
+        "q": "What is there to do around Llanidloes?",
+        "a": "Llanidloes offers the historic half-timbered market hall and independent shops in town, with the Hafren Forest, the source of the River Severn, and the Clywedog reservoir all close by for walking and cycling. It is a quiet, remote base rather than a busy resort."
+      },
+      {
+        "q": "Is Mid Wales good for stargazing near Llanidloes?",
+        "a": "Yes. This part of Mid Wales is sparsely populated with very little light pollution, so on clear nights the skies are excellent — one reason a hot tub break out here suits stargazers. The nearby Elan Valley is a designated Dark Sky Park."
+      }
+    ]
+  },
+  {
+    "region": "mid-wales",
+    "slug": "builth-wells",
+    "name": "Builth Wells",
+    "county": "Powys",
+    "welsh": "Llanfair-ym-Muallt",
+    "lead": "Riverside town and home of the Royal Welsh Show.",
+    "intro": "Builth Wells is a former spa town on the River Wye in the heart of Mid Wales, best known now as the permanent home of the Royal Welsh Show, the largest agricultural show in Europe. The rest of the year it is a quiet, workaday market town in fine walking country.",
+    "staying": "A central Mid Wales base handy for the Wye valley, the Elan Valley and the Cambrian mountains. Avoid Royal Welsh week in July unless the show is why you are coming.",
+    "thingsToDo": "The riverside and bridge over the Wye; the Royal Welsh Showground across the river; the Cambrian Mountains and the wild Abergwesyn Pass to the west; and easy reach of the Elan Valley.",
+    "whenToVisit": "Spring to autumn for the hills and river; the third full week of July is Royal Welsh Show week, when the whole area fills.",
+    "localTip": "Drive the Abergwesyn Pass west from Builth — a single-track road over empty mountains known as the \"Devil's Staircase\", one of the loneliest and most spectacular drives in Wales.",
+    "searchTerm": "Builth Wells",
+    "faqs": [
+      {
+        "q": "What is the Royal Welsh Show?",
+        "a": "The Royal Welsh Show is the largest agricultural show in Europe, held each July at its permanent showground in Builth Wells. It draws around 200,000 visitors over four days, so accommodation across Mid Wales books up far in advance for that week."
+      },
+      {
+        "q": "Is Builth Wells a good base for Mid Wales?",
+        "a": "Yes. Builth Wells sits centrally on the River Wye, within reach of the Elan Valley, the Cambrian Mountains and the wild Abergwesyn Pass, making it a practical base for walking, cycling and touring the empty heart of Mid Wales — outside Royal Welsh Show week, when it is very busy."
+      }
+    ]
+  },
+  {
+    "region": "ceredigion",
+    "slug": "aberystwyth",
+    "name": "Aberystwyth",
+    "county": "Ceredigion",
+    "lead": "University town, seafront promenade and a cliff railway.",
+    "intro": "Aberystwyth is the capital of the Cardigan Bay coast, a university and seaside town with a Victorian promenade, a ruined castle on the point and the National Library of Wales up on the hill. It is the liveliest town on this stretch of coast and its cultural anchor.",
+    "staying": "The base with the most going on in Ceredigion — restaurants, culture and a proper seafront — and a hub for the wider coast and the Cambrian mountains inland.",
+    "thingsToDo": "The promenade and the \"kicking the bar\" ritual at its north end; the Cliff Railway up Constitution Hill; the National Library of Wales; and the Vale of Rheidol steam railway up to Devil's Bridge.",
+    "whenToVisit": "Year-round as a town; summer for the beach and boat trips. Term time brings the student buzz, summer the holiday crowd.",
+    "localTip": "Take the Vale of Rheidol steam railway inland to Devil's Bridge and its waterfalls — a full day out that climbs from the sea into the hills and back.",
+    "searchTerm": "Aberystwyth",
+    "faqs": [
+      {
+        "q": "Is Aberystwyth a good base for the Ceredigion coast?",
+        "a": "Yes. As the largest town on Cardigan Bay, Aberystwyth has the widest choice of restaurants, culture and amenities on the Ceredigion coast, plus a seafront, castle and cliff railway, and good road and rail links north and south along the coast and inland."
+      },
+      {
+        "q": "What is the Vale of Rheidol Railway?",
+        "a": "The Vale of Rheidol Railway is a narrow-gauge steam line running from Aberystwyth up into the hills to Devil's Bridge, where three bridges are stacked over a wooded gorge and waterfalls. The round trip is a popular full-day excursion from the town."
+      }
+    ],
+    "images": [
+      {
+        "file": "aberystwyth-cover.jpg",
+        "feature": true,
+        "alt": "The seafront promenade at Aberystwyth looking out over Cardigan Bay",
+        "caption": "The seafront promenade at Aberystwyth.",
+        "credit": {
+          "author": "Antony Stanley from Gloucester, UK",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seafront,_Aberystwyth_(3488697095).jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "ceredigion",
+    "slug": "aberaeron",
+    "name": "Aberaeron",
+    "county": "Ceredigion",
+    "lead": "A Georgian harbour painted in impossible colours.",
+    "intro": "Aberaeron is the prettiest town on the Ceredigion coast, a planned Georgian harbour of terraces painted in bold, clashing colours around a working quay. It has become a food destination out of proportion to its size, and its honey ice cream is locally famous.",
+    "staying": "A charming, walkable harbour base for the middle of Cardigan Bay, well placed for New Quay's dolphins and the Aeron valley inland.",
+    "thingsToDo": "The harbour and the painted terraces; the honey ice cream and harbourside dining; the coast path in both directions; and easy trips to New Quay for dolphin-watching.",
+    "whenToVisit": "Late spring to early autumn for the harbour at its best; the town's food scene is a year-round draw.",
+    "localTip": "Buy the honey ice cream at the Hive on the quay and walk out along the harbour wall — the row of painted Georgian houses reflected in the water is the town's signature.",
+    "searchTerm": "Aberaeron",
+    "faqs": [
+      {
+        "q": "Why are the houses in Aberaeron so colourful?",
+        "a": "Aberaeron was built largely to a single Georgian plan in the early 19th century around its new harbour, giving it an unusually uniform terraced architecture. Owners have since painted the houses in bold contrasting colours, which has become the town's trademark look."
+      },
+      {
+        "q": "Is Aberaeron good for food?",
+        "a": "Yes — for its size, Aberaeron has a strong food reputation, with harbourside restaurants and its well-known honey ice cream. It makes a good base for a Cardigan Bay break that combines coast walks with eating well."
+      }
+    ]
+  },
+  {
+    "region": "ceredigion",
+    "slug": "new-quay",
+    "name": "New Quay",
+    "county": "Ceredigion",
+    "welsh": "Cei Newydd",
+    "lead": "Dolphins from the harbour wall, and a Dylan Thomas past.",
+    "intro": "New Quay is a stacked, whitewashed fishing town on Cardigan Bay, and the best place in Wales to see bottlenose dolphins — the bay holds the largest resident population in the UK, and they are regularly seen from the harbour wall. Dylan Thomas lived here, and the town is said to have inspired Under Milk Wood.",
+    "staying": "The base for dolphin-watching and a classic small-scale seaside week, with sheltered beaches and boat trips from the quay.",
+    "thingsToDo": "Dolphin and wildlife boat trips from the harbour; the sheltered town beaches; the Dylan Thomas trail; and the coast path to the Ynys Lochtyn headland.",
+    "whenToVisit": "April to September is the main dolphin season and the busiest time; the sightings are best on calm days.",
+    "localTip": "Take a licensed boat trip rather than watching from the wall — the operators keep a legal distance from the dolphins but the sighting rate out on the water is far higher.",
+    "searchTerm": "New Quay",
+    "faqs": [
+      {
+        "q": "Can you see dolphins at New Quay?",
+        "a": "Yes — Cardigan Bay has the largest resident population of bottlenose dolphins in the UK, and New Quay is the best-known spot to see them, sometimes even from the harbour wall. Licensed boat trips from the harbour offer the highest chance of a close, responsible sighting, mainly from April to September."
+      },
+      {
+        "q": "What is New Quay's connection to Dylan Thomas?",
+        "a": "Dylan Thomas lived in New Quay during the 1940s, and the town is widely thought to have helped inspire the fictional seaside village of Llareggub in Under Milk Wood. A local trail links places associated with the poet."
+      }
+    ]
+  },
+  {
+    "region": "ceredigion",
+    "slug": "cardigan",
+    "name": "Cardigan",
+    "county": "Ceredigion",
+    "welsh": "Aberteifi",
+    "lead": "A restored castle where the first Eisteddfod was held.",
+    "intro": "Cardigan sits where the River Teifi meets the sea at the southern end of Ceredigion, an old market and port town whose castle hosted the first recorded Eisteddfod in 1176. A major restoration has brought the castle and quayside back to life, and the town anchors a quietly beautiful stretch of coast.",
+    "staying": "A well-placed base for the southern Cardigan Bay coast and the Teifi valley, close to the Pembrokeshire border and the beaches at Mwnt and Poppit.",
+    "thingsToDo": "The restored Cardigan Castle; the Teifi estuary and the Welsh Wildlife Centre; the beaches at Mwnt and Poppit Sands; and the coast path towards Ynys Lochtyn.",
+    "whenToVisit": "Late spring to early autumn for the beaches and the coast; the castle and town are a year-round draw.",
+    "localTip": "Drive to the tiny beach and whitewashed hilltop chapel at Mwnt — a National Trust cove that is one of the best spots on the whole bay to see dolphins and, in autumn, seals hauled out below.",
+    "searchTerm": "Cardigan",
+    "faqs": [
+      {
+        "q": "What is Cardigan Castle known for?",
+        "a": "Cardigan Castle is known as the site of the first recorded Eisteddfod, held there in 1176 under the Lord Rhys. After years of decay it was extensively restored and reopened, and now houses gardens, exhibitions, accommodation and events beside the River Teifi."
+      },
+      {
+        "q": "What are the best beaches near Cardigan?",
+        "a": "Mwnt, a small National Trust cove with a hilltop chapel and good dolphin-watching, and Poppit Sands at the mouth of the Teifi are the best-known beaches near Cardigan. Both are a short drive from the town and mark the start of the Ceredigion and Pembrokeshire coast paths."
+      }
+    ]
+  },
+  {
+    "region": "ceredigion",
+    "slug": "lampeter",
+    "name": "Lampeter",
+    "county": "Ceredigion",
+    "welsh": "Llanbedr Pont Steffan",
+    "lead": "A small university town in the green Teifi valley.",
+    "intro": "Lampeter is a small market and university town inland in the Teifi valley, home to the oldest degree-awarding institution in Wales after the ancient English universities. It is a quiet, green base away from the coast, with an alternative, bookish streak.",
+    "staying": "An inland, good-value base in gentle countryside, well placed for the Teifi valley and for reaching both the Ceredigion coast and the Cambrian mountains.",
+    "thingsToDo": "The university town itself and its independent shops; the Teifi valley walks and the woollen-mill trail; the Cors Caron nature reserve to the north; and easy drives to the coast at Aberaeron and New Quay.",
+    "whenToVisit": "Spring to autumn for the valley and countryside; the town is a calm year-round base.",
+    "localTip": "Walk the boardwalks at Cors Caron, a huge raised peat bog north of Lampeter — a strange, wide-open landscape rich in birds and, in winter, red kites.",
+    "searchTerm": "Lampeter",
+    "faqs": [
+      {
+        "q": "Is Lampeter worth staying in?",
+        "a": "Lampeter suits those wanting a quiet, inland base in the Teifi valley rather than a seaside town. As a small university town it has independent shops and cafés, gentle countryside walks and good value, with the Ceredigion coast around 30 to 40 minutes away by car."
+      },
+      {
+        "q": "What is Cors Caron?",
+        "a": "Cors Caron is a large raised bog (peatland) nature reserve north of Lampeter, crossed by boardwalks and a former railway trail. It is an important habitat for birds and other wildlife, and one of the finest examples of its kind in Britain."
+      }
+    ]
+  },
+  {
+    "region": "wye-valley",
+    "slug": "tintern",
+    "name": "Tintern",
+    "county": "Monmouthshire",
+    "lead": "A ruined abbey in a bend of the river.",
+    "intro": "Tintern is barely more than a village strung along the Wye, but it holds the most romantic ruin in Wales: the roofless Cistercian abbey that inspired Wordsworth and Turner. The steep wooded gorge closes in around it, and the whole place is a short, scenic drive from the Severn crossings.",
+    "staying": "The classic Wye Valley base, right on the river beneath the wooded slopes. Small and characterful properties here suit couples and short breaks close to Bristol and the M4.",
+    "thingsToDo": "Tintern Abbey; the climb to the Devil's Pulpit viewpoint on Offa's Dyke above the abbey; the old railway walk along the river; and canoeing on the Wye.",
+    "whenToVisit": "Late October for the gorge in full autumn colour is the standout; spring and summer for the river and walks.",
+    "localTip": "Walk up to the Devil's Pulpit early — a steep twenty minutes onto the English side of the gorge — for the abbey seen from directly above, ideally with morning mist still in the valley.",
+    "searchTerm": "Tintern",
+    "faqs": [
+      {
+        "q": "Can you visit Tintern Abbey?",
+        "a": "Yes — Tintern Abbey, a roofless but largely complete Cistercian ruin on the banks of the Wye, is open to visitors and managed by Cadw. It is one of the great Romantic ruins of Britain, painted by Turner and celebrated in Wordsworth's poetry."
+      },
+      {
+        "q": "What is the Devil's Pulpit?",
+        "a": "The Devil's Pulpit is a rocky viewpoint on the Offa's Dyke path high above Tintern, on the English side of the gorge, giving a dramatic bird's-eye view down onto the abbey. It is reached by a steep but short walk up from the valley floor."
+      }
+    ]
+  },
+  {
+    "region": "wye-valley",
+    "slug": "monmouth",
+    "name": "Monmouth",
+    "county": "Monmouthshire",
+    "welsh": "Trefynwy",
+    "lead": "A market town with a fortified bridge and a rock-star studio.",
+    "intro": "Monmouth is the market town at the northern end of the Wye Valley, where the Monnow and the Wye meet. It keeps the only fortified medieval river-gate bridge left in Britain, and just outside town sits Rockfield Studios, where Queen, Oasis and many others made landmark records.",
+    "staying": "The Wye Valley's town base, with restaurants and shops and a good spread of properties on the surrounding hills. Well placed for both the gorge and the Forest of Dean over the border.",
+    "thingsToDo": "The Monnow Bridge gate; the walk up to the Kymin, a hilltop with a Georgian naval temple and wide views; Rockfield Studios (from the outside); and canoeing on the Wye.",
+    "whenToVisit": "Autumn for the valley colour; the town is a year-round, weekend-friendly base close to English cities.",
+    "localTip": "Walk up to the Kymin above the town for the \"Naval Temple\" and a panorama over nine counties — a short, sharp climb that most visitors miss entirely.",
+    "searchTerm": "Monmouth",
+    "faqs": [
+      {
+        "q": "What is Monmouth's Monnow Bridge?",
+        "a": "The Monnow Bridge in Monmouth is the only medieval fortified river bridge in Britain with its gate tower still standing on the bridge itself. Dating from the 13th century, it is the town's best-known landmark and a scheduled monument."
+      },
+      {
+        "q": "What is Rockfield Studios?",
+        "a": "Rockfield, just outside Monmouth, is a pioneering residential recording studio where albums by Queen (including Bohemian Rhapsody), Oasis, Coldplay and many others were recorded. It is a working studio rather than a visitor attraction, but its history draws music fans to the area."
+      }
+    ],
+    "images": [
+      {
+        "file": "monmouth-cover.jpg",
+        "feature": true,
+        "alt": "The medieval fortified Monnow Bridge and gate tower at Monmouth",
+        "caption": "The fortified Monnow Bridge at Monmouth.",
+        "credit": {
+          "author": "Bob Crowther",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monmouth_-_Monnow_Bridge.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "wye-valley",
+    "slug": "chepstow",
+    "name": "Chepstow",
+    "county": "Monmouthshire",
+    "welsh": "Cas-gwent",
+    "lead": "The oldest stone castle in Britain, at the mouth of the Wye.",
+    "intro": "Chepstow guards the mouth of the Wye where it meets the Severn, and its castle — begun in 1067 — is the oldest surviving stone fortification in Britain. It is the southern gateway to the valley, minutes from the old Severn Bridge and the closest Welsh town to Bristol.",
+    "staying": "The most accessible Wye Valley base from England, with the castle, racecourse and town on hand and the gorge opening out to the north. Good for a short break with minimal driving.",
+    "thingsToDo": "Chepstow Castle and the town walls; the racecourse; the start of the Wye Valley Walk and Offa's Dyke Path north to Tintern; and the tidal Severn views from the old bridge.",
+    "whenToVisit": "Year-round; autumn for the valley, and race days bring crowds. Very close to Bristol and the M4/M48.",
+    "localTip": "Start the riverside walk from Chepstow up to Tintern along the old railway and Offa's Dyke — it is the best way to arrive at the abbey, on foot through the gorge rather than by car.",
+    "searchTerm": "Chepstow",
+    "faqs": [
+      {
+        "q": "Is Chepstow Castle the oldest in Britain?",
+        "a": "Chepstow Castle is generally regarded as the oldest surviving stone-built castle in Britain, with construction beginning in 1067, soon after the Norman Conquest. It stands dramatically on cliffs above the River Wye and is open to visitors."
+      },
+      {
+        "q": "How close is Chepstow to Bristol?",
+        "a": "Very close — Chepstow sits just over the Severn from England, roughly 30 to 40 minutes from Bristol via the M48 Severn Bridge. That makes it the most easily reached part of the Wye Valley for visitors coming from the West Country and the M4 corridor."
+      }
+    ],
+    "images": [
+      {
+        "file": "chepstow-cover.jpg",
+        "feature": true,
+        "alt": "Chepstow Castle standing on cliffs above the River Wye",
+        "caption": "Chepstow Castle above the tidal River Wye.",
+        "credit": {
+          "author": "Michael Garlick",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chepstow_Castle,_The_river_Wye_from_the_river_cliff_-_geograph.org.uk_-_4754626.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "wye-valley",
+    "slug": "llandogo",
+    "name": "Llandogo",
+    "county": "Monmouthshire",
+    "lead": "A riverside village climbing the wooded gorge.",
+    "intro": "Llandogo is a small village on the Welsh bank of the Wye between Tintern and Monmouth, its cottages climbing steeply up the wooded valley side. Once a river port for Bristol trows, it is now a quiet walking base in the heart of the gorge.",
+    "staying": "A peaceful riverside base right in the middle of the valley's best scenery, within a few minutes of Tintern and Monmouth both.",
+    "thingsToDo": "The walk up to Cleddon Shoots waterfall behind the village; the riverside path along the Wye; Offa's Dyke on the ridge above; and easy reach of Tintern Abbey.",
+    "whenToVisit": "Autumn for the woodland colour; spring for the waterfalls after rain. A quiet base year-round.",
+    "localTip": "Follow the steep path up behind the village to Cleddon Shoots, a tall woodland waterfall that runs hardest after wet weather and is often completely deserted.",
+    "searchTerm": "Llandogo",
+    "faqs": [
+      {
+        "q": "Is Llandogo a good quiet base in the Wye Valley?",
+        "a": "Yes. Llandogo is a small, peaceful village midway between Tintern and Monmouth, set on the river amid the steep woods of the gorge. It offers riverside and hillside walks from the door and easy access to the valley's highlights without the traffic of the bigger towns."
+      },
+      {
+        "q": "What is Cleddon Shoots?",
+        "a": "Cleddon Shoots is a woodland waterfall on the hillside above Llandogo, tumbling through the trees of the Wye gorge. It is reached by a steep footpath from the village and is at its most dramatic after rain."
+      }
+    ]
+  },
+  {
+    "region": "wye-valley",
+    "slug": "trellech",
+    "name": "Trellech",
+    "county": "Monmouthshire",
+    "lead": "Standing stones and a lost medieval town on the hill.",
+    "intro": "Trellech sits on the hills above the Wye gorge and was, briefly in the 13th century, one of the largest towns in medieval Wales before it dwindled to a village. It keeps three prehistoric standing stones — \"Harold's Stones\" — that give it its name, and wide views over the surrounding country.",
+    "staying": "An elevated, rural base above the valley with more space and bigger views than the riverside villages, and Monmouth and Tintern both a short drive away.",
+    "thingsToDo": "Harold's Stones and the \"Virtuous Well\"; the large medieval church; the walks over the hills towards the Wye gorge; and the archaeology of the buried medieval town.",
+    "whenToVisit": "Spring to autumn for the walks and views; a quiet base in any season.",
+    "localTip": "Seek out the three leaning \"Harold's Stones\" in a field on the edge of the village — a Bronze Age alignment thousands of years older than the medieval town around it.",
+    "searchTerm": "Trellech",
+    "faqs": [
+      {
+        "q": "What are Harold's Stones at Trellech?",
+        "a": "Harold's Stones are a row of three tall, leaning standing stones on the edge of Trellech, dating from the Bronze Age. They give the village its name (loosely \"three stones\") and are among the notable prehistoric monuments of the Wye Valley area."
+      },
+      {
+        "q": "Was Trellech ever a large town?",
+        "a": "Yes — in the 13th century Trellech was one of the largest towns in medieval Wales, an industrial and market centre, before decline and plague reduced it to a village. Archaeological work in the surrounding fields has explored the remains of this \"lost\" town."
+      }
+    ]
+  },
+  {
+    "region": "conwy-valley",
+    "slug": "conwy",
+    "name": "Conwy",
+    "county": "Conwy",
+    "lead": "A complete ring of medieval walls around a castle town.",
+    "intro": "Conwy is one of the great walled towns of Europe, its medieval ramparts still circling the town intact, anchored by Edward I's castle at the estuary mouth. Both are a UNESCO World Heritage Site, and the quay below holds what is claimed to be the smallest house in Britain.",
+    "staying": "A superb, characterful base at the seaward end of the valley, with the castle, walls, quay and restaurants all within the walls, and Snowdonia rising immediately behind.",
+    "thingsToDo": "Conwy Castle and the full circuit of the town walls; the Smallest House in Great Britain on the quay; Plas Mawr, a perfectly preserved Elizabethan townhouse; and mussels from the estuary.",
+    "whenToVisit": "Year-round; the town is atmospheric even in winter. Summer and half-terms are busy on the main north Wales route.",
+    "localTip": "Walk the full circuit of the town walls at opening time — the complete medieval circuit, with the castle, estuary and mountains all in view, is one of the best short walks in Wales and empty first thing.",
+    "searchTerm": "Conwy",
+    "faqs": [
+      {
+        "q": "Can you walk the town walls in Conwy?",
+        "a": "Yes. Conwy has one of the most complete sets of medieval town walls in Britain, and much of the circuit is open to walk, giving elevated views over the castle, the estuary and the mountains behind. The walls and castle together form part of a UNESCO World Heritage Site."
+      },
+      {
+        "q": "Where is the smallest house in Britain?",
+        "a": "The Smallest House in Great Britain stands on the quay at Conwy — a tiny red cottage just over three metres high and less than two metres wide, lived in until the early 20th century. It is open to visitors for a small charge."
+      }
+    ],
+    "images": [
+      {
+        "file": "conwy-cover.jpg",
+        "feature": true,
+        "alt": "Conwy Castle and the walled town above the estuary",
+        "caption": "Conwy Castle and the walled town.",
+        "credit": {
+          "author": "mattbuck (category)",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conwy_Castle_MMB_03.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "conwy-valley",
+    "slug": "llanrwst",
+    "name": "Llanrwst",
+    "county": "Conwy",
+    "lead": "An ancient bridge and a tea room that leans.",
+    "intro": "Llanrwst is a market town in the middle of the Conwy valley, famous for the graceful stone bridge — attributed to Inigo Jones — that arches over the river to the tiny, crooked cottage of Tu Hwnt i'r Bont, now a tea room draped in Virginia creeper. Behind it rises the Gwydir Forest.",
+    "staying": "A well-placed valley base between Conwy and Betws-y-Coed, with farmland and forest around it and the mountains close, usually at better value than either honeypot.",
+    "thingsToDo": "The Pont Fawr bridge and Tu Hwnt i'r Bont tea room; the Gwydir Forest and its old lead-mine tracks and lakes; Gwydir Castle, a restored Tudor house; and the walks up either side of the valley.",
+    "whenToVisit": "Autumn is when the creeper on Tu Hwnt i'r Bont turns red and the forest colours; spring and summer for the walking.",
+    "localTip": "Head into the Gwydir Forest above the town for the old mine tracks and quiet lakes — it stays almost empty even when Betws-y-Coed just up the road is packed.",
+    "searchTerm": "Llanrwst",
+    "faqs": [
+      {
+        "q": "What is Tu Hwnt i'r Bont?",
+        "a": "Tu Hwnt i'r Bont is a 15th-century stone cottage beside the Pont Fawr bridge in Llanrwst, now a National Trust tea room. It is famous for the Virginia creeper covering its walls, which turns vivid red in autumn and makes it one of the most photographed buildings in the Conwy valley."
+      },
+      {
+        "q": "Is Llanrwst a good base for the Conwy Valley?",
+        "a": "Yes. Llanrwst sits centrally in the valley between Conwy and Betws-y-Coed, with the Gwydir Forest on its doorstep and the mountains close. It tends to be quieter and better value than the busier towns at each end of the valley."
+      }
+    ]
+  },
+  {
+    "region": "conwy-valley",
+    "slug": "trefriw",
+    "name": "Trefriw",
+    "county": "Conwy",
+    "lead": "A Victorian spa village and a working woollen mill.",
+    "intro": "Trefriw is a small village on the west side of the Conwy valley that grew as a Victorian spa around its chalybeate wells, and still runs a working woollen mill powered by the river. Above it the Gwydir Forest and a chain of hill lakes climb towards the mountains.",
+    "staying": "A quiet, characterful valley base with the forest and lakes immediately behind and Betws-y-Coed and Conwy both a short drive away.",
+    "thingsToDo": "The Trefriw Woollen Mill and the spa wells; the walk up to Llyn Crafnant and Llyn Geirionydd in the hills above; and the forest tracks of Gwydir.",
+    "whenToVisit": "Spring to autumn for the lakes and forest walks; the mill is a year-round wet-weather option.",
+    "localTip": "Walk or drive up to Llyn Crafnant above the village — a serene hill lake ringed by forest and crags that feels far more remote than the short climb to reach it.",
+    "searchTerm": "Trefriw",
+    "faqs": [
+      {
+        "q": "What is Trefriw known for?",
+        "a": "Trefriw is known for its working woollen mill, water-powered on the river, and for its Victorian spa heritage based on iron-rich chalybeate wells. Above the village, the hill lakes of Crafnant and Geirionydd and the Gwydir Forest offer excellent walking."
+      },
+      {
+        "q": "What walks are there near Trefriw?",
+        "a": "The standout walks from Trefriw climb into the hills to Llyn Crafnant and Llyn Geirionydd, two scenic lakes ringed by forest and crag, with a circular route linking them. The wider Gwydir Forest offers many quieter tracks and old mine paths."
+      }
+    ]
+  },
+  {
+    "region": "conwy-valley",
+    "slug": "llandudno",
+    "name": "Llandudno",
+    "county": "Conwy",
+    "lead": "The grand dame of Welsh seaside resorts.",
+    "intro": "Llandudno is the largest and most elegant seaside resort in Wales, a sweeping Victorian promenade curving between two headlands beneath the great limestone hump of the Great Orme. It grew as a planned resort in the 1850s and has kept its pier, its tramway and its period grandeur.",
+    "staying": "A polished seaside base just north of the Conwy valley, good for those who want a proper promenade, hotels and a pier alongside easy access to Snowdonia and Conwy.",
+    "thingsToDo": "The pier and the promenade; the Great Orme by tramway, cable car or the toll road, with its summit views and wild goats; the Alice in Wonderland trail; and the beaches on either headland.",
+    "whenToVisit": "Year-round as a resort; summer for the beach and pier. It is busy on fine weekends given its size and rail links.",
+    "localTip": "Ride the Victorian tramway up the Great Orme rather than driving — it hauls you up the headland on cables laid in 1902, and the summit has the views, the goats and a Bronze Age copper mine.",
+    "searchTerm": "Llandudno",
+    "faqs": [
+      {
+        "q": "What is there to do in Llandudno?",
+        "a": "Llandudno offers a classic Victorian seaside experience — a long promenade, a pier, and the Great Orme headland reached by tramway or cable car, with summit views, wild Kashmiri goats and an ancient copper mine. There is also an Alice in Wonderland trail, linked to the town's connection with the real Alice Liddell."
+      },
+      {
+        "q": "Is Llandudno a good base for Snowdonia and Conwy?",
+        "a": "Yes. Llandudno sits at the seaward end of the Conwy valley, with the walled town of Conwy a few minutes away and Snowdonia within about 30 to 40 minutes. It suits visitors who want a full-service seaside resort as a base for exploring the mountains and coast."
+      }
+    ],
+    "images": [
+      {
+        "file": "llandudno-cover.jpg",
+        "feature": true,
+        "alt": "Llandudno pier and the bay seen from the slopes of the Great Orme",
+        "caption": "Llandudno pier and bay from the Great Orme.",
+        "credit": {
+          "author": "Mattcymru2",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llandudno_pier_from_great_orme.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "clwydian-range",
+    "slug": "llangollen",
+    "name": "Llangollen",
+    "county": "Denbighshire",
+    "lead": "The Dee, a steam railway and an aqueduct in the sky.",
+    "intro": "Llangollen sits in a bend of the fast-flowing Dee in the south of the range, a compact town packed with attractions: a steam railway, a canal wharf, a ruined hilltop castle and, just downstream, Thomas Telford's astonishing Pontcysyllte Aqueduct. It hosts the International Musical Eisteddfod each July.",
+    "staying": "The liveliest base in the Clwydian and Dee Valley area, with the most to do on the doorstep and easy reach of Snowdonia's eastern edge.",
+    "thingsToDo": "The Llangollen Railway and the horse-drawn canal boats; the walk up to Castell Dinas Brân; the Pontcysyllte Aqueduct towpath; and the Horseshoe Falls and Horseshoe Pass drive.",
+    "whenToVisit": "Spring to autumn for the outdoor attractions; July for the Eisteddfod, when the town is full. Autumn for the Dee valley colour.",
+    "localTip": "Walk the towpath across the Pontcysyllte Aqueduct — 126 feet above the Dee with a drop straight off the water side and no railing — then reward yourself back in town. It is a World Heritage Site and unforgettable.",
+    "searchTerm": "Llangollen",
+    "faqs": [
+      {
+        "q": "Can you walk across the Pontcysyllte Aqueduct?",
+        "a": "Yes. A towpath runs alongside the canal channel across Pontcysyllte Aqueduct, 126 feet above the River Dee near Llangollen. There is a railing on the towpath side but only open water on the other, making it a spectacular — and for some, vertiginous — walk. It is a UNESCO World Heritage Site."
+      },
+      {
+        "q": "What is there to do in Llangollen?",
+        "a": "Llangollen packs in a heritage steam railway, horse-drawn canal boat trips, the hilltop ruin of Castell Dinas Brân, the Pontcysyllte Aqueduct and the scenic Horseshoe Pass, all within a few minutes. It also hosts the International Musical Eisteddfod each July."
+      }
+    ],
+    "images": [
+      {
+        "file": "llangollen-cover.jpg",
+        "feature": true,
+        "alt": "Llangollen station and the bridge over the fast-flowing River Dee",
+        "caption": "The Dee and the bridge at Llangollen.",
+        "credit": {
+          "author": "DeFacto",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llangollen_railway_station_from_the_River_Dee_bridge.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "clwydian-range",
+    "slug": "ruthin",
+    "name": "Ruthin",
+    "county": "Denbighshire",
+    "welsh": "Rhuthun",
+    "lead": "A medieval market town right under the ridge.",
+    "intro": "Ruthin is a handsome medieval market town in the Vale of Clwyd, gathered on a low hill around a square of timber-framed and Georgian buildings, directly beneath the Clwydian ridge. Its old gaol and craft centre draw visitors, and the hills rise straight from the edge of town.",
+    "staying": "The best-placed base for walking the Clwydian Range itself, with Moel Famau and the ridge hillforts on the doorstep and the vale's gentle countryside around.",
+    "thingsToDo": "The walk up to Moel Famau and its Jubilee Tower; Ruthin Gaol and the Craft Centre; the medieval town square; and the Offa's Dyke Path along the ridge.",
+    "whenToVisit": "Late summer and early autumn for the heather on the ridge; the town is a year-round, low-season base.",
+    "localTip": "Climb Moel Famau from the Bwlch Penbarras car park above Ruthin for the shortest route to the ridge's highest point and its ruined Jubilee Tower, with both the vale and the coast in view.",
+    "searchTerm": "Ruthin",
+    "faqs": [
+      {
+        "q": "Is Ruthin a good base for walking the Clwydian Range?",
+        "a": "Yes — Ruthin sits directly beneath the Clwydian ridge in the Vale of Clwyd, making it the most convenient town for climbing Moel Famau, the range's highest point, and walking the Offa's Dyke Path along the hillfort-topped ridge."
+      },
+      {
+        "q": "What is Moel Famau?",
+        "a": "Moel Famau is the highest hill in the Clwydian Range, topped by the ruined Jubilee Tower begun in 1810 to mark George III's jubilee. It is a popular, non-technical walk with wide views over the Vale of Clwyd, Snowdonia and, on clear days, the coast and beyond."
+      }
+    ]
+  },
+  {
+    "region": "clwydian-range",
+    "slug": "mold",
+    "name": "Mold",
+    "county": "Flintshire",
+    "welsh": "Yr Wyddgrug",
+    "lead": "A market town, a theatre and the eastern gateway.",
+    "intro": "Mold is the county town of Flintshire at the eastern end of the range, closest to the motorway and the cities of the north-west. It is a lively market town with a strong cultural anchor in Theatr Clwyd, and the country park of Loggerheads and the ridge lie just to the west.",
+    "staying": "The most accessible base in the Clwydian area from Manchester, Liverpool and Chester, good for those who want the ridge without a long drive to reach it.",
+    "thingsToDo": "Theatr Clwyd, one of the leading producing theatres in Wales; the market days; Loggerheads Country Park and the limestone gorge of the Alyn; and the climb onto the ridge at Moel Famau nearby.",
+    "whenToVisit": "Year-round; the theatre and markets make it a good wet-weather and off-season base.",
+    "localTip": "Start a ridge walk from Loggerheads Country Park just west of Mold — the wooded limestone gorge of the River Alyn is a lovely warm-up before the climb onto the open heather.",
+    "searchTerm": "Mold",
+    "faqs": [
+      {
+        "q": "Is Mold easy to reach from England?",
+        "a": "Yes — Mold, in Flintshire, is the easternmost town of the Clwydian area and the closest to the motorway network, roughly an hour from Manchester and Liverpool and close to Chester. That makes it a convenient base for a quick scenic escape from the north-west of England."
+      },
+      {
+        "q": "What is there to do in Mold?",
+        "a": "Mold has a lively market, the well-regarded Theatr Clwyd, and easy access to Loggerheads Country Park and the wooded Alyn gorge just to the west, with the Clwydian ridge and Moel Famau a short drive beyond for walking."
+      }
+    ]
+  },
+  {
+    "region": "clwydian-range",
+    "slug": "corwen",
+    "name": "Corwen",
+    "county": "Denbighshire",
+    "lead": "Owain Glyndŵr's town on the upper Dee.",
+    "intro": "Corwen is a small town on the upper Dee between the Clwydian Range and the Berwyn mountains, strongly associated with Owain Glyndŵr, who raised his standard nearby and is commemorated by a statue in the square. It is a quiet, well-placed base between two ranges of hills.",
+    "staying": "A good-value, central base for both the Clwydian and Berwyn hills and the Dee valley, with Llangollen a short drive downstream.",
+    "thingsToDo": "The Owain Glyndŵr statue and heritage; the walks into the Berwyn mountains and up to the Glyndŵr's Seat viewpoint; the restored Corwen station on the Llangollen Railway; and the upper Dee valley.",
+    "whenToVisit": "Spring to autumn for the hills; a quiet base in any season, and handy for the Llangollen attractions without Llangollen's crowds.",
+    "localTip": "Walk up to \"Glyndŵr's Seat\" above the town for a wide view over the Dee valley — the same country the man himself campaigned across six hundred years ago.",
+    "searchTerm": "Corwen",
+    "faqs": [
+      {
+        "q": "What is Corwen's connection to Owain Glyndŵr?",
+        "a": "Corwen lies at the heart of Owain Glyndŵr's territory, close to his manor at Glyndyfrdwy where he was proclaimed Prince of Wales in 1400 at the start of his revolt. The town commemorates him with a prominent statue in its square."
+      },
+      {
+        "q": "Is Corwen a good base for the Berwyn and Clwydian hills?",
+        "a": "Yes. Corwen sits on the upper Dee between the Berwyn mountains to the south and the Clwydian Range to the north, giving access to both, plus the Dee valley and nearby Llangollen. It is a quiet, good-value alternative to the busier towns."
+      }
+    ]
+  },
+  {
+    "region": "clwydian-range",
+    "slug": "denbigh",
+    "name": "Denbigh",
+    "county": "Denbighshire",
+    "welsh": "Dinbych",
+    "lead": "A hilltop castle over a walled market town.",
+    "intro": "Denbigh is a historic market town in the Vale of Clwyd, crowned by the substantial ruins of a medieval castle and walled upper town on the hill above. It sits on the western side of the vale, looking across to the Clwydian ridge, with H. M. Stanley — of \"Dr Livingstone, I presume\" — among its sons.",
+    "staying": "A quiet, historic base on the far side of the Vale of Clwyd from the ridge, good value and well placed for the whole range and the north coast.",
+    "thingsToDo": "Denbigh Castle and the town walls; the medieval Burgess Gate; the walks in the Vale of Clwyd; and easy reach of Moel Famau and the ridge across the valley.",
+    "whenToVisit": "Spring to autumn for the walking and the castle; a calm year-round base.",
+    "localTip": "Climb to the castle and walk what survives of the walls at dusk — the hilltop ruin catches the last light over the whole Vale of Clwyd and the ridge beyond.",
+    "searchTerm": "Denbigh",
+    "faqs": [
+      {
+        "q": "Can you visit Denbigh Castle?",
+        "a": "Yes — Denbigh Castle is a substantial 13th-century ruin on the hill above the town, managed by Cadw, with a striking triple-towered gatehouse and surviving stretches of the walled upper town. It gives wide views over the Vale of Clwyd."
+      },
+      {
+        "q": "Is Denbigh a good base for the Clwydian Range?",
+        "a": "Denbigh sits on the western side of the Vale of Clwyd, across the valley from the main Clwydian ridge, so Moel Famau and the hillfort walks are a short drive away. It is a quiet, historic and good-value base for exploring the range and the north coast."
+      }
+    ]
+  },
+  {
+    "region": "vale-of-glamorgan",
+    "slug": "cowbridge",
+    "name": "Cowbridge",
+    "county": "Vale of Glamorgan",
+    "welsh": "Y Bont-faen",
+    "lead": "The Vale's market town, with a serious high street.",
+    "intro": "Cowbridge is the genteel market town at the centre of the Vale of Glamorgan, a broad Georgian-and-medieval high street of independent shops, delis and restaurants that has become one of the most sought-after addresses in south Wales. It sits amid gentle farmland, minutes from the heritage coast.",
+    "staying": "A comfortable, foodie base for exploring the Vale, close to both Cardiff and the coast, with the best evening options in the area.",
+    "thingsToDo": "The independent shops and restaurants of the high street; the physic garden and the surviving town wall; and easy drives to the heritage coast at Llantwit Major, Nash Point and Southerndown.",
+    "whenToVisit": "Year-round — as an inland market town it is far less seasonal than the coast, and a reliable base when the seaside fills up.",
+    "localTip": "Use Cowbridge as your evening base and the heritage coast as your day out — the beaches and cliffs are fifteen minutes south, but the good food is all in town.",
+    "searchTerm": "Cowbridge",
+    "faqs": [
+      {
+        "q": "Why is Cowbridge popular?",
+        "a": "Cowbridge is known for its attractive Georgian and medieval high street lined with independent shops, delis and restaurants, set in gentle countryside between Cardiff and the Glamorgan Heritage Coast. That mix of good food, character and location has made it one of the most desirable towns in south Wales."
+      },
+      {
+        "q": "Is Cowbridge a good base for the Glamorgan coast?",
+        "a": "Yes. Cowbridge sits inland at the centre of the Vale of Glamorgan, roughly fifteen minutes from the heritage coast beaches at Llantwit Major, Nash Point and Southerndown, while offering the area's best choice of restaurants and shops for the evenings."
+      }
+    ]
+  },
+  {
+    "region": "vale-of-glamorgan",
+    "slug": "llantwit-major",
+    "name": "Llantwit Major",
+    "county": "Vale of Glamorgan",
+    "welsh": "Llanilltud Fawr",
+    "lead": "An ancient town of saints, beside the heritage coast.",
+    "intro": "Llantwit Major claims one of the earliest centres of learning in Britain — a monastic school founded by St Illtud in the fifth century — and keeps a remarkable early-medieval church full of carved Celtic crosses. It sits right on the Glamorgan Heritage Coast, with a dramatic rocky beach below the town.",
+    "staying": "The pick of the heritage-coast bases, combining real history with a beach and cliff walks on the doorstep, and Cowbridge and Cardiff both close.",
+    "thingsToDo": "The Church of St Illtud and its Celtic crosses; the medieval town centre; Llantwit Major beach and the striped cliffs of the heritage coast; and the coast path to Nash Point and St Donats.",
+    "whenToVisit": "Late spring to early autumn for the beach and cliffs; the town and church are a year-round draw.",
+    "localTip": "Walk the coast path west from the beach towards Nash Point at low tide — the striped Jurassic rock platforms and the working lighthouse are the best of the whole heritage coast.",
+    "searchTerm": "Llantwit Major",
+    "faqs": [
+      {
+        "q": "Why is Llantwit Major historically important?",
+        "a": "Llantwit Major is the site of a monastic school founded by St Illtud around the fifth century, often described as one of the earliest centres of learning in Britain. Its Church of St Illtud holds an outstanding collection of early-medieval Celtic carved stones and crosses."
+      },
+      {
+        "q": "What is the Glamorgan Heritage Coast?",
+        "a": "The Glamorgan Heritage Coast is a protected stretch of striped Jurassic limestone cliffs and rocky beaches running west from Barry, taking in Llantwit Major, Nash Point and Southerndown. It offers dramatic clifftop walking within easy reach of Cardiff."
+      }
+    ]
+  },
+  {
+    "region": "vale-of-glamorgan",
+    "slug": "penarth",
+    "name": "Penarth",
+    "county": "Vale of Glamorgan",
+    "lead": "A Victorian pier and promenade, minutes from Cardiff.",
+    "intro": "Penarth is an elegant Victorian seaside town on the eastern edge of the Vale, effectively Cardiff-by-the-sea, with a restored pier, a curving esplanade and clifftop gardens. It combines a genteel resort feel with immediate access to the capital just across the barrage.",
+    "staying": "The base for those who want a seaside town with a city day built in — Cardiff Bay is a walk or short hop across the barrage, and the heritage coast is a short drive west.",
+    "thingsToDo": "The pier and pavilion and the esplanade; the walk over the Cardiff Bay Barrage into the city; the clifftop path to Lavernock; and Cosmeston Lakes and medieval village just south.",
+    "whenToVisit": "Year-round as a town; summer for the pier and seafront. Very easy to reach from Cardiff.",
+    "localTip": "Walk across the Cardiff Bay Barrage from Penarth into the Bay — a flat, breezy stroll that links a Victorian pier to the modern waterfront in twenty minutes on foot.",
+    "searchTerm": "Penarth",
+    "faqs": [
+      {
+        "q": "Is Penarth close to Cardiff?",
+        "a": "Yes — Penarth sits directly across Cardiff Bay from the city, linked by the Cardiff Bay Barrage, which you can walk or cycle across in around twenty minutes. It makes an ideal base for combining a seaside stay with easy days in the Welsh capital."
+      },
+      {
+        "q": "What is there to do in Penarth?",
+        "a": "Penarth offers a restored Victorian pier and pavilion, a seafront esplanade and clifftop gardens, coastal walks towards Lavernock, and the nearby Cosmeston Lakes and reconstructed medieval village — all within easy reach of Cardiff Bay."
+      }
+    ],
+    "images": [
+      {
+        "file": "penarth-cover.jpg",
+        "feature": true,
+        "alt": "Penarth pier and seafront on the Vale of Glamorgan coast",
+        "caption": "Penarth pier, on the Vale of Glamorgan coast.",
+        "credit": {
+          "author": "Nadezna1971",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Penarth,_Vale_of_Glamorgan,_Wales,,.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "vale-of-glamorgan",
+    "slug": "barry",
+    "name": "Barry",
+    "county": "Vale of Glamorgan",
+    "welsh": "Y Barri",
+    "lead": "Barry Island, a pleasure beach and a sitcom afterlife.",
+    "intro": "Barry is the largest town in the Vale, and its seaside quarter, Barry Island, is a classic Welsh pleasure beach — a wide arc of sand, a funfair and a promenade — given a second life as the setting for the sitcom Gavin & Stacey. Behind the resort front it is a busy working town with a long dockland history.",
+    "staying": "A lively, family-friendly and good-value base at the eastern end of the heritage coast, with the beach and funfair on hand and Cardiff and Cowbridge close.",
+    "thingsToDo": "Whitmore Bay and the Barry Island promenade and funfair; the Gavin & Stacey filming locations; Porthkerry Country Park and its viaduct; and the pebble beach at the Knap.",
+    "whenToVisit": "Summer for the beach and funfair; the resort is quieter but still open around the shoulder seasons.",
+    "localTip": "Walk west from the resort to Porthkerry Country Park — woods and cliffs under a huge railway viaduct, with a pebble beach at the bottom, a world away from the funfair a mile back.",
+    "searchTerm": "Barry",
+    "faqs": [
+      {
+        "q": "Is Barry Island worth visiting?",
+        "a": "Barry Island is a traditional seaside resort with a wide sandy beach (Whitmore Bay), a promenade and a funfair, and it draws visitors as the filming location for the sitcom Gavin & Stacey. It is an easy, family-friendly day out close to Cardiff."
+      },
+      {
+        "q": "What is Porthkerry Country Park?",
+        "a": "Porthkerry Country Park, on the edge of Barry, is a wooded valley leading to a pebble beach beneath a tall Victorian railway viaduct. It offers walking, picnicking and a quieter alternative to the Barry Island resort front nearby."
+      }
+    ],
+    "images": [
+      {
+        "file": "barry-cover.jpg",
+        "feature": true,
+        "alt": "Colourful beach huts above the sands at Barry Island",
+        "caption": "The beach huts at Barry Island.",
+        "credit": {
+          "author": "Jeremy Segrott from Cardiff, Wales, UK",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barry_Island_beach_huts_(19051128398).jpg"
+        }
+      }
+    ]
+  },
+  {
+    "region": "vale-of-glamorgan",
+    "slug": "southerndown",
+    "name": "Southerndown",
+    "county": "Vale of Glamorgan",
+    "lead": "Dunraven Bay and the cliffs that stand in for everywhere.",
+    "intro": "Southerndown is a small village on the Glamorgan Heritage Coast beside Dunraven Bay, a dramatic beach of sand and rock beneath striped limestone cliffs and the terraced remains of a lost clifftop mansion. The scenery is so cinematic it regularly stands in for other coasts on screen, including in Doctor Who.",
+    "staying": "A scenic, low-key base right on the heritage coast, quieter than the resort towns and superb for cliff walks, with Cowbridge and Bridgend close for supplies.",
+    "thingsToDo": "Dunraven Bay and the walled gardens of the vanished Dunraven Castle; the clifftop walks east towards Ogmore and west towards Nash Point; and rock-pooling and fossils on the beach at low tide.",
+    "whenToVisit": "Spring to autumn for the beach and cliffs; the coast is dramatic in any season and often filmed in winter.",
+    "localTip": "Explore the terraced walled garden of the demolished Dunraven Castle above the bay — a strange, atmospheric survival, and the viewpoint gives you the whole striped sweep of the heritage coast.",
+    "searchTerm": "Southerndown",
+    "faqs": [
+      {
+        "q": "What is Dunraven Bay at Southerndown?",
+        "a": "Dunraven Bay is the beach at Southerndown on the Glamorgan Heritage Coast, backed by dramatic striped limestone cliffs and the walled gardens of the demolished Dunraven Castle. Its striking scenery has featured in productions including Doctor Who."
+      },
+      {
+        "q": "Is Southerndown good for walking?",
+        "a": "Yes — Southerndown sits on the Wales Coast Path, with cliff walks in both directions along the Glamorgan Heritage Coast, towards Ogmore-by-Sea and the Nash Point lighthouse. The beach is also known for rock pools and fossils at low tide."
+      }
+    ],
+    "images": [
+      {
+        "file": "southerndown-cover.jpg",
+        "feature": true,
+        "alt": "Sunset over Dunraven Bay at Southerndown on the Glamorgan Heritage Coast",
+        "caption": "Dunraven Bay at Southerndown, on the heritage coast.",
+        "credit": {
+          "author": "Suntooth",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunraven_Bay,_Southerndown_panorama.png"
+        }
+      }
+    ]
+  }
+]

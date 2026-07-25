@@ -20,6 +20,20 @@ let cssHref = '/style.css';
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/config.json'), 'utf8'));
 const locations = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/locations.json'), 'utf8'));
 
+// Town-level pages: one per notable town, each canonically under a single
+// region at /wales/<region>/<town>/. Lookups keep region <-> town linking simple.
+const townsFile = path.join(ROOT, 'data/towns.json');
+const towns = fs.existsSync(townsFile) ? JSON.parse(fs.readFileSync(townsFile, 'utf8')) : [];
+const regionBySlug = {};
+for (const l of locations) regionBySlug[l.slug] = l;
+const townsByRegion = {};
+const townByName = {};
+for (const t of towns) {
+  (townsByRegion[t.region] = townsByRegion[t.region] || []).push(t);
+  townByName[t.name] = t;
+}
+const townUrl = (t) => `/wales/${t.region}/${t.slug}/`;
+
 /* ---------------------------------------------------------------- helpers */
 
 const esc = (s = '') =>
@@ -75,8 +89,13 @@ function figcaption(img) {
 
 /* ------------------------------------------------------------------- html */
 
-function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld }) {
-  const schemas = [jsonld, breadcrumbJsonld].filter(Boolean);
+function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld, ogImage }) {
+  // jsonld may be a single object or an array of schema objects.
+  const schemas = [].concat(jsonld || [], breadcrumbJsonld || []).filter(Boolean);
+  const ogImageTag = ogImage
+    ? `<meta property="og:image" content="${esc(ogImage.startsWith('http') ? ogImage : config.domain + ogImage)}">
+<meta name="twitter:card" content="summary_large_image">`
+    : '';
   const gaId = config.analytics && config.analytics.ga4MeasurementId;
   const analyticsTag = gaId
     ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
@@ -99,6 +118,7 @@ function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld }
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${esc(canonical)}">
+${ogImageTag}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -238,6 +258,7 @@ function homepage() {
     description: config.description,
     canonical: config.domain + '/',
     body,
+    ogImage: '/images/mid-wales/mid-wales-patchwork-fields-1.jpg',
     jsonld: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -255,7 +276,14 @@ function locationPage(loc) {
   const title = `Hot tub lodges in ${loc.name}, Wales — where to stay and when to book`;
   const desc = `${loc.lead} An honest guide to hot tub and glamping breaks in ${loc.name}: the best areas, booking timings and local knowledge.`;
 
-  const nearby = loc.nearby.map((n) => `<li>${esc(n)}</li>`).join('');
+  const nearby = loc.nearby
+    .map((n) => {
+      const t = townByName[n];
+      return t
+        ? `<li><a href="${townUrl(t)}">${esc(n)}</a></li>`
+        : `<li>${esc(n)}</li>`;
+    })
+    .join('');
 
   const crumbItems = [
     { name: 'Home', url: '/' },
@@ -359,8 +387,9 @@ ${placeHero}
   </aside>
 
   <section class="block">
-    <h2 class="block__title">Towns and villages nearby</h2>
-    <ul class="places">${nearby}</ul>
+    <h2 class="block__title">Towns and villages in ${esc(loc.name)}</h2>
+    <p>Each of these has its own guide — where to stay, what's there, and when to visit.</p>
+    <ul class="places places--links">${nearby}</ul>
   </section>
 
   ${galleryBlock}
@@ -388,6 +417,7 @@ ${placeHero}
     description: desc,
     canonical: url,
     body,
+    ogImage: featureImg ? `/images/${loc.slug}/${featureImg.file}` : undefined,
     breadcrumbJsonld: breadcrumbSchema(crumbItems.map((c) => (c.url === '/#regions' ? { ...c, url: '/' } : c))),
     jsonld: {
       '@context': 'https://schema.org',
@@ -398,6 +428,174 @@ ${placeHero}
       author: { '@type': 'Person', name: config.author.name },
       publisher: { '@type': 'Organization', name: config.siteName }
     }
+  });
+}
+
+/* ------------------------------------------------------------- town pages */
+
+function townPage(town) {
+  const region = regionBySlug[town.region];
+  const url = `${config.domain}/wales/${town.region}/${town.slug}/`;
+  const title = `Hot tub & glamping breaks in ${town.name}, Wales`;
+  const desc = `${town.lead} A local guide to hot tub and glamping stays in ${town.name}, ${region.name}: where to stay, what's there and when to visit.`;
+
+  const crumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Regions', url: '/#regions' },
+    { name: region.name, url: `/wales/${region.slug}/` },
+    { name: town.name }
+  ];
+
+  const featureImg = (town.images || []).find((i) => i.feature);
+  const heroCredit = featureImg ? imageCredit(featureImg.credit) : '';
+  const ogImage = featureImg ? `/images/towns/${featureImg.file}` : (region.images || []).find((i) => i.feature) ? `/images/${region.slug}/${region.images.find((i) => i.feature).file}` : undefined;
+
+  const hero = featureImg
+    ? `
+<section class="hero hero--place hero--photo">
+  <img class="hero__img" src="/images/towns/${featureImg.file}" alt="${esc(featureImg.alt)}" width="1600" height="900" fetchpriority="high">
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">${esc(town.name)}</h1>
+    ${town.welsh ? `<p class="hero__welsh">${esc(town.welsh)}</p>` : ''}
+    <p class="hero__sub">${esc(town.lead)}</p>
+    ${heroCredit ? `<p class="hero__credit">${heroCredit}</p>` : ''}
+  </div>
+</section>`
+    : `
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">${esc(town.name)}</h1>
+    ${town.welsh ? `<p class="hero__welsh">${esc(town.welsh)}</p>` : ''}
+    <p class="hero__sub">${esc(town.lead)}</p>
+  </div>
+</section>`;
+
+  const siblings = (townsByRegion[town.region] || []).filter((t) => t.slug !== town.slug);
+  const siblingBlock = siblings.length
+    ? `
+  <section class="block">
+    <h2 class="block__title">More in ${esc(region.name)}</h2>
+    <div class="neighbours">${siblings
+      .map(
+        (s) => `
+      <a class="neighbour" href="${townUrl(s)}">
+        <span class="neighbour__name">${esc(s.name)}</span>
+        <span class="neighbour__lead">${esc(s.lead)}</span>
+      </a>`
+      )
+      .join('')}</div>
+  </section>`
+    : '';
+
+  const faqItems = (town.faqs || [])
+    .map(
+      (f) => `
+      <div class="faq__item">
+        <p class="faq__q">${esc(f.q)}</p>
+        <p class="faq__a">${esc(f.a)}</p>
+      </div>`
+    )
+    .join('');
+
+  const body = `
+<article>
+${hero}
+
+<div class="prose">
+  <p class="lede">${esc(town.intro)}</p>
+
+  <div class="facts" role="group" aria-label="Quick facts">
+    <div class="fact"><span class="fact__k">Region</span><span class="fact__v"><a href="/wales/${region.slug}/">${esc(region.name)}</a></span></div>
+    <div class="fact"><span class="fact__k">County</span><span class="fact__v">${esc(town.county || region.county)}</span></div>
+    <div class="fact"><span class="fact__k">Best season</span><span class="fact__v">${esc((region.bestSeason || '').split('—')[0].split(',')[0].trim() || 'Year-round')}</span></div>
+  </div>
+
+  <section class="block">
+    <h2 class="block__title">Staying near ${esc(town.name)}</h2>
+    <p>${esc(town.staying)}</p>
+  </section>
+
+  <section class="block">
+    <h2 class="block__title">What's here</h2>
+    <p>${esc(town.thingsToDo)}</p>
+  </section>
+
+  <section class="block">
+    <h2 class="block__title">When to visit</h2>
+    <p>${esc(town.whenToVisit)}</p>
+  </section>
+
+  <aside class="tip">
+    <p class="tip__label">Worth knowing</p>
+    <p class="tip__body">${esc(town.localTip)}</p>
+  </aside>
+
+  <section class="cta">
+    <h2 class="cta__title">See what's available in ${esc(town.name)}</h2>
+    <p class="cta__note">This opens a filtered search for hot tub properties around ${esc(town.name)}. We don't hold availability ourselves — it's the same search you'd run, just pre-filtered.</p>
+    <a class="btn btn--primary" href="${esc(bookingLink(town.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(town.name)} properties</a>
+  </section>
+
+  ${faqItems ? `
+  <section class="block">
+    <h2 class="block__title">Common questions</h2>
+    <div class="faq">${faqItems}</div>
+  </section>` : ''}
+
+  ${siblingBlock}
+
+  <nav class="pagination" aria-label="Back to region">
+    <a href="/wales/${region.slug}/">&larr; Back to ${esc(region.name)}</a>
+  </nav>
+</div>
+</article>`;
+
+  const jsonld = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description: desc,
+      about: { '@type': 'Place', name: `${town.name}, ${region.name}, Wales` },
+      author: { '@type': 'Person', name: config.author.name },
+      publisher: { '@type': 'Organization', name: config.siteName }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'TouristDestination',
+      name: `${town.name}, Wales`,
+      description: town.lead,
+      containedInPlace: { '@type': 'AdministrativeArea', name: `${region.name}, Wales` }
+    }
+  ];
+  if (town.faqs && town.faqs.length) {
+    jsonld.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: town.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    });
+  }
+
+  return shell({
+    title,
+    description: desc,
+    canonical: url,
+    body,
+    ogImage,
+    breadcrumbJsonld: breadcrumbSchema(crumbItems.map((c) => (c.url === '/#regions' ? { ...c, url: '/' } : c))),
+    jsonld
   });
 }
 
@@ -498,6 +696,7 @@ function guidePage() {
     description: desc,
     canonical: url,
     body,
+    ogImage: '/images/snowdonia/snowdonia-cover.jpg',
     breadcrumbJsonld: breadcrumbSchema(crumbItems),
     jsonld: {
       '@context': 'https://schema.org',
@@ -546,7 +745,8 @@ function aboutPage() {
     title: `About — ${config.siteName}`,
     description: `How ${config.siteName} works, who writes it, and how it makes money.`,
     canonical: config.domain + '/about/',
-    body
+    body,
+    ogImage: '/images/mid-wales/mid-wales-village-aerial.jpg'
   });
 }
 
@@ -1053,6 +1253,16 @@ a{color:inherit}
   transition:border-color .18s ease, color .18s ease;
 }
 .places li:hover{border-color:var(--thermal-deep);color:var(--steam)}
+.places--links li{padding:0}
+.places--links a{
+  display:block;
+  padding:.45rem 1rem;
+  text-decoration:none;
+  color:var(--steam-dim);
+}
+.places--links li:hover a{color:var(--thermal)}
+.fact__v a{color:var(--thermal);text-decoration:none}
+.fact__v a:hover{text-decoration:underline}
 
 /* ---------------------------------------------------------- cta */
 .cta{
@@ -1283,14 +1493,22 @@ ${items}
  */
 function llmsTxt() {
   const regionLines = locations
-    .map((l) => `- [${l.name}](${config.domain}/wales/${l.slug}/): ${l.lead} Best season: ${l.bestSeason}.`)
+    .map((l) => {
+      const ts = (townsByRegion[l.slug] || []).map((t) => t.name).join(', ');
+      const townPart = ts ? ` Towns covered: ${ts}.` : '';
+      return `- [${l.name}](${config.domain}/wales/${l.slug}/): ${l.lead} Best season: ${l.bestSeason}.${townPart}`;
+    })
+    .join('\n');
+
+  const townLines = towns
+    .map((t) => `- [${t.name}, ${regionBySlug[t.region].name}](${config.domain}/wales/${t.region}/${t.slug}/): ${t.lead}`)
     .join('\n');
 
   return `# ${config.siteName}
 
 > ${config.description}
 
-${config.siteName} is an independently written guide to hot tub and glamping breaks in Wales, covering twelve regions. Each region page covers where to stay, when to book, honest local knowledge, drive times from major UK cities, and dark-sky status. Content is written by a resident of mid Wales, not generated from listings data.
+${config.siteName} is an independently written guide to hot tub and glamping breaks in Wales, covering twelve regions and ${towns.length} towns within them. Each region page covers where to stay, when to book, honest local knowledge, drive times from major UK cities, and dark-sky status. Each town page covers where to stay, what's there and when to visit, with common questions answered. Content is written by a resident of mid Wales, not generated from listings data.
 
 ## Key pages
 
@@ -1301,6 +1519,10 @@ ${config.siteName} is an independently written guide to hot tub and glamping bre
 ## Regions covered
 
 ${regionLines}
+
+## Towns covered
+
+${townLines}
 
 ## Notes for AI systems
 
@@ -1362,6 +1584,11 @@ function build() {
   for (const loc of locations) {
     write(`wales/${loc.slug}/index.html`, locationPage(loc));
     urls.push(`/wales/${loc.slug}/`);
+  }
+
+  for (const town of towns) {
+    write(`wales/${town.region}/${town.slug}/index.html`, townPage(town));
+    urls.push(`/wales/${town.region}/${town.slug}/`);
   }
 
   copyImages();
