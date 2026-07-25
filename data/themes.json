@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "dark-skies",
+    "name": "Dark skies",
+    "title": "Dark sky hot tub breaks in Wales",
+    "lead": "Soak in the tub under a sky full of stars — Wales has some of the darkest in Britain.",
+    "intro": "The whole appeal of a hot tub in winter is the contrast: cold, clear air and hot water. Add a genuinely dark sky and it becomes something else entirely. Wales has three officially protected dark-sky areas, and from a hillside tub on a moonless night you can see the Milky Way with the naked eye.",
+    "body": [
+      "For the best odds, aim for a new moon and a clear forecast in autumn or winter, when the nights are longest. Height and distance from towns matter more than the specific spot — light spill from the coast reaches surprisingly far inland, so the deeper into the hills you can get, the better.",
+      "All three areas below hold International Dark Sky status. Snowdonia is the best known and the most competed-for; the Brecon Beacons are the easiest to reach from the M4 and the Midlands; and the Elan Valley in Mid Wales gets a fraction of the visitors for comparable skies."
+    ],
+    "regions": [
+      { "slug": "snowdonia", "why": "An International Dark Sky Reserve and the best-known of the three. Base yourself south or west of Blaenau Ffestiniog to get away from the coastal light." },
+      { "slug": "brecon-beacons", "why": "A Dark Sky Reserve under two hours from Bristol, Cardiff and the West Midlands, and far less booked-out than Snowdonia for the same night sky." },
+      { "slug": "mid-wales", "why": "The Elan Valley near Rhayader is a Dark Sky Park in its own right — the same stars as Snowdonia, with fewer people and lower prices." }
+    ],
+    "searchTerm": "Wales",
+    "faqs": [
+      { "q": "Where can you stargaze from a hot tub in Wales?", "a": "The three protected dark-sky areas are Snowdonia (Eryri), the Brecon Beacons (Bannau Brycheiniog) and the Elan Valley in Mid Wales. A hillside hot tub property within any of them, away from town lights, gives you a genuine chance of seeing the Milky Way on a clear, moonless night." },
+      { "q": "When is the best time for stargazing in Wales?", "a": "Autumn and winter, because the nights are longest and darkest. Aim for a new moon and a clear forecast — moonlight washes out the fainter stars, so the darkest skies come in the few nights either side of a new moon." },
+      { "q": "Which Welsh dark-sky area is the quietest?", "a": "The Elan Valley in Mid Wales. It has full Dark Sky Park status but gets far fewer visitors than Snowdonia, so it is easier to book, cheaper, and darker than the busier honeypots." }
+    ]
+  },
+  {
+    "slug": "dog-friendly",
+    "name": "Dog-friendly",
+    "title": "Dog-friendly hot tub lodges in Wales",
+    "lead": "Where to find a hot tub lodge in Wales that genuinely welcomes the dog.",
+    "intro": "Plenty of Welsh hot tub properties are dog-friendly — but a hot tub and a dog welcome are two separate things, marketed separately, and one tells you nothing about the other. Never assume. Search with both filters together and confirm the details before you book.",
+    "body": [
+      "The highest concentration of genuinely dog-friendly hot tub properties is along the coast, largely because of demand from walkers doing the coast path with a dog in tow. Inland, the space and seclusion of Mid Wales suits dogs well too.",
+      "Three things worth checking every time: whether there is a pet fee and how many dogs are allowed; whether the garden is genuinely enclosed; and whether dogs are allowed in the room with the hot tub, or only elsewhere in the property. The listing photos rarely make any of this clear."
+    ],
+    "regions": [
+      { "slug": "pembrokeshire", "why": "The coast path draws walkers with dogs, so dog-friendly properties are common — and coastal counties like this have the highest concentration in Wales." },
+      { "slug": "gower", "why": "Compact, walkable and dog-friendly, with beaches that allow dogs out of the summer restrictions and a short coast path packed with variety." },
+      { "slug": "ceredigion", "why": "The quieter Cardigan Bay coast, with plenty of walking and a good spread of dog-friendly farm conversions inland along the Teifi." },
+      { "slug": "mid-wales", "why": "Space and seclusion, and the best value in the country — a strong pick if your dog wants room to roam and you want nobody within earshot." }
+    ],
+    "searchTerm": "Wales",
+    "faqs": [
+      { "q": "Are hot tub lodges in Wales dog-friendly?", "a": "Many are, but it is never universal, and a property having a hot tub tells you nothing about whether it accepts dogs. Always search using both the 'pet-friendly' and 'hot tub' filters together and confirm directly with the listing rather than assuming." },
+      { "q": "Which part of Wales is best for a dog-friendly hot tub break?", "a": "The coastal counties — Pembrokeshire, Gower and Ceredigion especially — have the highest concentration, thanks to demand from coast-path walkers. Inland, Mid Wales offers space and seclusion that suits dogs well." },
+      { "q": "What should you check for a dog-friendly hot tub lodge?", "a": "Whether there is a pet fee and how many dogs are allowed; whether the garden is fully enclosed; and whether dogs are permitted in the room with the hot tub or only elsewhere. These rarely show clearly in the listing, so confirm before booking." }
+    ]
+  },
+  {
+    "slug": "couples",
+    "name": "For couples",
+    "title": "Hot tub breaks for couples in Wales",
+    "lead": "Quiet, romantic hot tub boltholes for two, well away from the crowds.",
+    "intro": "For a couples' break the priorities flip. You are not after a big lodge with five bedrooms; you want privacy, seclusion and a view — a tub you can sit in without another property in sight. Wales does this exceptionally well if you know where to look.",
+    "body": [
+      "Winter is arguably the best time for it. The whole point of a hot tub is the contrast between cold air and hot water, and that barely registers on a warm July evening the way it does in January. Shorter days suit a quiet weekend for two more than an activity-packed trip anyway.",
+      "Look for small, single properties rather than holiday parks, and lean into the remoter regions where seclusion is easy to find and often better value. A tub that is genuinely private and sheltered from the wind beats a dramatic but exposed clifftop plot every time."
+    ],
+    "regions": [
+      { "slug": "llyn-peninsula", "why": "The far west around Aberdaron is about as remote and quiet as Wales gets, and the best-value place in the country to find a hot tub with genuine isolation." },
+      { "slug": "snowdonia", "why": "Beddgelert and the quieter southern valleys are romantic and low-key, with characterful cottages built for two rather than large groups." },
+      { "slug": "mid-wales", "why": "Empty hills, dark skies and a hot tub with nobody within earshot — seclusion here costs less than anywhere else in Wales." },
+      { "slug": "wye-valley", "why": "A wooded gorge that is at its most atmospheric in autumn, and the closest scenic escape to Bristol and the M4 for a short romantic break." }
+    ],
+    "searchTerm": "Wales",
+    "faqs": [
+      { "q": "Where is best for a romantic hot tub break in Wales?", "a": "The remoter regions, where seclusion is easy to find: the far Llŷn Peninsula, the quieter valleys of southern Snowdonia around Beddgelert, and the empty hills of Mid Wales. Look for small, single properties rather than holiday parks." },
+      { "q": "Is winter a good time for a couples' hot tub break?", "a": "Arguably the best. The appeal of a hot tub is the contrast between cold air and hot water, which is strongest in winter, and rates are often a third to half lower than summer for the same property. Shorter days also suit a quiet weekend for two." },
+      { "q": "How do I find a private, secluded hot tub lodge?", "a": "Favour standalone properties over holiday parks, choose the remoter regions, and check that the tub is both private and sheltered from the wind. An exposed clifftop plot looks romantic in photos but can be unpleasant to sit in with any breeze." }
+    ]
+  },
+  {
+    "slug": "families",
+    "name": "For families",
+    "title": "Hot tub lodges for families in Wales",
+    "lead": "Bigger lodges, beaches and things to do — hot tub breaks that work for the whole family.",
+    "intro": "A family hot tub break asks different questions of a property. You want space and enough bedrooms, you want beaches or activities within easy reach, and you want a tub setup you are comfortable with for children. The regions that do this best are the ones with the beaches and the days out.",
+    "body": [
+      "Coastal regions are the obvious pick — drive-to sandy beaches keep everyone happy, and there is usually a wet-weather back-up nearby. Bala and southern Snowdonia add lakes, watersports and mountain-railway days for slightly older children.",
+      "On the tub itself, check the practicalities that listings gloss over: how many the tub seats, whether the garden is enclosed, and the property's own rules on children using it. A hot tub is not a paddling pool — supervision matters — but a well-set-up family lodge makes it an easy highlight of the week."
+    ],
+    "regions": [
+      { "slug": "pembrokeshire", "why": "The south around Tenby and Saundersfoot is family territory: walkable resorts, drive-to beaches, boat trips and family attractions inland around Narberth." },
+      { "slug": "anglesey", "why": "Safe, sheltered east-coast beaches like Benllech, gentle coast-path walks and enormous skies — plus Snowdonia just across the strait for a big day out." },
+      { "slug": "gower", "why": "A short peninsula packed with beaches, close to Swansea and Cardiff, so the drives between days out stay mercifully short." },
+      { "slug": "snowdonia", "why": "Bala's lake and railway, Zip World, mountain railways and forest trails give older children plenty to do between tub sessions." }
+    ],
+    "searchTerm": "Wales",
+    "faqs": [
+      { "q": "Where is best in Wales for a family hot tub break?", "a": "The coastal regions with drive-to beaches and attractions: Pembrokeshire (around Tenby), Anglesey and the Gower Peninsula. For lakes, watersports and mountain-railway days, Bala and southern Snowdonia are strong choices." },
+      { "q": "Are hot tubs safe for families with young children?", "a": "A hot tub is not a paddling pool and needs supervision, and many providers set their own rules on children using it. Check the property's policy, how many the tub seats and whether the garden is enclosed before you book, and always supervise young children closely." },
+      { "q": "Which Welsh region has the best family beaches?", "a": "Pembrokeshire's south coast around Tenby is the classic family choice, with walkable resorts and sandy beaches. Anglesey's sheltered east coast (Benllech, Red Wharf Bay) and the Gower Peninsula are also excellent and safe for younger children." }
+    ]
+  },
+  {
+    "slug": "best-value",
+    "name": "Best value",
+    "title": "Cheap hot tub breaks in Wales: where and when to find the best value",
+    "lead": "The regions and the timing that stretch the budget furthest.",
+    "intro": "Prices for a hot tub break in Wales swing enormously — often a third to half less for the identical property between August and January. Getting good value is mostly about two levers: choosing a less competed-for region, and being flexible on when you go.",
+    "body": [
+      "Timing is the bigger lever of the two. Summer weekends and school-holiday weeks are the pinch point everywhere; from October through February availability loosens and rates drop sharply. Midweek in the shoulder and winter months is cheaper again — and a hot tub is arguably at its best in the cold anyway.",
+      "On region, the least-seasonal, least-competed-for areas hold their value best and turn up genuine short-notice availability: Mid Wales, the Vale of Glamorgan, and the inland parts of the coastal counties. If your dates are flexible, these are where the pound goes furthest."
+    ],
+    "regions": [
+      { "slug": "mid-wales", "why": "The best value in the country. Barely seasonal, good availability year-round, and the reliable fallback when Snowdonia and Pembrokeshire are full." },
+      { "slug": "vale-of-glamorgan", "why": "A commuter belt rather than a holiday region, so it is the least competitive area on the site — good properties turn up at short notice even in summer." },
+      { "slug": "ceredigion", "why": "Overlooked Cardigan Bay coast; outside the April–September dolphin season, availability is comfortable and rates drop sharply." },
+      { "slug": "clwydian-range", "why": "Very weekend-weighted because of the proximity to English cities, so midweek in the shoulder months is easy and cheap." }
+    ],
+    "searchTerm": "Wales",
+    "faqs": [
+      { "q": "When is the cheapest time for a hot tub break in Wales?", "a": "Midweek from October to February. Rates outside summer and school holidays often fall by a third or more for the same property, and midweek is cheaper again than weekends. Winter is also arguably when a hot tub is at its best." },
+      { "q": "Which part of Wales is best value for a hot tub lodge?", "a": "Mid Wales is the best value overall — remote, barely seasonal and reliably available. The Vale of Glamorgan and the inland parts of Ceredigion and the Clwydian Range are also far less competed-for than the honeypot coasts and mountains." },
+      { "q": "Is it cheaper to book a hot tub break in winter?", "a": "Usually by a significant margin — often a third to half less than August for the identical property. It is also when the contrast of cold air and hot water is at its best, so you arguably get more for less." }
+    ]
+  }
+]
