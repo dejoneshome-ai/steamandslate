@@ -275,13 +275,38 @@ function locationPage(loc) {
 
   const featureImg = (loc.images || []).find((i) => i.feature);
   const galleryImgs = (loc.images || []).filter((i) => !i.feature);
+  const heroCredit = featureImg ? imageCredit(featureImg.credit) : '';
 
-  const featureBlock = featureImg
+  // The place hero leads with the region's own photograph when there is one,
+  // full-bleed behind a legibility scrim. Pages without a photo fall back to
+  // the illustrated ridge-and-steam hero.
+  const placeHero = featureImg
     ? `
-  <figure class="photo photo--feature">
-    <img src="/images/${loc.slug}/${featureImg.file}" alt="${esc(featureImg.alt)}" loading="lazy" width="1600" height="900">
-    ${figcaption(featureImg)}
-  </figure>` : '';
+<section class="hero hero--place hero--photo">
+  <img class="hero__img" src="/images/${loc.slug}/${featureImg.file}" alt="${esc(featureImg.alt)}" width="1600" height="900" fetchpriority="high">
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">${esc(loc.name)}</h1>
+    <p class="hero__welsh">${esc(loc.welsh)}</p>
+    <p class="hero__sub">${esc(loc.lead)}</p>
+    ${heroCredit ? `<p class="hero__credit">${heroCredit}</p>` : ''}
+  </div>
+</section>`
+    : `
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">${esc(loc.name)}</h1>
+    <p class="hero__welsh">${esc(loc.welsh)}</p>
+    <p class="hero__sub">${esc(loc.lead)}</p>
+  </div>
+</section>`;
 
   const galleryBlock = galleryImgs.length
     ? `
@@ -299,23 +324,10 @@ function locationPage(loc) {
 
   const body = `
 <article>
-<section class="hero hero--place">
-  <div class="steam" aria-hidden="true">
-    <span class="steam__plume steam__plume--a"></span>
-    <span class="steam__plume steam__plume--b"></span>
-  </div>
-  ${ridge()}
-  <div class="hero__inner">
-    ${breadcrumbBar(crumbItems)}
-    <h1 class="hero__title hero__title--place">${esc(loc.name)}</h1>
-    <p class="hero__welsh">${esc(loc.welsh)}</p>
-    <p class="hero__sub">${esc(loc.lead)}</p>
-  </div>
-</section>
+${placeHero}
 
 <div class="prose">
   <p class="lede">${esc(loc.intro)}</p>
-  ${featureBlock}
 
   <div class="facts" role="group" aria-label="Quick facts">
     <div class="fact"><span class="fact__k">Nearest town</span><span class="fact__v">${esc(loc.nearestTown)}</span></div>
@@ -678,6 +690,14 @@ a{color:inherit}
 .masthead__nav a:hover{color:var(--steam)}
 .masthead__nav a:hover::after{right:0}
 
+/* keep the header on one line on small phones */
+@media (max-width:30rem){
+  .masthead{padding:1.15rem 1.1rem;gap:.6rem}
+  .wordmark{font-size:1.2rem}
+  .masthead__nav{gap:1rem}
+  .masthead__nav a{font-size:.72rem;letter-spacing:.05em}
+}
+
 /* -------------------------------------------------------- hero */
 .hero{
   position:relative;
@@ -735,6 +755,42 @@ a{color:inherit}
   line-height:1.62;
   margin:0 0 2.25rem;
   text-wrap:pretty;
+}
+
+/* ------------------------------------------- photographic place hero */
+.hero--photo{
+  display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:clamp(28rem, 64vh, 44rem);
+  padding-top:8rem;
+  padding-bottom:2.75rem;
+  background:var(--ink);
+}
+.hero--photo .hero__img{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;object-fit:cover;
+}
+.hero--photo .hero__scrim{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(11,20,24,.97) 0%, rgba(11,20,24,.62) 30%, rgba(11,20,24,.18) 58%, rgba(11,20,24,.5) 100%),
+    linear-gradient(to right, rgba(11,20,24,.62), rgba(11,20,24,0) 62%);
+}
+.hero--photo .hero__sub{margin-bottom:0}
+.hero--photo .crumbs{margin-bottom:1rem}
+.hero__credit{
+  margin:1.1rem 0 0;
+  text-align:left;
+}
+.hero__credit .photo__credit{color:rgba(234,241,238,.66);font-size:.7rem}
+.hero__credit .photo__credit a{color:rgba(234,241,238,.7);text-decoration-color:rgba(234,241,238,.35)}
+.hero__credit .photo__credit a:hover{color:var(--thermal);text-decoration-color:var(--thermal)}
+
+/* full-width image that breaks out of the narrow reading column */
+.prose .photo--feature,
+.prose .photo-grid{
+  width:min(92vw, var(--wrap));
+  margin-left:50%;
+  transform:translateX(-50%);
 }
 
 /* -------------------------------------------------------------- photos */
