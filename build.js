@@ -244,7 +244,7 @@ function homepage() {
 <section class="regions" id="regions">
   <div class="section__head">
     <h2 class="section__title">Every region in Wales</h2>
-    <p class="section__note">Pick where you want to be. Each guide covers the areas within it, when to book, and one thing worth knowing before you go.</p>
+    <p class="section__note">A guide to self-catering lodges, log cabins, cottages and glamping with hot tubs, across every corner of Wales. Pick where you want to be — each region covers the areas within it, when to book, and one thing worth knowing before you go.</p>
   </div>
   <div class="region__list">${rows}</div>
 </section>
@@ -421,6 +421,16 @@ ${placeHero}
     <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
   </section>
 
+  ${(loc.faqs && loc.faqs.length) ? `
+  <section class="block">
+    <h2 class="block__title">Common questions about ${esc(loc.name)}</h2>
+    <div class="faq">${loc.faqs.map((f) => `
+      <div class="faq__item">
+        <p class="faq__q">${esc(f.q)}</p>
+        <p class="faq__a">${esc(f.a)}</p>
+      </div>`).join('')}</div>
+  </section>` : ''}
+
   ${neighbourCards ? `
   <section class="block">
     <h2 class="block__title">Considering somewhere nearby?</h2>
@@ -440,15 +450,26 @@ ${placeHero}
     body,
     ogImage: featureImg ? `/images/${loc.slug}/${featureImg.file}` : undefined,
     breadcrumbJsonld: breadcrumbSchema(crumbItems.map((c) => (c.url === '/#regions' ? { ...c, url: '/' } : c))),
-    jsonld: {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: title,
-      description: desc,
-      about: { '@type': 'Place', name: `${loc.name}, Wales` },
-      author: { '@type': 'Person', name: config.author.name },
-      publisher: { '@type': 'Organization', name: config.siteName }
-    }
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description: desc,
+        about: { '@type': 'Place', name: `${loc.name}, Wales` },
+        author: { '@type': 'Person', name: config.author.name },
+        publisher: { '@type': 'Organization', name: config.siteName }
+      },
+      ...(loc.faqs && loc.faqs.length ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: loc.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a }
+        }))
+      }] : [])
+    ]
   });
 }
 
@@ -1517,13 +1538,42 @@ a{color:inherit}
 /* -------------------------------------------------------------- sitemap */
 
 function sitemap(urls) {
+  const lastmod = new Date().toISOString().slice(0, 10);
   const items = urls
-    .map((u) => `  <url><loc>${config.domain}${u}</loc></url>`)
+    .map((u) => `  <url><loc>${config.domain}${u}</loc><lastmod>${lastmod}</lastmod></url>`)
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${items}
 </urlset>`;
+}
+
+/* ----------------------------------------------------------- 404 page */
+
+function notFoundPage() {
+  const body = `
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    <p class="eyebrow">Error 404</p>
+    <h1 class="hero__title hero__title--place">Page not found</h1>
+    <p class="hero__sub">That page has drifted off like steam. Let's get you back to somewhere useful.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="/#regions">Choose a region</a>
+      <a class="btn btn--ghost" href="/guide/">Read the guide</a>
+    </div>
+  </div>
+</section>`;
+  return shell({
+    title: `Page not found — ${config.siteName}`,
+    description: 'The page you were looking for could not be found.',
+    canonical: config.domain + '/404.html',
+    body
+  });
 }
 
 /* -------------------------------------------------------------- llms.txt
@@ -1638,6 +1688,8 @@ function build() {
     const src = path.join(ROOT, 'assets', f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT, f));
   }
+
+  write('404.html', notFoundPage());
 
   write('sitemap.xml', sitemap(urls));
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${config.domain}/sitemap.xml\n`);
