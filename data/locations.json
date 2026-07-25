@@ -38,7 +38,21 @@
     ],
     "bestSeason": "Oct–Feb for value and cold, clear air",
     "darkSky": true,
-    "nearestTown": "Betws-y-Coed"
+    "nearestTown": "Betws-y-Coed",
+    "images": [
+      {
+        "file": "snowdonia-cover.jpg",
+        "feature": true,
+        "alt": "Snow-covered Snowdonia mountains beneath a dramatic, stormy winter sky",
+        "caption": "Snowdonia under winter snow, with a squall breaking over the tops.",
+        "credit": {
+          "author": "Daniel Edwards",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowdonia_in_Winter.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "pembrokeshire",
@@ -79,7 +93,21 @@
     ],
     "bestSeason": "May, or mid-Sep through October",
     "darkSky": false,
-    "nearestTown": "Haverfordwest"
+    "nearestTown": "Haverfordwest",
+    "images": [
+      {
+        "file": "pembrokeshire-cover.jpg",
+        "feature": true,
+        "alt": "The Pembrokeshire Coast Path running along green clifftops above a blue sea",
+        "caption": "The Wales Coast Path along the Pembrokeshire cliffs.",
+        "credit": {
+          "author": "Eirian Evans",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pembrokeshire-Wales_Coast_Path_-_geograph.org.uk_-_6258171.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "brecon-beacons",
@@ -120,7 +148,21 @@
     ],
     "bestSeason": "Year-round — avoid Hay Festival week, late May",
     "darkSky": true,
-    "nearestTown": "Brecon"
+    "nearestTown": "Brecon",
+    "images": [
+      {
+        "file": "brecon-beacons-cover.jpg",
+        "feature": true,
+        "alt": "Rolling green farmland with the peaks of Pen y Fan and Corn Du on the horizon",
+        "caption": "Pen y Fan and Corn Du across the fields, seen from Pen-y-Crug.",
+        "credit": {
+          "author": "Dominic Nelson",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Pen-y-Crug_summit_towards_Pen-y-Fan_and_Corn_Du.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "anglesey",
@@ -161,7 +203,21 @@
     ],
     "bestSeason": "September into October for light and quiet",
     "darkSky": false,
-    "nearestTown": "Llangefni"
+    "nearestTown": "Llangefni",
+    "images": [
+      {
+        "file": "anglesey-cover.jpg",
+        "feature": true,
+        "alt": "South Stack lighthouse on a rocky islet off the cliffs of Anglesey",
+        "caption": "South Stack lighthouse on the west coast of Anglesey.",
+        "credit": {
+          "author": "David Dixon",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Stack_Lighthouse,_Anglesey_-_geograph.org.uk_-_8007893.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "gower",
@@ -202,7 +258,21 @@
     ],
     "bestSeason": "Midweek, almost any month",
     "darkSky": false,
-    "nearestTown": "Swansea"
+    "nearestTown": "Swansea",
+    "images": [
+      {
+        "file": "gower-cover.jpg",
+        "feature": true,
+        "alt": "The wide sweep of sand at Rhossili Bay on the Gower Peninsula",
+        "caption": "Rhossili Bay, at the western tip of the Gower Peninsula.",
+        "credit": {
+          "author": "Keith Lawson 11",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhossili_Bay_beach,_Gower_Peninsula,_Wales.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "llyn-peninsula",
@@ -243,7 +313,21 @@
     ],
     "bestSeason": "September onward, for genuine isolation",
     "darkSky": false,
-    "nearestTown": "Pwllheli"
+    "nearestTown": "Pwllheli",
+    "images": [
+      {
+        "file": "llyn-peninsula-cover.jpg",
+        "feature": true,
+        "alt": "A curving sandy bay backed by hills near Nefyn on the Llyn Peninsula",
+        "caption": "The coast near Nefyn, on the Llyn Peninsula.",
+        "credit": {
+          "author": "Chembeth",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ll%C5%B7n_Peninsula_near_Nefyn,_North_Wales,_UK.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "mid-wales",
@@ -273,7 +357,7 @@
       {
         "file": "mid-wales-village-aerial.jpg",
         "alt": "Aerial view of Montgomery, Powys, a small Mid Wales market town with visible castle ruins, surrounded by patchwork farmland",
-        "caption": "Montgomery itself \u2014 the small border town this site is written from."
+        "caption": "Montgomery itself — the small border town this site is written from."
       },
       {
         "file": "mid-wales-patchwork-fields-1.jpg",
@@ -346,7 +430,21 @@
     ],
     "bestSeason": "Outside the April–September dolphin season for value",
     "darkSky": false,
-    "nearestTown": "Aberystwyth"
+    "nearestTown": "Aberystwyth",
+    "images": [
+      {
+        "file": "ceredigion-cover.jpg",
+        "feature": true,
+        "alt": "Aerial view of the Ynys-Lochtyn headland reaching into Cardigan Bay",
+        "caption": "Ynys-Lochtyn headland on the Ceredigion coast.",
+        "credit": {
+          "author": "Dave Price",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ynys-Lochtyn_and_Pendinaslochdyn_-_geograph.org.uk_-_3464154.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "wye-valley",
@@ -387,7 +485,21 @@
     ],
     "bestSeason": "Late October, for the gorge in full colour",
     "darkSky": false,
-    "nearestTown": "Monmouth"
+    "nearestTown": "Monmouth",
+    "images": [
+      {
+        "file": "wye-valley-cover.jpg",
+        "feature": true,
+        "alt": "The River Wye winding through a steep, wooded gorge on the border",
+        "caption": "The wooded gorge of the lower Wye Valley.",
+        "credit": {
+          "author": "Philip Halling",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Wye_Valley_-_geograph.org.uk_-_7196462.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "conwy-valley",
@@ -428,7 +540,21 @@
     ],
     "bestSeason": "Midweek in the shoulder months",
     "darkSky": false,
-    "nearestTown": "Conwy"
+    "nearestTown": "Conwy",
+    "images": [
+      {
+        "file": "conwy-valley-cover.jpg",
+        "feature": true,
+        "alt": "Conwy Castle and the estuary at blue hour, harbour lights reflected in the water",
+        "caption": "Conwy Castle and the estuary at dusk.",
+        "credit": {
+          "author": "Brian Deegan",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conwy_Castle_and_Bridges_over_the_River_Conwy_-_geograph.org.uk_-_7738008.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "clwydian-range",
@@ -469,7 +595,21 @@
     ],
     "bestSeason": "Late August into September, for the heather",
     "darkSky": false,
-    "nearestTown": "Ruthin"
+    "nearestTown": "Ruthin",
+    "images": [
+      {
+        "file": "clwydian-range-cover.jpg",
+        "feature": true,
+        "alt": "Aerial view of the heather-covered Moel Famau ridge in the Clwydian Range",
+        "caption": "The Jubilee Tower on Moel Famau, high point of the Clwydian Range.",
+        "credit": {
+          "author": "Llywelyn2000",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moel_Famau_gyda_dron_-_Moel_Famau,_Clwydian_Hills,_Wales_(Area_of_Outstanding_Beauty)_01.jpg"
+        }
+      }
+    ]
   },
   {
     "slug": "vale-of-glamorgan",
@@ -510,6 +650,20 @@
     ],
     "bestSeason": "The least seasonal region — good most of the year",
     "darkSky": false,
-    "nearestTown": "Cowbridge"
+    "nearestTown": "Cowbridge",
+    "images": [
+      {
+        "file": "vale-of-glamorgan-cover.jpg",
+        "feature": true,
+        "alt": "Layered limestone cliffs and a rocky foreshore at Nash Point",
+        "caption": "Nash Point, on the Glamorgan Heritage Coast.",
+        "credit": {
+          "author": "Wilson44691",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nash_Point_062415.jpg"
+        }
+      }
+    ]
   }
 ]
