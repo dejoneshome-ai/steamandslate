@@ -113,15 +113,21 @@ function shell({ title, description, canonical, body, jsonld, breadcrumbJsonld, 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="theme-color" content="#0D171C">
 <link rel="canonical" href="${esc(canonical)}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="${esc(config.siteName)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${esc(canonical)}">
+<meta property="og:locale" content="en_GB">
 ${ogImageTag}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${cssHref}">
 ${schemas.map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n')}
 ${analyticsTag}
@@ -259,13 +265,27 @@ function homepage() {
     canonical: config.domain + '/',
     body,
     ogImage: '/images/mid-wales/mid-wales-patchwork-fields-1.jpg',
-    jsonld: {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: config.siteName,
-      url: config.domain,
-      description: config.description
-    }
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: config.siteName,
+        url: config.domain,
+        description: config.description,
+        publisher: { '@id': config.domain + '/#organization' }
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': config.domain + '/#organization',
+        name: config.siteName,
+        url: config.domain,
+        logo: config.domain + '/apple-touch-icon.png',
+        description: config.description,
+        founder: { '@type': 'Person', name: config.author.name },
+        knowsAbout: ['hot tub breaks in Wales', 'glamping in Wales', 'self-catering lodges', 'dark sky stargazing']
+      }
+    ]
   });
 }
 
@@ -398,6 +418,7 @@ ${placeHero}
     <h2 class="cta__title">See what's available</h2>
     <p class="cta__note">This opens a filtered search for hot tub properties in ${esc(loc.name)}. We don't hold availability ourselves — this is the same search you'd run yourself, just pre-filtered.</p>
     <a class="btn btn--primary" href="${esc(bookingLink(loc.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(loc.name)} properties</a>
+    <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
   </section>
 
   ${neighbourCards ? `
@@ -542,6 +563,7 @@ ${hero}
     <h2 class="cta__title">See what's available in ${esc(town.name)}</h2>
     <p class="cta__note">This opens a filtered search for hot tub properties around ${esc(town.name)}. We don't hold availability ourselves — it's the same search you'd run, just pre-filtered.</p>
     <a class="btn btn--primary" href="${esc(bookingLink(town.searchTerm))}" rel="sponsored noopener" target="_blank">Browse ${esc(town.name)} properties</a>
+    <p class="cta__disclosure">If you book through this link we may earn a small commission, at no extra cost to you.</p>
   </section>
 
   ${faqItems ? `
@@ -746,7 +768,24 @@ function aboutPage() {
     description: `How ${config.siteName} works, who writes it, and how it makes money.`,
     canonical: config.domain + '/about/',
     body,
-    ogImage: '/images/mid-wales/mid-wales-village-aerial.jpg'
+    ogImage: '/images/mid-wales/mid-wales-village-aerial.jpg',
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'AboutPage',
+        name: `About ${config.siteName}`,
+        url: config.domain + '/about/',
+        publisher: { '@id': config.domain + '/#organization' }
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: config.author.name,
+        description: config.author.bio,
+        homeLocation: { '@type': 'Place', name: config.author.location },
+        worksFor: { '@type': 'Organization', name: config.siteName, '@id': config.domain + '/#organization' }
+      }
+    ]
   });
 }
 
@@ -773,9 +812,9 @@ const css = `
   --moss:#5B7A6C;
 
   /* --- text --- */
-  --steam:#EAF1EE;
-  --steam-dim:#9FB6B1;
-  --steam-mute:#7B948F;
+  --steam:#EDF3F0;
+  --steam-dim:#BCCCC7;
+  --steam-mute:#8AA19C;
 
   /* --- accents --- */
   --thermal:#84CEC4;
@@ -786,7 +825,7 @@ const css = `
 
   /* --- type --- */
   --display:"Instrument Serif",Georgia,serif;
-  --body:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
 
   /* --- measures --- */
   --wrap:70rem;
@@ -825,8 +864,8 @@ body{
   background:var(--ink);
   color:var(--steam);
   font-family:var(--body);
-  font-size:1.0625rem;
-  line-height:1.68;
+  font-size:1.125rem;
+  line-height:1.72;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
   position:relative;
@@ -1286,6 +1325,7 @@ a{color:inherit}
   font-size:1.9rem;margin:0 0 .75rem;letter-spacing:-.01em;
 }
 .cta__note{color:var(--steam-dim);font-size:.9375rem;margin:0 0 1.5rem;max-width:34rem}
+.cta__disclosure{color:var(--steam-mute);font-size:.78rem;margin:.9rem 0 0;max-width:34rem}
 
 .pagination{padding-top:var(--s-5)}
 .pagination a{
@@ -1592,6 +1632,12 @@ function build() {
   }
 
   copyImages();
+
+  // Copy root-level static assets (favicons, touch icon) straight into the build.
+  for (const f of ['favicon.svg', 'favicon-32.png', 'favicon-48.png', 'apple-touch-icon.png']) {
+    const src = path.join(ROOT, 'assets', f);
+    if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT, f));
+  }
 
   write('sitemap.xml', sitemap(urls));
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${config.domain}/sitemap.xml\n`);
