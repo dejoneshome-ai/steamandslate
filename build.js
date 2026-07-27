@@ -325,7 +325,7 @@ function homepage() {
 </section>
 
 <section class="manifesto">
-  <p class="manifesto__text">Not a booking engine. Not a list of every cottage with a tub bolted on. A guide to the <em>good</em> ones &mdash; written by someone who lives in mid Wales and has spent a lot of cold weekends working out which is which.</p>
+  <p class="manifesto__text">Anywhere can bolt a tub onto a cottage and call it a getaway. Knowing which ones are <em>actually worth it</em> is the harder part &mdash; the right region, a setting with nobody else in sight, the off-season weeks when the price quietly halves. That is the whole job of this guide, written from mid Wales and tested over a lot of cold weekends.</p>
 </section>
 
 <section class="regions" id="regions">
