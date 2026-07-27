@@ -324,11 +324,7 @@ function homepage() {
   </div>
 </section>
 
-<section class="manifesto">
-  <p class="manifesto__text">Anywhere can bolt a tub onto a cottage and call it a getaway. Knowing which ones are <em>actually worth it</em> is the harder part &mdash; the right region, a setting with nobody else in sight, the off-season weeks when the price quietly halves. That is the whole job of this guide, written from mid Wales and tested over a lot of cold weekends.</p>
-</section>
-
-<section class="regions" id="regions">
+<section class="regions regions--top" id="regions">
   <div class="section__head">
     <h2 class="section__title">Every region in Wales</h2>
     <p class="section__note">Self-catering lodges, log cabins, cottages and glamping with hot tubs, across every corner of the country. Pick where you want to be.</p>
@@ -1613,6 +1609,7 @@ a{color:inherit}
   max-width:var(--wrap);margin:0 auto;
   padding:var(--s-9) 1.5rem var(--s-8);
 }
+.regions--top{padding-top:var(--s-8)}
 .section__head{margin-bottom:var(--s-7);max-width:var(--read)}
 .section__title{
   font-family:var(--display);font-weight:600;
@@ -1964,15 +1961,6 @@ a{color:inherit}
 }
 .hero--home .steam{z-index:2}
 .hero--home .hero__inner{position:relative;z-index:3;width:100%}
-
-/* ------------------------------------- home: manifesto strip */
-.manifesto{max-width:var(--wrap);margin:0 auto;padding:var(--s-8) 1.5rem var(--s-7)}
-.manifesto__text{
-  font-family:var(--display);font-weight:500;
-  font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.22;letter-spacing:-.02em;
-  max-width:26ch;margin:0;color:var(--steam);text-wrap:balance;
-}
-.manifesto__text em{font-family:var(--accent);font-style:italic;font-weight:400;color:var(--thermal)}
 
 /* ------------------------------------- home: region cards */
 .region-cards{
