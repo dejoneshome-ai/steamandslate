@@ -149,14 +149,28 @@ ${analyticsTag}
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="masthead">
+<header class="masthead" id="top">
   <a class="wordmark" href="/">
     <span class="wordmark__steam">Steam</span><span class="wordmark__amp">&amp;</span><span class="wordmark__slate">Slate</span>
   </a>
-  <nav class="masthead__nav" aria-label="Primary">
-    <a href="/#regions">Regions</a>
-    <a href="/guide/">Guide</a>
-    <a href="/about/">About</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+    <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+  </button>
+  <nav class="masthead__nav" id="nav" aria-label="Primary">
+    <div class="navitem navitem--drop">
+      <a class="navitem__top" href="/#regions">Regions</a>
+      <div class="navpanel">
+        <div class="navpanel__grid">${locations.map((l) => `<a href="/wales/${l.slug}/">${esc(l.name)}</a>`).join('')}</div>
+      </div>
+    </div>
+    <div class="navitem navitem--drop">
+      <a class="navitem__top" href="/collections/">Collections</a>
+      <div class="navpanel">
+        <div class="navpanel__grid navpanel__grid--two">${themes.map((t) => `<a href="/collections/${t.slug}/">${esc(t.name)}</a>`).join('')}</div>
+      </div>
+    </div>
+    <a class="navitem__top" href="/guide/">Guide</a>
+    <a class="navitem__top" href="/about/">About</a>
   </nav>
 </header>
 
@@ -166,13 +180,47 @@ ${body}
 
 <footer class="footer">
   <div class="footer__inner">
-    <p class="footer__note">${esc(config.author.bio)}</p>
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <a class="wordmark" href="/"><span class="wordmark__steam">Steam</span><span class="wordmark__amp">&amp;</span><span class="wordmark__slate">Slate</span></a>
+        <p class="footer__note">${esc(config.author.bio)}</p>
+      </div>
+      <nav class="footer__col" aria-label="Regions">
+        <h2 class="footer__h">Regions</h2>
+        <ul>${locations.map((l) => `<li><a href="/wales/${l.slug}/">${esc(l.name)}</a></li>`).join('')}</ul>
+      </nav>
+      <nav class="footer__col" aria-label="Browse by theme">
+        <h2 class="footer__h">Browse by</h2>
+        <ul>${themes.map((t) => `<li><a href="/collections/${t.slug}/">${esc(t.name)}</a></li>`).join('')}<li><a href="/collections/">All collections</a></li></ul>
+      </nav>
+      <nav class="footer__col" aria-label="More">
+        <h2 class="footer__h">More</h2>
+        <ul>
+          <li><a href="/guide/">The booking guide</a></li>
+          <li><a href="/about/">About this site</a></li>
+          <li><a href="/credits/">Image credits</a></li>
+        </ul>
+      </nav>
+    </div>
     <p class="footer__meta">
       ${esc(config.siteName)} &middot; Written in ${esc(config.author.location)}<br>
       Some links to accommodation providers earn us a commission. It never changes what you pay, and it never decides what goes on the site.
     </p>
   </div>
 </footer>
+<script>
+(function(){
+  var t=document.querySelector('.nav-toggle');if(!t)return;
+  var b=document.body;
+  t.addEventListener('click',function(){
+    var open=b.classList.toggle('nav-open');
+    t.setAttribute('aria-expanded',open?'true':'false');
+  });
+  document.querySelectorAll('#nav a').forEach(function(a){
+    a.addEventListener('click',function(){b.classList.remove('nav-open');t.setAttribute('aria-expanded','false');});
+  });
+})();
+</script>
 ${gaId ? `<script>
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('.booking-cta');
@@ -228,60 +276,90 @@ function ridge() {
 /* --------------------------------------------------------------- homepage */
 
 function homepage() {
-  const rows = locations
-    .map(
-      (loc, i) => `
-      <a class="region" href="/wales/${loc.slug}/">
-        <span class="region__index">${String(i + 1).padStart(2, '0')}</span>
-        <span class="region__names">
-          <span class="region__name">${esc(loc.name)}</span>
-          <span class="region__welsh">${esc(loc.welsh)}</span>
+  const regionCards = locations
+    .map((loc, i) => {
+      const cover = (loc.images || []).find((im) => im.feature);
+      const media = cover
+        ? `<img src="/images/${loc.slug}/${cover.file}" alt="${esc(cover.alt)}" loading="lazy" width="800" height="534">`
+        : '';
+      return `
+      <a class="rcard" href="/wales/${loc.slug}/">
+        <span class="rcard__media">${media}<span class="rcard__index">${String(i + 1).padStart(2, '0')}</span></span>
+        <span class="rcard__body">
+          <span class="rcard__name">${esc(loc.name)}</span>
+          <span class="rcard__welsh">${esc(loc.welsh)}</span>
+          <span class="rcard__lead">${esc(loc.lead)}</span>
+          <span class="rcard__go">Explore ${esc(loc.name)} <span aria-hidden="true">&rarr;</span></span>
         </span>
-        <span class="region__lead">${esc(loc.lead)}</span>
-        <span class="region__go" aria-hidden="true">&rarr;</span>
-      </a>`
-    )
+      </a>`;
+    })
+    .join('');
+
+  const collectionCards = themes
+    .map((t) => `
+      <a class="ccard" href="${themeUrl(t)}">
+        <span class="ccard__go" aria-hidden="true">&rarr;</span>
+        <span class="ccard__name">${esc(t.name)}</span>
+        <span class="ccard__lead">${esc(t.lead)}</span>
+      </a>`)
     .join('');
 
   const body = `
-<section class="hero">
+<section class="hero hero--home">
+  <img class="hero__img" src="/images/mid-wales/mid-wales-valley-mist.jpg" alt="Dawn mist filling a Welsh valley, with hills rising above it into clear sky" width="1600" height="900" fetchpriority="high">
   <div class="steam" aria-hidden="true">
     <span class="steam__plume steam__plume--a"></span>
     <span class="steam__plume steam__plume--b"></span>
     <span class="steam__plume steam__plume--c"></span>
   </div>
-  ${ridge()}
+  <div class="hero__scrim" aria-hidden="true"></div>
   <div class="hero__inner">
-    <p class="eyebrow">An independent guide &middot; ${locations.length} regions</p>
+    <p class="eyebrow">An independent guide &middot; ${locations.length} regions of Wales</p>
     <h1 class="hero__title">Hot water,<br><em>cold Welsh air.</em></h1>
-    <p class="hero__sub">Where to find a lodge with a hot tub in Wales, which part of each region is actually worth staying in, and when the prices drop. Written by someone who lives here.</p>
+    <p class="hero__sub">The hand-written guide to hot tub lodges, cabins and glamping in Wales &mdash; which region actually suits you, where the good ones hide, and when the prices drop.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="#regions">Choose a region</a>
-      <a class="btn btn--ghost" href="/guide/">Not sure yet? Read the guide first</a>
+      <a class="btn btn--ghost" href="/guide/">Read the guide first</a>
     </div>
   </div>
+</section>
+
+<section class="manifesto">
+  <p class="manifesto__text">Not a booking engine. Not a list of every cottage with a tub bolted on. A guide to the <em>good</em> ones &mdash; written by someone who lives in mid Wales and has spent a lot of cold weekends working out which is which.</p>
 </section>
 
 <section class="regions" id="regions">
   <div class="section__head">
     <h2 class="section__title">Every region in Wales</h2>
-    <p class="section__note">A guide to self-catering lodges, log cabins, cottages and glamping with hot tubs, across every corner of Wales. Pick where you want to be — each region covers the areas within it, when to book, and one thing worth knowing before you go.</p>
+    <p class="section__note">Self-catering lodges, log cabins, cottages and glamping with hot tubs, across every corner of the country. Pick where you want to be.</p>
   </div>
-  <div class="region__list">${rows}</div>
-  <div class="themes-row">
-    <span class="themes-row__label">Or browse by what you're after:</span>
-    ${themes.map((t) => `<a class="themes-row__link" href="${themeUrl(t)}">${esc(t.name)}</a>`).join('')}
-  </div>
+  <div class="region-cards">${regionCards}</div>
+  <p class="cards-note">Region cover photography is Creative Commons licensed &mdash; <a href="/credits/">full image credits</a>.</p>
 </section>
 
-<section class="postcard" aria-label="Photography">
-  <figure class="postcard__figure">
-    <img src="/images/mid-wales/mid-wales-patchwork-fields-1.jpg" alt="Patchwork of green and gold farmland under a big cloud-streaked sky in mid Wales" loading="lazy" width="1600" height="900">
-    <figcaption class="postcard__caption">
-      <span class="postcard__eyebrow">Mid Wales</span>
-      <span class="postcard__line">Drone photography over the hills around Montgomery, where this guide is written &mdash; real photographs, not stock.</span>
-    </figcaption>
-  </figure>
+<section class="collections-home" id="collections">
+  <div class="section__head">
+    <h2 class="section__title">Or start from what you're after</h2>
+    <p class="section__note">Not sure which region? Browse by the thing that matters most &mdash; each one pulls together the areas that do it best.</p>
+  </div>
+  <div class="collection-cards">${collectionCards}</div>
+</section>
+
+<section class="closing">
+  <div class="closing__inner">
+    <figure class="closing__figure">
+      <img src="/images/mid-wales/mid-wales-village-aerial.jpg" alt="Aerial view of Montgomery, the mid Wales market town this guide is written from" loading="lazy" width="1200" height="800">
+    </figure>
+    <div class="closing__body">
+      <p class="eyebrow">Written in Montgomery, Powys</p>
+      <h2 class="closing__title">Real places, real photographs, real opinions.</h2>
+      <p class="closing__text">No provider has paid to appear here, and no region has been included or left out for commercial reasons. Some links earn a small commission if you book &mdash; it never changes what you pay, and it never decides what goes on the site.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="/guide/">Read the booking guide</a>
+        <a class="btn btn--ghost" href="/about/">About this site</a>
+      </div>
+    </div>
+  </div>
 </section>`;
 
   return shell({
@@ -289,7 +367,7 @@ function homepage() {
     description: config.description,
     canonical: config.domain + '/',
     body,
-    ogImage: '/images/mid-wales/mid-wales-patchwork-fields-1.jpg',
+    ogImage: '/images/mid-wales/mid-wales-valley-mist.jpg',
     jsonld: [
       {
         '@context': 'https://schema.org',
@@ -785,6 +863,114 @@ function themePage(theme) {
   });
 }
 
+/* ------------------------------------------------ collections index */
+
+function collectionsIndexPage() {
+  const url = `${config.domain}/collections/`;
+  const title = 'Hot tub breaks in Wales by theme — dark skies, dog-friendly, couples & more';
+  const desc = "Browse hot tub and glamping breaks in Wales by what matters most: dark skies, dog-friendly, couples, families and best value.";
+  const crumbItems = [{ name: 'Home', url: '/' }, { name: 'Collections' }];
+
+  const cards = themes
+    .map((t) => `
+      <a class="ccard" href="${themeUrl(t)}">
+        <span class="ccard__go" aria-hidden="true">&rarr;</span>
+        <span class="ccard__name">${esc(t.name)}</span>
+        <span class="ccard__lead">${esc(t.lead)}</span>
+      </a>`)
+    .join('');
+
+  const body = `
+<article>
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">Browse by what<br><em>you're after.</em></h1>
+    <p class="hero__sub">Not sure which region? Start from the thing that matters most — each collection pulls together the regions that do it best.</p>
+  </div>
+</section>
+
+<section class="collections-home">
+  <div class="collection-cards">${cards}</div>
+  <nav class="pagination" aria-label="Regions"><a href="/#regions">&larr; Or browse every region</a></nav>
+</section>
+</article>`;
+
+  return shell({
+    title,
+    description: desc,
+    canonical: url,
+    body,
+    breadcrumbJsonld: breadcrumbSchema(crumbItems),
+    jsonld: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: title,
+      description: desc,
+      url,
+      isPartOf: { '@id': config.domain + '/#organization' }
+    }
+  });
+}
+
+/* --------------------------------------------------- image credits page */
+
+function creditsPage() {
+  const url = `${config.domain}/credits/`;
+  const title = `Image credits — ${config.siteName}`;
+  const desc = 'Attribution for the Creative Commons photography used across the site.';
+  const crumbItems = [{ name: 'Home', url: '/' }, { name: 'Image credits' }];
+
+  const items = [];
+  for (const l of locations) for (const im of (l.images || [])) if (im.credit) items.push({ place: l.name, im });
+  for (const t of towns) for (const im of (t.images || [])) if (im.credit) items.push({ place: `${t.name}, ${regionBySlug[t.region].name}`, im });
+
+  const rows = items
+    .map(({ place, im }) => {
+      const c = im.credit;
+      const lic = c.licenseUrl
+        ? `<a href="${esc(c.licenseUrl)}" rel="nofollow noopener" target="_blank">${esc(c.license)}</a>`
+        : esc(c.license || '');
+      const src = c.sourceUrl ? ` (<a href="${esc(c.sourceUrl)}" rel="nofollow noopener" target="_blank">source</a>)` : '';
+      return `<li><span class="credits-place">${esc(place)}</span> — ${esc(c.author)} / ${lic}, via Wikimedia Commons${src}</li>`;
+    })
+    .join('');
+
+  const body = `
+<article>
+<section class="hero hero--place">
+  <div class="steam" aria-hidden="true">
+    <span class="steam__plume steam__plume--a"></span>
+    <span class="steam__plume steam__plume--b"></span>
+  </div>
+  ${ridge()}
+  <div class="hero__inner">
+    ${breadcrumbBar(crumbItems)}
+    <h1 class="hero__title hero__title--place">Image credits</h1>
+    <p class="hero__sub">The Mid Wales drone photography is the author's own. Region and town cover photos come from Wikimedia Commons under the Creative Commons licences credited below.</p>
+  </div>
+</section>
+
+<div class="prose">
+  <ul class="credits-list">${rows}</ul>
+  <nav class="pagination"><a href="/">&larr; Back home</a></nav>
+</div>
+</article>`;
+
+  return shell({
+    title,
+    description: desc,
+    canonical: url,
+    body,
+    breadcrumbJsonld: breadcrumbSchema(crumbItems)
+  });
+}
+
 /* ------------------------------------------------------------ guide page */
 
 function guidePage() {
@@ -1097,30 +1283,100 @@ a{color:inherit}
 .wordmark:hover{opacity:.85}
 .wordmark__amp{font-family:var(--accent);color:var(--thermal);font-style:italic}
 .wordmark__slate{color:var(--steam-dim)}
-.masthead__nav{display:flex;gap:1.75rem}
-.masthead__nav a{
+.masthead__nav{display:flex;gap:1.75rem;align-items:center}
+.navitem__top{
   text-decoration:none;
   font-size:.8125rem;
   letter-spacing:.09em;
   text-transform:uppercase;
   color:var(--steam-dim);
-  padding:.3rem 0;
+  padding:.4rem 0;
   position:relative;
   transition:color .2s ease;
+  white-space:nowrap;
 }
-.masthead__nav a::after{
-  content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;
+.navitem__top::after{
+  content:"";position:absolute;left:0;right:100%;bottom:.1rem;height:1px;
   background:var(--thermal);transition:right .25s ease;
 }
-.masthead__nav a:hover{color:var(--steam)}
-.masthead__nav a:hover::after{right:0}
+.navitem__top:hover{color:var(--steam)}
+.navitem--drop:hover .navitem__top::after,
+.navitem__top:hover::after{right:0}
 
-/* keep the header on one line on small phones */
+/* --- desktop dropdown panels --- */
+.navitem--drop{position:relative}
+.navitem--drop > .navitem__top::before{
+  content:"";display:inline-block;width:.42em;height:.42em;margin:0 .05em .15em .45em;
+  border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg);opacity:.6;vertical-align:middle;
+}
+.navpanel{
+  position:absolute;top:100%;right:0;margin-top:.5rem;
+  min-width:16rem;
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  box-shadow:var(--shadow-2);
+  padding:.6rem;
+  opacity:0;visibility:hidden;transform:translateY(6px);
+  transition:opacity .18s ease, transform .18s ease, visibility .18s;
+  z-index:20;
+}
+.navitem--drop:hover .navpanel,
+.navitem--drop:focus-within .navpanel{opacity:1;visibility:visible;transform:none}
+.navpanel__grid{display:grid;grid-template-columns:1fr 1fr;gap:.1rem}
+.navpanel__grid--two{grid-template-columns:1fr}
+.navpanel__grid a{
+  text-decoration:none;color:var(--steam-dim);
+  font-size:.9rem;letter-spacing:0;text-transform:none;
+  padding:.5rem .6rem;border-radius:var(--r-sm);white-space:nowrap;
+  transition:background-color .15s ease, color .15s ease;
+}
+.navpanel__grid a:hover{background:var(--thermal-soft);color:var(--thermal)}
+
+/* --- mobile menu toggle --- */
+.nav-toggle{
+  display:none;
+  flex-direction:column;justify-content:center;gap:.32rem;
+  width:2.6rem;height:2.6rem;padding:.6rem;
+  background:transparent;border:1px solid var(--line);border-radius:var(--r-sm);
+  cursor:pointer;
+}
+.nav-toggle__bar{display:block;height:2px;width:100%;background:var(--steam);border-radius:2px;transition:transform .2s ease, opacity .2s ease}
+.nav-open .nav-toggle__bar:nth-child(1){transform:translateY(.42rem) rotate(45deg)}
+.nav-open .nav-toggle__bar:nth-child(2){opacity:0}
+.nav-open .nav-toggle__bar:nth-child(3){transform:translateY(-.42rem) rotate(-45deg)}
+
+@media (max-width:52rem){
+  .nav-toggle{display:flex}
+  .masthead{position:sticky;top:0;background:rgba(11,20,24,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+  .masthead__nav{
+    display:none;
+    position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:var(--ink);border-bottom:1px solid var(--line);
+    padding:.5rem 1rem 1.2rem;
+    max-height:80vh;overflow-y:auto;
+    box-shadow:var(--shadow-2);
+  }
+  .nav-open .masthead__nav{display:flex}
+  .navitem__top{
+    text-transform:none;font-size:1.05rem;letter-spacing:0;
+    padding:.85rem .2rem;border-bottom:1px solid var(--line-soft);color:var(--steam);
+  }
+  .navitem__top::after{display:none}
+  .navitem--drop > .navitem__top::before{display:none}
+  .navpanel{
+    position:static;opacity:1;visibility:visible;transform:none;
+    min-width:0;margin:0;padding:.2rem 0 .6rem .6rem;
+    background:transparent;border:0;box-shadow:none;border-radius:0;
+  }
+  .navpanel__grid,.navpanel__grid--two{grid-template-columns:1fr 1fr}
+  .navpanel__grid a{font-size:.95rem;padding:.55rem .5rem;color:var(--steam-dim)}
+}
 @media (max-width:30rem){
-  .masthead{padding:1.15rem 1.1rem;gap:.6rem}
-  .wordmark{font-size:1.2rem}
-  .masthead__nav{gap:1rem}
-  .masthead__nav a{font-size:.72rem;letter-spacing:.05em}
+  .masthead{padding:1.15rem 1.1rem}
+  .wordmark{font-size:1.25rem}
 }
 
 /* -------------------------------------------------------- hero */
@@ -1688,6 +1944,110 @@ a{color:inherit}
   .postcard__caption{padding:1.6rem 1.25rem 1.25rem}
 }
 
+/* ------------------------------------- home: photographic hero */
+.hero--home{
+  display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:clamp(32rem, 78vh, 52rem);
+  margin-top:-5.5rem;
+  padding:8rem 1.5rem 4rem;
+  background:var(--ink);
+}
+.hero--home .hero__img{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;object-fit:cover;object-position:50% 42%;
+}
+.hero--home .hero__scrim{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(11,20,24,.95) 0%, rgba(11,20,24,.55) 34%, rgba(11,20,24,.18) 62%, rgba(11,20,24,.55) 100%),
+    linear-gradient(to right, rgba(11,20,24,.6), rgba(11,20,24,0) 62%);
+}
+.hero--home .steam{z-index:2}
+.hero--home .hero__inner{position:relative;z-index:3;width:100%}
+
+/* ------------------------------------- home: manifesto strip */
+.manifesto{max-width:var(--wrap);margin:0 auto;padding:var(--s-8) 1.5rem var(--s-7)}
+.manifesto__text{
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.22;letter-spacing:-.02em;
+  max-width:26ch;margin:0;color:var(--steam);text-wrap:balance;
+}
+.manifesto__text em{font-family:var(--accent);font-style:italic;font-weight:400;color:var(--thermal)}
+
+/* ------------------------------------- home: region cards */
+.region-cards{
+  display:grid;grid-template-columns:repeat(auto-fill, minmax(19rem, 1fr));gap:1.5rem;
+}
+.rcard{
+  display:flex;flex-direction:column;text-decoration:none;
+  background:var(--surface);border:1px solid var(--line-soft);
+  border-radius:var(--r-md);overflow:hidden;
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.rcard:hover{transform:translateY(-4px);border-color:var(--line);box-shadow:var(--shadow-2)}
+.rcard__media{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--slate);display:block}
+.rcard__media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.rcard:hover .rcard__media img{transform:scale(1.05)}
+.rcard__index{
+  position:absolute;top:.65rem;left:.7rem;
+  font-family:var(--display);font-weight:600;font-size:.75rem;letter-spacing:.05em;
+  color:var(--steam);background:rgba(11,20,24,.55);
+  padding:.15rem .55rem;border-radius:var(--r-pill);backdrop-filter:blur(4px);
+}
+.rcard__body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;flex:1}
+.rcard__name{font-family:var(--display);font-weight:600;font-size:1.4rem;color:var(--steam);letter-spacing:-.01em;line-height:1.1}
+.rcard__welsh{font-family:var(--accent);font-style:italic;color:var(--steam-dim);font-size:1rem;margin:.05rem 0 .5rem}
+.rcard__lead{color:var(--steam-dim);font-size:.95rem;line-height:1.5;flex:1}
+.rcard__go{margin-top:1rem;font-size:.82rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--thermal);display:flex;align-items:center;gap:.45rem}
+.rcard__go span{transition:transform .2s ease}
+.rcard:hover .rcard__go span{transform:translateX(4px)}
+.cards-note{margin:1.5rem 0 0;font-size:.85rem;color:var(--steam-mute);text-align:center}
+.cards-note a{color:var(--steam-dim);text-decoration:underline;text-underline-offset:2px}
+.cards-note a:hover{color:var(--thermal)}
+
+/* ------------------------------------- credits list */
+.credits-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.credits-list li{font-size:.95rem;line-height:1.5;color:var(--steam-dim);padding-bottom:.6rem;border-bottom:1px solid var(--line-soft)}
+.credits-list li:last-child{border-bottom:0}
+.credits-list a{color:var(--steam-dim);text-decoration:underline;text-underline-offset:2px}
+.credits-list a:hover{color:var(--thermal)}
+.credits-place{font-weight:600;color:var(--steam)}
+
+/* ------------------------------------- home: collection cards */
+.collections-home{max-width:var(--wrap);margin:0 auto;padding:var(--s-7) 1.5rem var(--s-8)}
+.collection-cards{display:grid;grid-template-columns:repeat(auto-fill, minmax(15rem, 1fr));gap:1rem}
+.ccard{
+  position:relative;display:flex;flex-direction:column;gap:.5rem;
+  text-decoration:none;padding:1.5rem 1.4rem 1.6rem;
+  border:1px solid var(--line);border-radius:var(--r-md);
+  background:linear-gradient(160deg, var(--surface-2), var(--slate));
+  transition:transform .18s ease, border-color .18s ease, box-shadow .2s ease;
+}
+.ccard:hover{transform:translateY(-3px);border-color:var(--thermal-deep);box-shadow:var(--shadow-1)}
+.ccard__name{font-family:var(--display);font-weight:600;font-size:1.25rem;color:var(--steam);max-width:9em}
+.ccard__lead{color:var(--steam-dim);font-size:.9rem;line-height:1.45}
+.ccard__go{position:absolute;top:1.35rem;right:1.35rem;color:var(--thermal);font-size:1.1rem;transition:transform .18s ease}
+.ccard:hover .ccard__go{transform:translateX(4px)}
+
+/* ------------------------------------- home: closing section */
+.closing{border-top:1px solid var(--line);background:linear-gradient(180deg, var(--slate), var(--ink))}
+.closing__inner{
+  max-width:var(--wrap);margin:0 auto;padding:var(--s-8) 1.5rem;
+  display:grid;grid-template-columns:1.05fr 1fr;gap:var(--s-7);align-items:center;
+}
+.closing__figure{margin:0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-2)}
+.closing__figure img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}
+.closing__title{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.15;letter-spacing:-.02em;
+  margin:.4rem 0 1rem;color:var(--steam);text-wrap:balance;
+}
+.closing__text{color:var(--steam-dim);margin:0 0 1.6rem;max-width:42ch}
+@media (max-width:44rem){
+  .closing__inner{grid-template-columns:1fr;gap:var(--s-6)}
+  .closing__figure{order:-1}
+}
+
 /* ------------------------------------------------------- footer */
 .footer{
   border-top:1px solid var(--line);
@@ -1701,22 +2061,44 @@ a{color:inherit}
 }
 .footer__inner{
   max-width:var(--wrap);margin:0 auto;
-  padding:var(--s-8) 1.5rem;
+  padding:var(--s-8) 1.5rem var(--s-7);
 }
+.footer__cols{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:2rem;
+  margin-bottom:var(--s-7);
+}
+.footer__brand .wordmark{font-size:1.35rem;margin-bottom:1rem}
 .footer__note{
   font-family:var(--display);
-  font-size:1.25rem;
+  font-size:1.1rem;
   line-height:1.4;
-  max-width:var(--read);
-  margin:0 0 1.5rem;
-  color:var(--steam);
+  max-width:24rem;
+  margin:0;
+  color:var(--steam-dim);
 }
+.footer__h{
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--moss);font-weight:600;margin:0 0 .9rem;
+}
+.footer__col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.55rem}
+.footer__col a{text-decoration:none;color:var(--steam-dim);font-size:.9rem;transition:color .15s ease}
+.footer__col a:hover{color:var(--thermal)}
 .footer__meta{
   font-size:.8125rem;
   color:var(--steam-mute);
   margin:0;
-  max-width:var(--read);
   line-height:1.75;
+  border-top:1px solid var(--line-soft);
+  padding-top:1.5rem;
+}
+@media (max-width:52rem){
+  .footer__cols{grid-template-columns:1fr 1fr;gap:1.75rem}
+  .footer__brand{grid-column:1 / -1}
+}
+@media (max-width:30rem){
+  .footer__cols{grid-template-columns:1fr}
 }
 `;
 
@@ -1860,6 +2242,9 @@ function build() {
   write('guide/index.html', guidePage());
   urls.push('/guide/');
 
+  write('credits/index.html', creditsPage());
+  urls.push('/credits/');
+
   for (const loc of locations) {
     write(`wales/${loc.slug}/index.html`, locationPage(loc));
     urls.push(`/wales/${loc.slug}/`);
@@ -1870,6 +2255,10 @@ function build() {
     urls.push(`/wales/${town.region}/${town.slug}/`);
   }
 
+  if (themes.length) {
+    write('collections/index.html', collectionsIndexPage());
+    urls.push('/collections/');
+  }
   for (const theme of themes) {
     write(`collections/${theme.slug}/index.html`, themePage(theme));
     urls.push(`/collections/${theme.slug}/`);
