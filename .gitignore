@@ -1,0 +1,7 @@
+# Build output — Netlify regenerates this with `node build.js`
+/site/
+
+# Transient dev tooling (installed ad hoc for screenshots/image work, never committed)
+/node_modules/
+package.json
+package-lock.json
